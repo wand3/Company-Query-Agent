@@ -13,6 +13,11 @@ from pathlib import Path
 from playwright.async_api import Playwright, async_playwright, expect
 
 
+# random delay time using uniform, so it uses floats instead of int to simulate human randomness
+delay = random.uniform(3, 7)
+short_delay = random.uniform(2, 4)
+
+
 async def navigate():
     async with async_playwright() as p:
         # browser configs

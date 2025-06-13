@@ -1,17 +1,18 @@
 #!/usr/bin/env python3
 from actions.base import Base
 from playwright.async_api import Page
-import logging
 import asyncio
 import json
 import random
 import os
 from pathlib import Path
-# from get_user_cookies import login
+from ..logger import setup_logger
 
 
 # Configure logging to display messages to the terminal
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s', handlers=[logging.StreamHandler()])
+# logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s', handlers=[logging.StreamHandler()])
+
+logger = setup_logger("linkedn", "INFO")
 
 
 parent_dir = os.path.dirname(os.path.dirname(__file__))  # Get the parent directory of the current directory
@@ -28,7 +29,7 @@ class loginAcct(Base):
         self.page = page
         self.url = url
         self.context = context
-        logging.info("initialized successfully")
+        logger.info("initialized successfully")
 
     # load cookies if it exists
     async def load_cookies(self):
@@ -41,11 +42,11 @@ class loginAcct(Base):
             #            for c in cookies_data.split(",")]
             cookies = json.load(f)
             await self.context.add_cookies(cookies)
-            logging.info(f"Cookies loaded for successfully")
+            logger.info(f"Cookies loaded for successfully")
 
     async def execute(self):
         await self.load_cookies()
-        logging.info(f"cookies loaded to session")
+        logger.info(f"cookies loaded to session")
         await asyncio.sleep(random.randint(2, 5))
         await self.page.goto(self.url)
         await self.page.wait_for_load_state()
