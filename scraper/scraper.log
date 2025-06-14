@@ -1,0 +1,288 @@
+DEBUG: 2025-06-14 01:23:44,151 INFO: initialized successfully
+DEBUG: 2025-06-14 01:23:44,151 INFO: initialized successfully
+DEBUG: 2025-06-14 01:23:44,151 INFO: initialized successfully
+DEBUG: 2025-06-14 01:23:44,151 INFO: initialized successfully
+DEBUG: 2025-06-14 01:23:44,154 INFO: cookies loaded to session
+DEBUG: 2025-06-14 01:23:44,154 INFO: cookies loaded to session
+DEBUG: 2025-06-14 01:23:44,154 INFO: cookies loaded to session
+DEBUG: 2025-06-14 01:23:44,154 INFO: cookies loaded to session
+DEBUG: 2025-06-14 01:23:53,396 INFO: Login button spotted succesfully
+DEBUG: 2025-06-14 01:23:53,396 INFO: Login button spotted succesfully
+DEBUG: 2025-06-14 01:23:53,396 INFO: Login button spotted succesfully
+DEBUG: 2025-06-14 01:23:53,396 INFO: Login button spotted succesfully
+DEBUG: 2025-06-14 01:24:14,765 INFO: Login button click success
+DEBUG: 2025-06-14 01:24:14,765 INFO: Login button click success
+DEBUG: 2025-06-14 01:24:14,765 INFO: Login button click success
+DEBUG: 2025-06-14 01:24:14,765 INFO: Login button click success
+DEBUG: 2025-06-14 01:39:16,639 INFO: initialized successfully
+DEBUG: 2025-06-14 01:39:16,639 INFO: initialized successfully
+DEBUG: 2025-06-14 01:39:16,639 INFO: initialized successfully
+DEBUG: 2025-06-14 01:39:16,639 INFO: initialized successfully
+DEBUG: 2025-06-14 01:39:16,667 INFO: cookies loaded to session
+DEBUG: 2025-06-14 01:39:16,667 INFO: cookies loaded to session
+DEBUG: 2025-06-14 01:39:16,667 INFO: cookies loaded to session
+DEBUG: 2025-06-14 01:39:16,667 INFO: cookies loaded to session
+DEBUG: 2025-06-14 01:39:25,935 INFO: Login button spotted succesfully
+DEBUG: 2025-06-14 01:39:25,935 INFO: Login button spotted succesfully
+DEBUG: 2025-06-14 01:39:25,935 INFO: Login button spotted succesfully
+DEBUG: 2025-06-14 01:39:25,935 INFO: Login button spotted succesfully
+DEBUG: 2025-06-14 01:39:43,935 INFO: Login button click success
+DEBUG: 2025-06-14 01:39:43,935 INFO: Login button click success
+DEBUG: 2025-06-14 01:39:43,935 INFO: Login button click success
+DEBUG: 2025-06-14 01:39:43,935 INFO: Login button click success
+DEBUG: 2025-06-14 01:42:19,075 ERROR: CSS visibility check failed for div#card-container.card-layout: Locator.evaluate: Timeout 155000ms exceeded.
+Call log:
+  - waiting for locator("div#card-container.card-layout")
+
+DEBUG: 2025-06-14 01:42:19,075 ERROR: CSS visibility check failed for div#card-container.card-layout: Locator.evaluate: Timeout 155000ms exceeded.
+Call log:
+  - waiting for locator("div#card-container.card-layout")
+
+DEBUG: 2025-06-14 01:42:19,075 ERROR: CSS visibility check failed for div#card-container.card-layout: Locator.evaluate: Timeout 155000ms exceeded.
+Call log:
+  - waiting for locator("div#card-container.card-layout")
+
+DEBUG: 2025-06-14 01:42:19,075 ERROR: CSS visibility check failed for div#card-container.card-layout: Locator.evaluate: Timeout 155000ms exceeded.
+Call log:
+  - waiting for locator("div#card-container.card-layout")
+
+DEBUG: 2025-06-14 02:09:01,271 INFO: initialized successfully
+DEBUG: 2025-06-14 02:09:01,271 INFO: initialized successfully
+DEBUG: 2025-06-14 02:09:01,271 INFO: initialized successfully
+DEBUG: 2025-06-14 02:09:01,271 INFO: initialized successfully
+DEBUG: 2025-06-14 02:09:01,286 INFO: cookies loaded to session
+DEBUG: 2025-06-14 02:09:01,286 INFO: cookies loaded to session
+DEBUG: 2025-06-14 02:09:01,286 INFO: cookies loaded to session
+DEBUG: 2025-06-14 02:09:01,286 INFO: cookies loaded to session
+DEBUG: 2025-06-14 02:09:10,032 INFO: Login button spotted succesfully
+DEBUG: 2025-06-14 02:09:10,032 INFO: Login button spotted succesfully
+DEBUG: 2025-06-14 02:09:10,032 INFO: Login button spotted succesfully
+DEBUG: 2025-06-14 02:09:10,032 INFO: Login button spotted succesfully
+DEBUG: 2025-06-14 02:09:33,559 INFO: Login button click success
+DEBUG: 2025-06-14 02:09:33,559 INFO: Login button click success
+DEBUG: 2025-06-14 02:09:33,559 INFO: Login button click success
+DEBUG: 2025-06-14 02:09:33,559 INFO: Login button click success
+DEBUG: 2025-06-14 02:12:09,005 ERROR: CSS visibility check failed for div#card-container.card-layout: Locator.evaluate: Timeout 155000ms exceeded.
+Call log:
+  - waiting for locator("div#card-container.card-layout")
+
+DEBUG: 2025-06-14 02:12:09,005 ERROR: CSS visibility check failed for div#card-container.card-layout: Locator.evaluate: Timeout 155000ms exceeded.
+Call log:
+  - waiting for locator("div#card-container.card-layout")
+
+DEBUG: 2025-06-14 02:12:09,005 ERROR: CSS visibility check failed for div#card-container.card-layout: Locator.evaluate: Timeout 155000ms exceeded.
+Call log:
+  - waiting for locator("div#card-container.card-layout")
+
+DEBUG: 2025-06-14 02:12:09,005 ERROR: CSS visibility check failed for div#card-container.card-layout: Locator.evaluate: Timeout 155000ms exceeded.
+Call log:
+  - waiting for locator("div#card-container.card-layout")
+
+DEBUG: 2025-06-14 02:14:44,139 ERROR: Bounding box check failed for div#card-container.card-layout: Locator.bounding_box: Timeout 155000ms exceeded.
+Call log:
+  - waiting for locator("div#card-container.card-layout")
+
+DEBUG: 2025-06-14 02:14:44,139 ERROR: Bounding box check failed for div#card-container.card-layout: Locator.bounding_box: Timeout 155000ms exceeded.
+Call log:
+  - waiting for locator("div#card-container.card-layout")
+
+DEBUG: 2025-06-14 02:14:44,139 ERROR: Bounding box check failed for div#card-container.card-layout: Locator.bounding_box: Timeout 155000ms exceeded.
+Call log:
+  - waiting for locator("div#card-container.card-layout")
+
+DEBUG: 2025-06-14 02:14:44,139 ERROR: Bounding box check failed for div#card-container.card-layout: Locator.bounding_box: Timeout 155000ms exceeded.
+Call log:
+  - waiting for locator("div#card-container.card-layout")
+
+DEBUG: 2025-06-14 02:14:47,218 ERROR: Wait-based verification failed for div#card-container.card-layout: Page.wait_for_selector: Timeout 3000ms exceeded.
+Call log:
+  - waiting for locator("div#card-container.card-layout") to be visible
+
+DEBUG: 2025-06-14 02:14:47,218 ERROR: Wait-based verification failed for div#card-container.card-layout: Page.wait_for_selector: Timeout 3000ms exceeded.
+Call log:
+  - waiting for locator("div#card-container.card-layout") to be visible
+
+DEBUG: 2025-06-14 02:14:47,218 ERROR: Wait-based verification failed for div#card-container.card-layout: Page.wait_for_selector: Timeout 3000ms exceeded.
+Call log:
+  - waiting for locator("div#card-container.card-layout") to be visible
+
+DEBUG: 2025-06-14 02:14:47,218 ERROR: Wait-based verification failed for div#card-container.card-layout: Page.wait_for_selector: Timeout 3000ms exceeded.
+Call log:
+  - waiting for locator("div#card-container.card-layout") to be visible
+
+DEBUG: 2025-06-14 02:17:22,297 ERROR: Element handle check failed for div#card-container.card-layout: Locator.element_handle: Timeout 155000ms exceeded.
+Call log:
+  - waiting for locator("div#card-container.card-layout")
+
+DEBUG: 2025-06-14 02:17:22,297 ERROR: Element handle check failed for div#card-container.card-layout: Locator.element_handle: Timeout 155000ms exceeded.
+Call log:
+  - waiting for locator("div#card-container.card-layout")
+
+DEBUG: 2025-06-14 02:17:22,297 ERROR: Element handle check failed for div#card-container.card-layout: Locator.element_handle: Timeout 155000ms exceeded.
+Call log:
+  - waiting for locator("div#card-container.card-layout")
+
+DEBUG: 2025-06-14 02:17:22,297 ERROR: Element handle check failed for div#card-container.card-layout: Locator.element_handle: Timeout 155000ms exceeded.
+Call log:
+  - waiting for locator("div#card-container.card-layout")
+
+DEBUG: 2025-06-14 02:17:22,302 WARNING: All visibility checks failed for: div#card-container.card-layout
+DEBUG: 2025-06-14 02:17:22,302 WARNING: All visibility checks failed for: div#card-container.card-layout
+DEBUG: 2025-06-14 02:17:22,302 WARNING: All visibility checks failed for: div#card-container.card-layout
+DEBUG: 2025-06-14 02:17:22,302 WARNING: All visibility checks failed for: div#card-container.card-layout
+DEBUG: 2025-06-14 02:17:22,308 INFO: Session continued successful for
+DEBUG: 2025-06-14 02:17:22,308 INFO: Session continued successful for
+DEBUG: 2025-06-14 02:17:22,308 INFO: Session continued successful for
+DEBUG: 2025-06-14 02:17:22,308 INFO: Session continued successful for
+DEBUG: 2025-06-14 02:21:03,567 INFO: initialized successfully
+DEBUG: 2025-06-14 02:21:03,567 INFO: initialized successfully
+DEBUG: 2025-06-14 02:21:03,567 INFO: initialized successfully
+DEBUG: 2025-06-14 02:21:03,567 INFO: initialized successfully
+DEBUG: 2025-06-14 02:21:03,568 INFO: cookies loaded to session
+DEBUG: 2025-06-14 02:21:03,568 INFO: cookies loaded to session
+DEBUG: 2025-06-14 02:21:03,568 INFO: cookies loaded to session
+DEBUG: 2025-06-14 02:21:03,568 INFO: cookies loaded to session
+DEBUG: 2025-06-14 02:21:11,107 INFO: Login button spotted succesfully
+DEBUG: 2025-06-14 02:21:11,107 INFO: Login button spotted succesfully
+DEBUG: 2025-06-14 02:21:11,107 INFO: Login button spotted succesfully
+DEBUG: 2025-06-14 02:21:11,107 INFO: Login button spotted succesfully
+DEBUG: 2025-06-14 02:21:30,487 INFO: Login button click success
+DEBUG: 2025-06-14 02:21:30,487 INFO: Login button click success
+DEBUG: 2025-06-14 02:21:30,487 INFO: Login button click success
+DEBUG: 2025-06-14 02:21:30,487 INFO: Login button click success
+DEBUG: 2025-06-14 02:21:45,639 ERROR: CSS visibility check failed for div#card-container.card-layout: Locator.evaluate: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("div#card-container.card-layout")
+
+DEBUG: 2025-06-14 02:21:45,639 ERROR: CSS visibility check failed for div#card-container.card-layout: Locator.evaluate: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("div#card-container.card-layout")
+
+DEBUG: 2025-06-14 02:21:45,639 ERROR: CSS visibility check failed for div#card-container.card-layout: Locator.evaluate: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("div#card-container.card-layout")
+
+DEBUG: 2025-06-14 02:21:45,639 ERROR: CSS visibility check failed for div#card-container.card-layout: Locator.evaluate: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("div#card-container.card-layout")
+
+DEBUG: 2025-06-14 02:22:00,658 ERROR: Bounding box check failed for div#card-container.card-layout: Locator.bounding_box: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("div#card-container.card-layout")
+
+DEBUG: 2025-06-14 02:22:00,658 ERROR: Bounding box check failed for div#card-container.card-layout: Locator.bounding_box: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("div#card-container.card-layout")
+
+DEBUG: 2025-06-14 02:22:00,658 ERROR: Bounding box check failed for div#card-container.card-layout: Locator.bounding_box: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("div#card-container.card-layout")
+
+DEBUG: 2025-06-14 02:22:00,658 ERROR: Bounding box check failed for div#card-container.card-layout: Locator.bounding_box: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("div#card-container.card-layout")
+
+DEBUG: 2025-06-14 02:22:03,695 ERROR: Wait-based verification failed for div#card-container.card-layout: Page.wait_for_selector: Timeout 3000ms exceeded.
+Call log:
+  - waiting for locator("div#card-container.card-layout") to be visible
+
+DEBUG: 2025-06-14 02:22:03,695 ERROR: Wait-based verification failed for div#card-container.card-layout: Page.wait_for_selector: Timeout 3000ms exceeded.
+Call log:
+  - waiting for locator("div#card-container.card-layout") to be visible
+
+DEBUG: 2025-06-14 02:22:03,695 ERROR: Wait-based verification failed for div#card-container.card-layout: Page.wait_for_selector: Timeout 3000ms exceeded.
+Call log:
+  - waiting for locator("div#card-container.card-layout") to be visible
+
+DEBUG: 2025-06-14 02:22:03,695 ERROR: Wait-based verification failed for div#card-container.card-layout: Page.wait_for_selector: Timeout 3000ms exceeded.
+Call log:
+  - waiting for locator("div#card-container.card-layout") to be visible
+
+DEBUG: 2025-06-14 02:22:18,738 ERROR: Element handle check failed for div#card-container.card-layout: Locator.element_handle: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("div#card-container.card-layout")
+
+DEBUG: 2025-06-14 02:22:18,738 ERROR: Element handle check failed for div#card-container.card-layout: Locator.element_handle: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("div#card-container.card-layout")
+
+DEBUG: 2025-06-14 02:22:18,738 ERROR: Element handle check failed for div#card-container.card-layout: Locator.element_handle: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("div#card-container.card-layout")
+
+DEBUG: 2025-06-14 02:22:18,738 ERROR: Element handle check failed for div#card-container.card-layout: Locator.element_handle: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("div#card-container.card-layout")
+
+DEBUG: 2025-06-14 02:22:18,744 WARNING: All visibility checks failed for: div#card-container.card-layout
+DEBUG: 2025-06-14 02:22:18,744 WARNING: All visibility checks failed for: div#card-container.card-layout
+DEBUG: 2025-06-14 02:22:18,744 WARNING: All visibility checks failed for: div#card-container.card-layout
+DEBUG: 2025-06-14 02:22:18,744 WARNING: All visibility checks failed for: div#card-container.card-layout
+DEBUG: 2025-06-14 02:22:18,745 INFO: Session continued successful for
+DEBUG: 2025-06-14 02:22:18,745 INFO: Session continued successful for
+DEBUG: 2025-06-14 02:22:18,745 INFO: Session continued successful for
+DEBUG: 2025-06-14 02:22:18,745 INFO: Session continued successful for
+DEBUG: 2025-06-14 02:22:19,071 INFO: Auth complete
+DEBUG: 2025-06-14 02:22:19,071 INFO: Auth complete
+DEBUG: 2025-06-14 02:22:19,071 INFO: Auth complete
+DEBUG: 2025-06-14 02:22:19,071 INFO: Auth complete
+DEBUG: 2025-06-14 02:22:19,100 INFO: initialized successfully
+DEBUG: 2025-06-14 02:22:19,100 INFO: initialized successfully
+DEBUG: 2025-06-14 02:22:19,100 INFO: initialized successfully
+DEBUG: 2025-06-14 02:22:19,100 INFO: initialized successfully
+DEBUG: 2025-06-14 02:22:19,100 INFO: initialized successfully
+DEBUG: 2025-06-14 02:22:19,100 INFO: Search box visible
+DEBUG: 2025-06-14 02:22:19,100 INFO: Search box visible
+DEBUG: 2025-06-14 02:22:19,100 INFO: Search box visible
+DEBUG: 2025-06-14 02:22:19,100 INFO: Search box visible
+DEBUG: 2025-06-14 02:22:19,100 INFO: Search box visible
+DEBUG: 2025-06-14 02:22:19,306 INFO: Basic hover succeeded
+DEBUG: 2025-06-14 02:22:19,306 INFO: Basic hover succeeded
+DEBUG: 2025-06-14 02:22:19,306 INFO: Basic hover succeeded
+DEBUG: 2025-06-14 02:22:19,306 INFO: Basic hover succeeded
+DEBUG: 2025-06-14 02:22:19,306 INFO: Basic hover succeeded
+DEBUG: 2025-06-14 02:22:19,306 INFO: Hover Search box visible True
+DEBUG: 2025-06-14 02:22:19,306 INFO: Hover Search box visible True
+DEBUG: 2025-06-14 02:22:19,306 INFO: Hover Search box visible True
+DEBUG: 2025-06-14 02:22:19,306 INFO: Hover Search box visible True
+DEBUG: 2025-06-14 02:22:19,306 INFO: Hover Search box visible True
+DEBUG: 2025-06-14 02:22:19,722 INFO: Method 1: Basic click succeeded
+DEBUG: 2025-06-14 02:22:19,722 INFO: Method 1: Basic click succeeded
+DEBUG: 2025-06-14 02:22:19,722 INFO: Method 1: Basic click succeeded
+DEBUG: 2025-06-14 02:22:19,722 INFO: Method 1: Basic click succeeded
+DEBUG: 2025-06-14 02:22:19,722 INFO: Method 1: Basic click succeeded
+DEBUG: 2025-06-14 02:22:19,723 INFO: Click Search box True
+DEBUG: 2025-06-14 02:22:19,723 INFO: Click Search box True
+DEBUG: 2025-06-14 02:22:19,723 INFO: Click Search box True
+DEBUG: 2025-06-14 02:22:19,723 INFO: Click Search box True
+DEBUG: 2025-06-14 02:22:19,723 INFO: Click Search box True
+DEBUG: 2025-06-14 02:22:25,486 INFO: Search box filled with company name Merec Industries
+DEBUG: 2025-06-14 02:22:25,486 INFO: Search box filled with company name Merec Industries
+DEBUG: 2025-06-14 02:22:25,486 INFO: Search box filled with company name Merec Industries
+DEBUG: 2025-06-14 02:22:25,486 INFO: Search box filled with company name Merec Industries
+DEBUG: 2025-06-14 02:22:25,486 INFO: Search box filled with company name Merec Industries
+DEBUG: 2025-06-14 02:22:30,869 INFO: Search success for Merec Industries
+DEBUG: 2025-06-14 02:22:30,869 INFO: Search success for Merec Industries
+DEBUG: 2025-06-14 02:22:30,869 INFO: Search success for Merec Industries
+DEBUG: 2025-06-14 02:22:30,869 INFO: Search success for Merec Industries
+DEBUG: 2025-06-14 02:22:30,869 INFO: Search success for Merec Industries
+DEBUG: 2025-06-14 02:22:30,870 INFO: Search Merec Industries loading
+DEBUG: 2025-06-14 02:22:30,870 INFO: Search Merec Industries loading
+DEBUG: 2025-06-14 02:22:30,870 INFO: Search Merec Industries loading
+DEBUG: 2025-06-14 02:22:30,870 INFO: Search Merec Industries loading
+DEBUG: 2025-06-14 02:22:30,870 INFO: Search Merec Industries loading
+DEBUG: 2025-06-14 02:22:30,879 INFO: Search filter company Merec Industries successful
+DEBUG: 2025-06-14 02:22:30,879 INFO: Search filter company Merec Industries successful
+DEBUG: 2025-06-14 02:22:30,879 INFO: Search filter company Merec Industries successful
+DEBUG: 2025-06-14 02:22:30,879 INFO: Search filter company Merec Industries successful
+DEBUG: 2025-06-14 02:22:30,879 INFO: Search filter company Merec Industries successful
+DEBUG: 2025-06-14 02:22:33,629 INFO: Search filter people Merec Industries successful
+DEBUG: 2025-06-14 02:22:33,629 INFO: Search filter people Merec Industries successful
+DEBUG: 2025-06-14 02:22:33,629 INFO: Search filter people Merec Industries successful
+DEBUG: 2025-06-14 02:22:33,629 INFO: Search filter people Merec Industries successful
+DEBUG: 2025-06-14 02:22:33,629 INFO: Search filter people Merec Industries successful
+DEBUG: 2025-06-14 02:22:33,675 INFO: Search and filter success
+DEBUG: 2025-06-14 02:22:33,675 INFO: Search and filter success
+DEBUG: 2025-06-14 02:22:33,675 INFO: Search and filter success
+DEBUG: 2025-06-14 02:22:33,675 INFO: Search and filter success
+DEBUG: 2025-06-14 02:22:33,675 INFO: Search and filter success

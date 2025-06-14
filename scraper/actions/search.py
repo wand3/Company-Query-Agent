@@ -1,20 +1,20 @@
-#!/usr/bin/env python3
-from actions.base import Base
+import re
+
+from scraper.actions.base import Base
 from playwright.async_api import Page
 import asyncio
 import json
 import random
 import os
 from pathlib import Path
-from ..logger import setup_logger
-from ..main import delay, short_delay
-
+from scraper.main import delay, short_delay
+from .utilities import check_if_click_successful, check_if_its_visible, click_with_fallback, hover_with_fallback
 
 # Configure logging to display messages to the terminal
 # logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s', handlers=[logging.StreamHandler()])
+from ..logger import setup_logger
 
 logger = setup_logger("linkedn", "INFO")
-
 
 parent_dir = os.path.dirname(os.path.dirname(__file__))  # Get the parent directory of the current directory
 companies_filepath = os.path.join(parent_dir, "scraper/companies.json")
@@ -34,10 +34,21 @@ class search(Base):
 
     # load cookies if it exists
     async def search_name(self):
-        search_input = await self.page.locator('id=global-nav-search').is_visible()
-        logger.info("Search box seen")
+        # await self.page.wait_for_load_state()
+        # search_input = await self.page.get_by_placeholder("Search", exact=True).is_visible()
+        # logger.info("Search box seen")
+        selector = "div#global-nav-search.global-nav__search"
+        search_input = check_if_its_visible(self.page, selector)
         if search_input:
-            await self.page.get_by_placeholder("Search").fill(self.name)
+            logger.info(f"Search box visible")
+            hover_search = await hover_with_fallback(self.page, selector)
+            logger.info(f"Hover Search box visible {hover_search}")
+
+            click_search = await click_with_fallback(self.page, selector)
+            logger.info(f"Click Search box {click_search}")
+
+            await self.page.keyboard.type(self.name, delay=100)
+            # await self.page.get_by_placeholder("Search", exact=True).fill(self.name)
             await asyncio.sleep(short_delay)
 
             logger.info(f"Search box filled with company name {self.name}")
@@ -45,24 +56,231 @@ class search(Base):
             await self.page.wait_for_load_state()
             await asyncio.sleep(delay)
             logger.info(f"Search success for {self.name}")
+            return True
 
-    async def company_filter(self):
-        """ user either botton click on company name or goto then about to get company with name and fetch company details
-
-        e.g. https://www.linkedin.com/company/lapaire/
-
-        https://www.linkedin.com/company/lapaire/about/
-
+    # selects company filter
+    async def company_filter(self, selector):
         """
-        pass
+        Handles company filter interaction with full verification workflow:
+        1. Checks visibility using multiple methods
+        2. Hovers with fallback techniques
+        3. Clicks with prioritized fallbacks
+        4. Verifies success through URL pattern and element state
+        """
+        # check if filters section is loaded
+        filters_bar = await check_if_its_visible(self.page, selector)
+        try:
+            if filters_bar:
+                # Define URL pattern for verification
+                url_pattern = "https://www.linkedin.com/search/results/companies/**"
 
+                # Candidate selectors in priority order
+                candidate_selectors = [
+                    "ul[role='list'] li button:has-text('Companies')",  # First locator in list
+                    "button.artdeco-pill:has-text('Companies')",  # Direct button selector
+                    "button.search-reusables__filter-pill-button:has-text('Companies')",
+                    "button:has-text('Companies')"
+                ]
 
+                success = False
 
+                for candidate in candidate_selectors:
+                    try:
+                        # 1. Visibility check
+                        is_visible = await check_if_its_visible(self.page, candidate)
+                        if not is_visible:
+                            logger.warning(f"Selector not visible: {candidate}")
+                            continue
 
+                        logger.info(f"Attempting filter with selector: {candidate}")
+
+                        # 2. Hover interaction
+                        hover_success = await hover_with_fallback(self.page, candidate)
+                        if not hover_success:
+                            logger.warning(f"Hover failed for selector: {candidate}")
+
+                        # 3. Click interaction
+                        click_success = await click_with_fallback(self.page, candidate)
+                        if not click_success:
+                            logger.error(f"Click failed for selector: {candidate}")
+                            continue
+
+                        # 4. Success verification
+                        await asyncio.sleep(1)  # Allow time for navigation
+                        verified = await check_if_click_successful(
+                            self.page,
+                            selector=candidate,
+                            url_pattern=url_pattern
+                        )
+
+                        if verified:
+                            logger.info(f"Company filter activated successfully with: {candidate}")
+                            success = True
+                            break
+                        else:
+                            # Fallback: Check if button state changed
+                            pressed_state = await self.page.evaluate(f"""selector => {{
+                                        const btn = document.querySelector(selector);
+                                        return btn ? btn.getAttribute('aria-pressed') : null;
+                                    }}""", candidate)
+
+                            if pressed_state == 'true':
+                                logger.info(f"Filter state changed to active: {candidate}")
+                                success = True
+                                break
+
+                    except Exception as e:
+                        logger.error(f"Filter processing failed for {candidate}: {str(e)}")
+
+                if not success:
+                    logger.error("All company filter methods failed")
+
+                return success
+
+        except Exception as e:
+            logger.error(f"Search filters not loaded {e}")
+
+        # self.page.goto(f"https://www.linkedin.com/search/results/companies/?keywords={self.name}&origin=SWITCH_SEARCH_VERTICAL&sid=zD_")
+        # self.page.wait_for_load_state()
+        # logger.info(f"Search filter company {self.name} successful")
+        # await asyncio.sleep(short_delay)
+        # self.page.goto(f"https://www.linkedin.com/search/results/people/?keywords={self.name}&origin=SWITCH_SEARCH_VERTICAL&sid=zD_")
+        # self.page.wait_for_load_state()
+        # logger.info(f"Search filter people {self.name} successful")
+
+    # scrape company about page
+    async def company_about(self):
+        """
+        Navigates to a company's 'About' page using LinkedIn's navigation bar.
+        Optimized with page.wait_for for better performance and reliability.
+        """
+        # Define URL patterns for verification
+        company_url_pattern = "https://www.linkedin.com/company/**"
+        about_url_pattern = "**/about/"
+
+        # Define navigation bar selector
+        nav_selector = "ul.org-page-navigation__items"
+
+        # Define About link selector options (in priority order)
+        about_selectors = [
+            f"{nav_selector} a:has-text('About')",  # Text-based targeting
+            f"{nav_selector} a[href*='/about/']",  # URL pattern targeting
+            f"{nav_selector} li:nth-child(2) a",  # Position-based (2nd item)
+            "a.org-page-navigation__item-anchor:has-text('About')"  # Fallback
+        ]
+
+        # 1. Verify we're on a company page using wait_for
+        try:
+            await self.page.wait_for(
+                lambda: re.match(r"https://www\.linkedin\.com/company/.*", self.page.url),
+                timeout=10000
+            )
+            logger.info("Verified company page URL pattern")
+        except TimeoutError:
+            logger.error("Not on a company page - aborting About navigation")
+            return False
+
+        # 2. Wait for navigation bar to load using wait_for
+        try:
+            await self.page.wait_for(
+                lambda: self.page.locator(nav_selector).is_visible(),
+                timeout=5000
+            )
+            logger.info("Company navigation bar loaded")
+        except TimeoutError:
+            logger.error("Navigation bar not found - cannot proceed to About page")
+            return False
+
+        success = False
+
+        for about_selector in about_selectors:
+            try:
+                logger.info(f"Attempting with selector: {about_selector}")
+
+                # 3. Check visibility using our utility function
+                is_visible = await check_if_its_visible(self.page, about_selector)
+                if not is_visible:
+                    logger.warning(f"About link not visible with selector: {about_selector}")
+                    continue
+
+                # 4. Hover interaction
+                hover_success = await hover_with_fallback(self.page, about_selector)
+                if not hover_success:
+                    logger.warning(f"Hover failed for selector: {about_selector}")
+                else:
+                    # Check for hover effects using wait_for
+                    try:
+                        await self.page.wait_for(
+                            lambda: self.page.evaluate(f"""selector => {{
+                                const el = document.querySelector(selector);
+                                return el && (el.matches(':hover') || 
+                                       getComputedStyle(el).backgroundColor !== 'rgba(0, 0, 0, 0)');
+                            }}""", about_selector),
+                            timeout=2000
+                        )
+                        logger.info("Hover effects confirmed")
+                    except:
+                        logger.debug("Hover effects not detected, proceeding anyway")
+
+                # 5. Click interaction
+                click_success = await click_with_fallback(self.page, about_selector)
+                if not click_success:
+                    logger.error(f"Click failed for selector: {about_selector}")
+                    continue
+
+                # 6. Verify navigation success using wait_for
+                try:
+                    # Wait for URL change using wait_for
+                    await self.page.wait_for(
+                        lambda: re.match(r".*/about/$", self.page.url) or
+                                re.match(r".*/about$", self.page.url),
+                        timeout=5000
+                    )
+                    logger.info("About page navigation verified by URL pattern")
+                    success = True
+                    break
+                except TimeoutError:
+                    # Verify active state using wait_for
+                    try:
+                        await self.page.wait_for(
+                            lambda: self.page.evaluate(f"""selector => {{
+                                const el = document.querySelector(selector);
+                                return el && el.getAttribute('aria-current') === 'page';
+                            }}""", about_selector),
+                            timeout=2000
+                        )
+                        logger.info("About link shows active state - navigation successful")
+                        success = True
+                        break
+                    except:
+                        logger.warning(f"About page verification failed for {about_selector}")
+
+            except Exception as e:
+                logger.error(f"About navigation failed with {about_selector}: {str(e)}")
+
+        if not success:
+            # Final fallback: Check for About page content using wait_for
+            try:
+                await self.page.wait_for(
+                    lambda: self.page.locator("section.about-us").is_visible() or
+                            self.page.locator("h2:has-text('Overview')").is_visible(),
+                    timeout=3000
+                )
+                logger.info("Detected About page content - navigation successful")
+                success = True
+            except Exception as e:
+                logger.error(f"All About navigation methods failed {e}")
+
+        return success
 
     async def execute(self):
-        logger.info(f"cookies loaded to session")
-        await asyncio.sleep(random.randint(2, 5))
-        await self.page.goto(self.url)
+        if await self.search_name():
+            logger.info(f"Search {self.name} loading")
+            company_selector = ""
+            apply_filter = await self.company_filter(company_selector)
+            if apply_filter:
+                logger.info(f"Search filter {self.name} success")
+
         await self.page.wait_for_load_state()
         await self.page.wait_for_load_state()
+        logger.info(f"Search and filter success")
