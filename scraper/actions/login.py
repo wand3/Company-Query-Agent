@@ -75,7 +75,7 @@ class loginAcct(Base):
         # password = input("enter password: ")
         await asyncio.sleep(short_delay)
 
-        await page.get_by_label("Password", exact=True).fill("_!Qaz2wsx3edc___20")
+        await page.get_by_label("Password", exact=True).fill("00000000000")
         await asyncio.sleep(short_delay)
 
         signin = await page.get_by_role("button", name="Sign in", exact=True).is_visible()
@@ -119,7 +119,7 @@ class loginAcct(Base):
                                 # password = input("enter password: ")
                                 await asyncio.sleep(short_delay)
 
-                                await page.get_by_label("Password", exact=True).fill("_!Qaz2wsx3edc___20")
+                                await page.get_by_label("Password", exact=True).fill("00000000000")
                                 await asyncio.sleep(short_delay)
 
                                 signin = await page.get_by_role("button", name="Sign in", exact=True).is_visible()

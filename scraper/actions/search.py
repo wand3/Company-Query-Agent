@@ -1,5 +1,4 @@
 import re
-
 from scraper.actions.base import Base
 from playwright.async_api import Page
 import asyncio
@@ -38,7 +37,7 @@ class search(Base):
         # search_input = await self.page.get_by_placeholder("Search", exact=True).is_visible()
         # logger.info("Search box seen")
         selector = "div#global-nav-search.global-nav__search"
-        search_input = check_if_its_visible(self.page, selector)
+        search_input = await check_if_its_visible(self.page, selector)
         if search_input:
             logger.info(f"Search box visible")
             hover_search = await hover_with_fallback(self.page, selector)
@@ -89,7 +88,7 @@ class search(Base):
                         # 1. Visibility check
                         is_visible = await check_if_its_visible(self.page, candidate)
                         if not is_visible:
-                            logger.warning(f"Selector not visible: {candidate}")
+                            logger.warning(f"Selector not visible: {candidate} {is_visible}")
                             continue
 
                         logger.info(f"Attempting filter with selector: {candidate}")
@@ -97,22 +96,23 @@ class search(Base):
                         # 2. Hover interaction
                         hover_success = await hover_with_fallback(self.page, candidate)
                         if not hover_success:
-                            logger.warning(f"Hover failed for selector: {candidate}")
+
+                            logger.warning(f"Hover failed for selector: {candidate} {hover_success}")
 
                         # 3. Click interaction
                         click_success = await click_with_fallback(self.page, candidate)
                         if not click_success:
-                            logger.error(f"Click failed for selector: {candidate}")
+                            logger.error(f"Click failed for selector: {candidate} {click_success}")
                             continue
 
                         # 4. Success verification
-                        await asyncio.sleep(1)  # Allow time for navigation
+                        await asyncio.sleep(short_delay)  # Allow time for navigation
                         verified = await check_if_click_successful(
                             self.page,
                             selector=candidate,
                             url_pattern=url_pattern
                         )
-
+                        logger.info(f"Company filter click successfully: {candidate} {verified}")
                         if verified:
                             logger.info(f"Company filter activated successfully with: {candidate}")
                             success = True
@@ -234,7 +234,7 @@ class search(Base):
                     await self.page.wait_for(
                         lambda: re.match(r".*/about/$", self.page.url) or
                                 re.match(r".*/about$", self.page.url),
-                        timeout=5000
+                        timeout=400
                     )
                     logger.info("About page navigation verified by URL pattern")
                     success = True
@@ -273,14 +273,44 @@ class search(Base):
 
         return success
 
+    async def scrape_company_about(self):
+        # Get page content after navigation
+        page_content = await self.page.content()
+        source_url = self.page.url
+
+        # Initialize scraper
+        from scraper.actions.scrape import CompanyAboutScraper
+        scraper = CompanyAboutScraper(page_content, source_url)
+
+        # Extract data
+        company_data = scraper.scrape()
+        logger.info(f'{company_data}')
+
+        # Save to JSON
+        json_path = scraper.save_to_json()
+        logger.info(f"Company data saved to: {json_path}")
+
+        return company_data
+
     async def execute(self):
         if await self.search_name():
             logger.info(f"Search {self.name} loading")
-            company_selector = ""
+            company_selector = "section.scaffold-layout-toolbar"
             apply_filter = await self.company_filter(company_selector)
+            logger.info(f"Apply filter {apply_filter} success")
+
             if apply_filter:
                 logger.info(f"Search filter {self.name} success")
+                about_page = await self.company_about()
+                try:
+                    if about_page:
+                        logger.info("About page loaded success")
+                        logger.info("Now on About page - scraping company data")
+                        company_data = await self.scrape_company_about(self.page)
+                        logger.info(f"Scraped data for {company_data}")
+
+                except Exception as e:
+                    logger.info(f"About page load error {e}")
 
         await self.page.wait_for_load_state()
-        await self.page.wait_for_load_state()
-        logger.info(f"Search and filter success")
+        logger.info(f"Search and filter success and about page")

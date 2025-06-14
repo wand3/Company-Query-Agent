@@ -1,5 +1,4 @@
 from scraper.actions.base import linkednController
-# from actions.shill import Shill
 import asyncio
 import json
 import random
