@@ -129,8 +129,19 @@ class search(Base):
                                 success = True
                                 break
 
+
                     except Exception as e:
                         logger.error(f"Filter processing failed for {candidate}: {str(e)}")
+
+                try:
+                    # CLick about first result to visit company
+                    result_click = self.page.locator(
+                        'ul[role="list"] li >> a[data-test-app-aware-link]').first()
+                    await result_click.click(force=True)
+                    logger.debug(f"First result click status {result_click}")
+                    success = True
+                except Exception as e:
+                    logger.error(f"Result click failed {e}")
 
                 if not success:
                     logger.error("All company filter methods failed")
@@ -140,14 +151,6 @@ class search(Base):
         except Exception as e:
             logger.error(f"Search filters not loaded {e}")
 
-        # self.page.goto(f"https://www.linkedin.com/search/results/companies/?keywords={self.name}&origin=SWITCH_SEARCH_VERTICAL&sid=zD_")
-        # self.page.wait_for_load_state()
-        # logger.info(f"Search filter company {self.name} successful")
-        # await asyncio.sleep(short_delay)
-        # self.page.goto(f"https://www.linkedin.com/search/results/people/?keywords={self.name}&origin=SWITCH_SEARCH_VERTICAL&sid=zD_")
-        # self.page.wait_for_load_state()
-        # logger.info(f"Search filter people {self.name} successful")
-
     # scrape company about page
     async def company_about(self):
         """
@@ -155,7 +158,7 @@ class search(Base):
         Optimized with page.wait_for for better performance and reliability.
         """
         # Define URL patterns for verification
-        company_url_pattern = "https://www.linkedin.com/company/**"
+        company_url_pattern = "https://www.linkedin.com/search/results/companies/**"
         about_url_pattern = "**/about/"
 
         # Define navigation bar selector
@@ -171,10 +174,11 @@ class search(Base):
 
         # 1. Verify we're on a company page using wait_for
         try:
-            await self.page.wait_for(
-                lambda: re.match(r"https://www\.linkedin\.com/company/.*", self.page.url),
-                timeout=10000
-            )
+            # await self.page.wait_for(
+            #     lambda: re.match(r"https://www\.linkedin\.com/company/.*", self.page.url),
+            #     timeout=10000
+            # )
+            await self.page.wait_for(company_url_pattern, timeout=10000)
             logger.info("Verified company page URL pattern")
         except TimeoutError:
             logger.error("Not on a company page - aborting About navigation")
@@ -219,14 +223,15 @@ class search(Base):
                             timeout=2000
                         )
                         logger.info("Hover effects confirmed")
-                    except:
-                        logger.debug("Hover effects not detected, proceeding anyway")
+                    except Exception as e:
+                        logger.debug(f"Hover effects not detected, proceeding anyway {e}")
 
                 # 5. Click interaction
                 click_success = await click_with_fallback(self.page, about_selector)
                 if not click_success:
                     logger.error(f"Click failed for selector: {about_selector}")
                     continue
+
 
                 # 6. Verify navigation success using wait_for
                 try:
@@ -252,8 +257,8 @@ class search(Base):
                         logger.info("About link shows active state - navigation successful")
                         success = True
                         break
-                    except:
-                        logger.warning(f"About page verification failed for {about_selector}")
+                    except Exception as e:
+                        logger.warning(f"About page verification failed for {about_selector} {e}")
 
             except Exception as e:
                 logger.error(f"About navigation failed with {about_selector}: {str(e)}")

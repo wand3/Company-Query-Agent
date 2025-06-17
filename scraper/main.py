@@ -52,7 +52,7 @@ async def navigate():
         # df = pd.read_csv('data.csv')
 
         page = await context.new_page()
-        page.set_default_timeout(15000)
+        page.set_default_timeout(120000)
 
         from scraper.actions.login import loginAcct
         controller = linkednController()
