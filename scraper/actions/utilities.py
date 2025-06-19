@@ -311,3 +311,41 @@ async def device_auth_confirmation(page, selector):
 
     except Exception as e:
         logger.error(f"Authentication failed {e}")
+
+
+async def select_first_company_result(page, selector):
+    """Hovers, selects and clicks the middle of the first company result"""
+    # Define the main container selector
+    company_container_selector = selector
+
+    # Wait for results to load
+    await page.wait_for_selector(company_container_selector, state="visible", timeout=15000)
+
+    # Get the first company result
+    first_company = page.locator(company_container_selector).first
+
+    # Hover over the entire result area
+    linked_area = first_company.locator("div.linked-area")
+    await linked_area.hover()
+
+    # Calculate and click the center position
+    bbox = await linked_area.bounding_box()
+    if bbox:
+        center_x = bbox['x'] + bbox['width'] / 2
+        center_y = bbox['y'] + bbox['height'] / 2
+
+        # Click the exact center
+        await page.mouse.click(center_x, center_y)
+
+        # Wait for navigation to company page
+        try:
+            await page.wait_for_url(
+                "https://www.linkedin.com/company/**",
+                timeout=10000,
+                wait_until="domcontentloaded"
+            )
+            return True
+        except TimeoutError:
+            logger.warning("Navigation to company page timed out")
+            return False
+    return False

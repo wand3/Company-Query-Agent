@@ -7,7 +7,7 @@ import random
 import os
 from pathlib import Path
 from scraper.main import delay, short_delay
-from .utilities import check_if_click_successful, check_if_its_visible, click_with_fallback, hover_with_fallback
+from .utilities import check_if_click_successful, check_if_its_visible, click_with_fallback, hover_with_fallback, select_first_company_result
 
 # Configure logging to display messages to the terminal
 # logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s', handlers=[logging.StreamHandler()])
@@ -128,16 +128,15 @@ class search(Base):
                                 logger.info(f"Filter state changed to active: {candidate}")
                                 success = True
                                 break
-
-
                     except Exception as e:
                         logger.error(f"Filter processing failed for {candidate}: {str(e)}")
 
                 try:
                     # CLick about first result to visit company
-                    result_click = self.page.locator(
-                        'ul[role="list"] li >> a[data-test-app-aware-link]').first()
-                    await result_click.click(force=True)
+                    result_click = await select_first_company_result(self.page, "div[data-chameleon-result-urn]")
+                    # result_click = self.page.locator(
+                    #     'ul[role="list"] li >> a[data-test-app-aware-link]').first()
+                    # await result_click.click(force=True)
                     logger.debug(f"First result click status {result_click}")
                     success = True
                 except Exception as e:
@@ -151,6 +150,36 @@ class search(Base):
         except Exception as e:
             logger.error(f"Search filters not loaded {e}")
 
+    # async def navigate_to_verified_link(page):
+    #     """
+    #     Locates and clicks the verified badge link to navigate to the about page
+    #     """
+    #     # Define selectors in priority order
+    #     selectors = [
+    #         "a[href*='/about/'][aria-label='Verified']",  # Most specific
+    #         "a.ember-view.active[href*='/about/']",  # Class-based
+    #         "a[href*='/about/'] svg[data-test-icon='verified-medium']",  # Child element
+    #         "a[href*='/about/']"  # Generic fallback
+    #     ]
+    #
+    #     for selector in selectors:
+    #         try:
+    #             # Check visibility
+    #             if await page.locator(selector).is_visible():
+    #                 logger.info(f"Verified link found with selector: {selector}")
+    #
+    #                 # Click using our robust click method
+    #                 if await click_with_fallback(page, selector):
+    #                     # Verify navigation success
+    #                     await page.wait_for_url("**/about/", timeout=10000)
+    #                     logger.info("Successfully navigated to About page via verified badge")
+    #                     return True
+    #         except Exception as e:
+    #             logger.warning(f"Attempt failed with {selector}: {str(e)}")
+    #
+    #     logger.error("All attempts to locate verified badge failed")
+    #     return False
+
     # scrape company about page
     async def company_about(self):
         """
@@ -158,16 +187,22 @@ class search(Base):
         Optimized with page.wait_for for better performance and reliability.
         """
         # Define URL patterns for verification
-        company_url_pattern = "https://www.linkedin.com/search/results/companies/**"
+        # company_url_pattern = "https://www.linkedin.com/search/results/companies/**"
+        company_url_pattern = "https://www.linkedin.com/company/**"
+
         about_url_pattern = "**/about/"
 
         # Define navigation bar selector
+        # nav_selector = "ul.org-page-navigation__items"
         nav_selector = "ul.org-page-navigation__items"
 
         # Define About link selector options (in priority order)
         about_selectors = [
+            f"{nav_selector} >> text='About'",  # Text-based targeting,
+            # f"{nav_selector} li a{n}",  # Text-based targeting
+
             f"{nav_selector} a:has-text('About')",  # Text-based targeting
-            f"{nav_selector} a[href*='/about/']",  # URL pattern targeting
+            f"{nav_selector} a[href*={about_url_pattern}]",  # URL pattern targeting
             f"{nav_selector} li:nth-child(2) a",  # Position-based (2nd item)
             "a.org-page-navigation__item-anchor:has-text('About')"  # Fallback
         ]
@@ -176,9 +211,9 @@ class search(Base):
         try:
             # await self.page.wait_for(
             #     lambda: re.match(r"https://www\.linkedin\.com/company/.*", self.page.url),
-            #     timeout=10000
+            #     timeout=5000
             # )
-            await self.page.wait_for(company_url_pattern, timeout=10000)
+            await self.page.wait_for_url(lambda: re.match(r"https://www\.linkedin\.com/company/.*", self.page.url))
             logger.info("Verified company page URL pattern")
         except TimeoutError:
             logger.error("Not on a company page - aborting About navigation")
@@ -186,10 +221,7 @@ class search(Base):
 
         # 2. Wait for navigation bar to load using wait_for
         try:
-            await self.page.wait_for(
-                lambda: self.page.locator(nav_selector).is_visible(),
-                timeout=5000
-            )
+            await self.page.wait_for_url(about_url_pattern)
             logger.info("Company navigation bar loaded")
         except TimeoutError:
             logger.error("Navigation bar not found - cannot proceed to About page")
@@ -214,7 +246,7 @@ class search(Base):
                 else:
                     # Check for hover effects using wait_for
                     try:
-                        await self.page.wait_for(
+                        await self.page.wait_for_url(
                             lambda: self.page.evaluate(f"""selector => {{
                                 const el = document.querySelector(selector);
                                 return el && (el.matches(':hover') || 
@@ -236,7 +268,7 @@ class search(Base):
                 # 6. Verify navigation success using wait_for
                 try:
                     # Wait for URL change using wait_for
-                    await self.page.wait_for(
+                    await self.page.wait_for_url(
                         lambda: re.match(r".*/about/$", self.page.url) or
                                 re.match(r".*/about$", self.page.url),
                         timeout=400
@@ -247,7 +279,7 @@ class search(Base):
                 except TimeoutError:
                     # Verify active state using wait_for
                     try:
-                        await self.page.wait_for(
+                        await self.page.wait_for_url(
                             lambda: self.page.evaluate(f"""selector => {{
                                 const el = document.querySelector(selector);
                                 return el && el.getAttribute('aria-current') === 'page';
@@ -266,7 +298,7 @@ class search(Base):
         if not success:
             # Final fallback: Check for About page content using wait_for
             try:
-                await self.page.wait_for(
+                await self.page.wait_for_url(
                     lambda: self.page.locator("section.about-us").is_visible() or
                             self.page.locator("h2:has-text('Overview')").is_visible(),
                     timeout=3000
@@ -305,8 +337,10 @@ class search(Base):
             logger.info(f"Apply filter {apply_filter} success")
 
             if apply_filter:
-                logger.info(f"Search filter {self.name} success")
+                logger.info(f"Search filter about page in {self.name} success")
                 about_page = await self.company_about()
+                logger.info(f"Company about page {about_page} success")
+
                 try:
                     if about_page:
                         logger.info("About page loaded success")

@@ -8,6 +8,13 @@ from ..logger import setup_logger
 from scraper.main import delay, short_delay
 from .utilities import check_if_click_successful, check_if_its_visible, click_with_fallback, hover_with_fallback, \
     device_auth_confirmation
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+username = os.getenv("USERNAME")
+password = os.getenv("PASSWORD")
+
 
 # Configure logging to display messages to the terminal
 # logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s', handlers=[logging.StreamHandler()])
@@ -69,13 +76,13 @@ class loginAcct(Base):
         await asyncio.sleep(delay)
 
         # email = input("email: ")
-        await page.locator("input[name='session_key']").fill("babawandebaiyewu@gmail.com")
+        await page.locator("input[name='session_key']").fill(username)
 
         await page.get_by_label("Password", exact=True).click()
         # password = input("enter password: ")
         await asyncio.sleep(short_delay)
 
-        await page.get_by_label("Password", exact=True).fill("00000000000")
+        await page.get_by_label("Password", exact=True).fill(password)
         await asyncio.sleep(short_delay)
 
         signin = await page.get_by_role("button", name="Sign in", exact=True).is_visible()
@@ -113,13 +120,13 @@ class loginAcct(Base):
                                 await asyncio.sleep(delay)
 
                                 # email = input("email: ")
-                                await page.locator("input[name='session_key']").fill("babawandebaiyewu@gmail.com")
+                                await page.locator("input[name='session_key']").fill(username)
 
                                 await page.get_by_label("Password", exact=True).click()
                                 # password = input("enter password: ")
                                 await asyncio.sleep(short_delay)
 
-                                await page.get_by_label("Password", exact=True).fill("")
+                                await page.get_by_label("Password", exact=True).fill(password)
                                 await asyncio.sleep(short_delay)
 
                                 signin = await page.get_by_role("button", name="Sign in", exact=True).is_visible()
