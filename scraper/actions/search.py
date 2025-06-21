@@ -7,7 +7,8 @@ import random
 import os
 from pathlib import Path
 from scraper.main import delay, short_delay
-from .utilities import check_if_click_successful, check_if_its_visible, click_with_fallback, hover_with_fallback, select_first_company_result
+from .utilities import check_if_click_successful, check_if_its_visible, click_with_fallback, hover_with_fallback, \
+    select_first_company_result
 
 # Configure logging to display messages to the terminal
 # logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s', handlers=[logging.StreamHandler()])
@@ -37,13 +38,13 @@ class search(Base):
         # search_input = await self.page.get_by_placeholder("Search", exact=True).is_visible()
         # logger.info("Search box seen")
         selector = "div#global-nav-search.global-nav__search"
-        search_input = await check_if_its_visible(self.page, selector)
+        search_input = await check_if_its_visible(self.page, selector, logger)
         if search_input:
             logger.info(f"Search box visible")
-            hover_search = await hover_with_fallback(self.page, selector)
+            hover_search = await hover_with_fallback(self.page, selector, logger)
             logger.info(f"Hover Search box visible {hover_search}")
 
-            click_search = await click_with_fallback(self.page, selector)
+            click_search = await click_with_fallback(self.page, selector, logger)
             logger.info(f"Click Search box {click_search}")
 
             await self.page.keyboard.type(self.name, delay=100)
@@ -67,7 +68,7 @@ class search(Base):
         4. Verifies success through URL pattern and element state
         """
         # check if filters section is loaded
-        filters_bar = await check_if_its_visible(self.page, selector)
+        filters_bar = await check_if_its_visible(self.page, selector, logger)
         try:
             if filters_bar:
                 # Define URL pattern for verification
@@ -86,7 +87,7 @@ class search(Base):
                 for candidate in candidate_selectors:
                     try:
                         # 1. Visibility check
-                        is_visible = await check_if_its_visible(self.page, candidate)
+                        is_visible = await check_if_its_visible(self.page, candidate, logger)
                         if not is_visible:
                             logger.warning(f"Selector not visible: {candidate} {is_visible}")
                             continue
@@ -94,9 +95,8 @@ class search(Base):
                         logger.info(f"Attempting filter with selector: {candidate}")
 
                         # 2. Hover interaction
-                        hover_success = await hover_with_fallback(self.page, candidate)
+                        hover_success = await hover_with_fallback(self.page, candidate, logger)
                         if not hover_success:
-
                             logger.warning(f"Hover failed for selector: {candidate} {hover_success}")
 
                         # 3. Click interaction
@@ -110,7 +110,8 @@ class search(Base):
                         verified = await check_if_click_successful(
                             self.page,
                             selector=candidate,
-                            url_pattern=url_pattern
+                            url_pattern=url_pattern,
+                            logger=logger
                         )
                         logger.info(f"Company filter click successfully: {candidate} {verified}")
                         if verified:
@@ -133,7 +134,7 @@ class search(Base):
 
                 try:
                     # CLick about first result to visit company
-                    result_click = await select_first_company_result(self.page, "div[data-chameleon-result-urn]")
+                    result_click = await select_first_company_result(self.page, "div[data-chameleon-result-urn]", logger)
                     # result_click = self.page.locator(
                     #     'ul[role="list"] li >> a[data-test-app-aware-link]').first()
                     # await result_click.click(force=True)
@@ -202,7 +203,7 @@ class search(Base):
             # f"{nav_selector} li a{n}",  # Text-based targeting
 
             f"{nav_selector} a:has-text('About')",  # Text-based targeting
-            f"{nav_selector} a[href*={about_url_pattern}]",  # URL pattern targeting
+            f"{nav_selector} a[href*='{about_url_pattern}']",  # URL pattern targeting
             f"{nav_selector} li:nth-child(2) a",  # Position-based (2nd item)
             "a.org-page-navigation__item-anchor:has-text('About')"  # Fallback
         ]
@@ -221,7 +222,7 @@ class search(Base):
 
         # 2. Wait for navigation bar to load using wait_for
         try:
-            await self.page.wait_for_url(about_url_pattern)
+            await check_if_its_visible(self.page, nav_selector, logger)
             logger.info("Company navigation bar loaded")
         except TimeoutError:
             logger.error("Navigation bar not found - cannot proceed to About page")
@@ -234,79 +235,98 @@ class search(Base):
                 logger.info(f"Attempting with selector: {about_selector}")
 
                 # 3. Check visibility using our utility function
-                is_visible = await check_if_its_visible(self.page, about_selector)
+                is_visible = await check_if_its_visible(self.page, about_selector, logger)
                 if not is_visible:
                     logger.warning(f"About link not visible with selector: {about_selector}")
                     continue
 
                 # 4. Hover interaction
-                hover_success = await hover_with_fallback(self.page, about_selector)
+                hover_success = await hover_with_fallback(self.page, about_selector, logger)
                 if not hover_success:
                     logger.warning(f"Hover failed for selector: {about_selector}")
-                else:
+
                     # Check for hover effects using wait_for
-                    try:
-                        await self.page.wait_for_url(
-                            lambda: self.page.evaluate(f"""selector => {{
-                                const el = document.querySelector(selector);
-                                return el && (el.matches(':hover') || 
-                                       getComputedStyle(el).backgroundColor !== 'rgba(0, 0, 0, 0)');
-                            }}""", about_selector),
-                            timeout=2000
-                        )
-                        logger.info("Hover effects confirmed")
-                    except Exception as e:
-                        logger.debug(f"Hover effects not detected, proceeding anyway {e}")
+                    # try:
+                    #     await self.page.wait_for_function(
+                    #         """selector => {{
+                    #             const el = document.querySelector(selector);
+                    #             return el && (el.matches(':hover') ||
+                    #                    getComputedStyle(el).backgroundColor !== 'rgba(0, 0, 0, 0)');
+                    #         }}""", about_selector,
+                    #         timeout=2000
+                    #     )
+                    #     logger.info("Hover effects confirmed")
+                    # except Exception as e:
+                    #     logger.debug(f"Hover effects not detected, proceeding anyway {e}")
 
                 # 5. Click interaction
-                click_success = await click_with_fallback(self.page, about_selector)
+                click_success = await click_with_fallback(self.page, about_selector, logger)
                 if not click_success:
                     logger.error(f"Click failed for selector: {about_selector}")
                     continue
 
+                await self.page.wait_for_load_state()
+                check = await check_if_click_successful(self.page, about_selector, company_url_pattern, logger)
+                logger.info("----- ---- ----- Checking if click to about page was successful")
 
-                # 6. Verify navigation success using wait_for
-                try:
-                    # Wait for URL change using wait_for
-                    await self.page.wait_for_url(
-                        lambda: re.match(r".*/about/$", self.page.url) or
-                                re.match(r".*/about$", self.page.url),
-                        timeout=400
-                    )
-                    logger.info("About page navigation verified by URL pattern")
-                    success = True
-                    break
-                except TimeoutError:
-                    # Verify active state using wait_for
-                    try:
-                        await self.page.wait_for_url(
-                            lambda: self.page.evaluate(f"""selector => {{
-                                const el = document.querySelector(selector);
-                                return el && el.getAttribute('aria-current') === 'page';
-                            }}""", about_selector),
-                            timeout=2000
-                        )
-                        logger.info("About link shows active state - navigation successful")
-                        success = True
-                        break
-                    except Exception as e:
-                        logger.warning(f"About page verification failed for {about_selector} {e}")
+                if check:
+
+                    overview = self.page.get_by_text("Overview")
+                    logger.info("----- ---- ----- About page overview successful")
+
+                    if overview:
+                        scrape_about = await self.scrape_company_about()
+                        if scrape_about:
+                            success = True
+                            logger.info("----- ---- ----- Scrape successful")
+                            return success
+
+
+
+                # Verify navigation success using wait_for
+                # try:
+                #     # Wait for URL change using wait_for
+                #     await self.page.wait_for_url(
+                #         lambda: re.match(r".*/about/$", self.page.url) or
+                #                 re.match(r".*/about$", self.page.url),
+                #         timeout=400
+                #     )
+                #     logger.info("About page navigation verified by URL pattern")
+                #     success = True
+                #     break
+                # except TimeoutError:
+                    # Verify active state using wait_for_function
+                    # try:
+                    #     await self.page.wait_for_function("""selector => {{
+                    #             const el = document.querySelector(selector);
+                    #             return el && el.getAttribute('aria-current') === 'page';
+                    #         }}""",
+                    #                                       about_selector,
+                    #                                       timeout=2000
+                    #                                       )
+                    #     logger.info("About link shows active state - navigation successful")
+                    #     success = True
+                    #     break
+                    # except Exception as e:
+                    #     logger.warning(f"About page verification failed for {about_selector} {e}")
 
             except Exception as e:
                 logger.error(f"About navigation failed with {about_selector}: {str(e)}")
 
-        if not success:
-            # Final fallback: Check for About page content using wait_for
-            try:
-                await self.page.wait_for_url(
-                    lambda: self.page.locator("section.about-us").is_visible() or
-                            self.page.locator("h2:has-text('Overview')").is_visible(),
-                    timeout=3000
-                )
-                logger.info("Detected About page content - navigation successful")
-                success = True
-            except Exception as e:
-                logger.error(f"All About navigation methods failed {e}")
+        # if not success:
+        #     # Final fallback: Check for About page content using wait_for
+        #     try:
+        #         await self.page.wait_for_function(
+        #             """() => {
+        #                 return document.querySelector('section.about-us') ||
+        #                        document.querySelector('h2')?.innerText.includes('Overview');
+        #             }""",
+        #             timeout=3000
+        #         )
+        #         logger.info("Detected About page content - navigation successful")
+        #         success = True
+        #     except Exception as e:
+        #         logger.error(f"All About navigation methods failed {e}")
 
         return success
 
@@ -339,13 +359,13 @@ class search(Base):
             if apply_filter:
                 logger.info(f"Search filter about page in {self.name} success")
                 about_page = await self.company_about()
-                logger.info(f"Company about page {about_page} success")
+                logger.info(f"Company about page {about_page}")
 
                 try:
                     if about_page:
                         logger.info("About page loaded success")
                         logger.info("Now on About page - scraping company data")
-                        company_data = await self.scrape_company_about(self.page)
+                        company_data = await self.scrape_company_about()
                         logger.info(f"Scraped data for {company_data}")
 
                 except Exception as e:

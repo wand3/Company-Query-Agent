@@ -1,9 +1,9 @@
 from ..logger import setup_logger
 
-logger = setup_logger("linkedn", "INFO")
+# logger = setup_logger("linkedn", "INFO")
 
 
-async def check_if_click_successful(page, selector, url_pattern):
+async def check_if_click_successful(page, selector, url_pattern, logger):
     """
     Verifies if a click operation was successful by checking:
     1. Network idle state
@@ -80,7 +80,7 @@ async def check_if_click_successful(page, selector, url_pattern):
     return success
 
 
-async def check_if_its_visible(page, selector):
+async def check_if_its_visible(page, selector, logger):
     """
     Checks if a selector is visible using multiple methods.
     Returns True as soon as one method confirms visibility.
@@ -143,7 +143,7 @@ async def check_if_its_visible(page, selector):
     return False
 
 
-async def hover_with_fallback(page, selector):
+async def hover_with_fallback(page, selector, logger):
     """
     Attempts to hover on an element using multiple methods.
     Returns True as soon as one hover method succeeds.
@@ -210,7 +210,7 @@ async def hover_with_fallback(page, selector):
     return False
 
 
-async def click_with_fallback(page, selector):
+async def click_with_fallback(page, selector, logger):
     """
     Attempts to click an element using multiple methods.
     Returns True as soon as one click method succeeds.
@@ -283,7 +283,7 @@ async def click_with_fallback(page, selector):
 
 
 # authenticate
-async def device_auth_confirmation(page, selector):
+async def device_auth_confirmation(page, selector, logger):
     # Define your selector (using both ID and class)
     try:
         url_pattern = "https://www.linkedin.com/checkpoint/challengesV2/**"
@@ -313,7 +313,7 @@ async def device_auth_confirmation(page, selector):
         logger.error(f"Authentication failed {e}")
 
 
-async def select_first_company_result(page, selector):
+async def select_first_company_result(page, selector, logger):
     """Hovers, selects and clicks the middle of the first company result"""
     # Define the main container selector
     company_container_selector = selector

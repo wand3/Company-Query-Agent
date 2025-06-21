@@ -23,7 +23,7 @@ logger = setup_logger("linkedn", "INFO")
 
 
 parent_dir = Path(__name__).resolve().parent  # Get the parent directory of the current directory
-cookies_filepath = parent_dir / 'scraper/cookies.json'
+cookies_filepath = parent_dir / 'scraper' / 'cookies.json'
 
 
 class loginAcct(Base):
@@ -40,13 +40,18 @@ class loginAcct(Base):
 
     # load cookies if it exists
     async def load_cookies(self):
-        base_folder = Path(__name__).resolve().parent
-        file_path = f'{base_folder}/scraper/cookies.json'
-        # load cookies of the user from the file
-        with open(file_path, "r") as f:
-            cookies = json.load(f)
-            await self.context.add_cookies(cookies)
-            logger.info(f"Cookies loaded for successfully")
+        try:
+            base_folder = Path(__name__).resolve().parent
+            file_path = f'{base_folder}/scraper/cookies.json'
+            # load cookies of the user from the file
+            with open(file_path, "w") as f:
+                cookies = json.load(f)
+                await self.context.add_cookies(cookies)
+                logger.info(f"Cookies loaded for successfully")
+            return True
+        except Exception as e:
+            logger.error(e)
+            return False
 
     # login if it auto logs out
     @staticmethod
@@ -148,25 +153,42 @@ class loginAcct(Base):
                     # check if feed page loaded
                     url_pattern = "https://www.linkedin.com/feed/"
                     selector = "div#global-nav-search.global-nav__search"
-                    feed_navigate = await check_if_click_successful(page, selector, url_pattern)
+                    feed_navigate = await check_if_click_successful(page, selector, url_pattern, logger)
                     if feed_navigate:
                         logger.info("Authentication complete now proceed to search")
 
+                        # # Save the login cookies
+                        # from .scrape import CompanyAboutScraper
+                        # # async def save_cookies(file_path=cookies_filepath):
+                        # cookies = await context.cookies()
+                        # with open(cookies_filepath, 'w') as f:
+                        #     json.dump(cookies, f)
+                        #     await page.save_cookies(cookies)
+                        # base_folder = Path(__name__).resolve().parent
+                        # file_path = f'{base_folder}/scraper/cookies.json'
+                        # save cookies of the user from the file
+
                         # Save the login cookies
-                        async def save_cookies(file_path=cookies_filepath):
+                        async def save_cookies(file_path=str(cookies_filepath)):
                             cookies = await context.cookies()
                             with open(file_path, 'w') as f:
                                 json.dump(cookies, f)
 
                         await save_cookies(context)
+                        logger.info(f"Cookies saved for successfully")
                         return True
 
             except Exception as e:
                 logger.info(f"Error checking card layout locator : {e}")
 
     async def execute(self):
-        # await self.load_cookies()
-        logger.info(f"cookies loaded to session")
+        load = await self.load_cookies()
+        if load:
+            logger.info(f"cookies loaded to session")
+            verify_cookies = check_if_click_successful(self.page, "div#global-nav-search.global-nav__search", "https://www.linkedin.com/feed/", logger)
+            if verify_cookies:
+                await asyncio.sleep(random.randint(2, 5))
+                return
         await asyncio.sleep(random.randint(2, 5))
         await self.page.goto(self.url)
         await self.page.wait_for_load_state()
