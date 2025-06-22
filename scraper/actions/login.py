@@ -42,7 +42,7 @@ class loginAcct(Base):
     async def load_cookies(self):
         try:
             base_folder = Path(__name__).resolve().parent
-            file_path = f'{base_folder}/scraper/cookies.json'
+            file_path = base_folder / 'scraper' / 'cookies.json'
             # load cookies of the user from the file
             with open(file_path, "w") as f:
                 cookies = json.load(f)

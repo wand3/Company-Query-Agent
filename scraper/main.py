@@ -62,8 +62,17 @@ async def navigate():
 
         logger.info("Auth complete")
         from scraper.actions.search import search
-        controller.add_command(search(page, context, "Merec Industries"))
+        controller.add_command(search(page, context, name="Lapaire Glasses", logger=logger))
         await controller.execute_commands()
+
+        # scrape page
+        from scraper.actions.scrape import CompanyAboutScraper
+        page_content = await page.content()
+        source_url = page.url
+        controller.clear_commands()
+        controller.add_command(CompanyAboutScraper(page_content, source_url,  logger=logger))
+        await controller.execute_commands()
+
         controller.clear_commands()
 
         await page.close()

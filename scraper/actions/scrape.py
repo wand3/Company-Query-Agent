@@ -15,10 +15,12 @@ from ..logger import setup_logger
 
 
 class CompanyAboutScraper(Base):
-    def __init__(self, page_content, source_url):
+
+    logger = setup_logger("linkedn", "INFO")
+
+    def __init__(self, page_content, source_url, logger):
         self.soup = BeautifulSoup(page_content, 'html.parser')
         self.source_url = source_url
-        logger = setup_logger("linkedn", "INFO")
         self.logger = logger
         self.data = {
             "source_company_name": "",
@@ -40,6 +42,17 @@ class CompanyAboutScraper(Base):
         header = self.soup.select_one('h1.org-top-card-summary__title')
         if header:
             self.data["source_company_name"] = header.get_text(strip=True)
+            self.logger.info("Extracting company Name Successful")
+
+    def extract_company_website(self):
+        """Extract company website from the page overview"""
+        try:
+            header = self.soup.select_one('dt h3')
+            if header:
+                self.data["source_company_name"] = header.get_text(strip=True)
+                self.logger.info("Extracting company Name Successful")
+        except Exception as e:
+            self.logger.info(f"Extracting company website failed: {e}")
 
     def extract_overview_section(self):
         """Extract data from the Overview section"""
@@ -86,7 +99,7 @@ class CompanyAboutScraper(Base):
 
     def extract_locations_section(self):
         """Extract country from locations section"""
-        locations_section = self.soup.select_one('h3:contains("Locations")')
+        locations_section = self.soup.select_one('h3:-soup-contains("Locations")')
         if not locations_section:
             return
 
@@ -99,7 +112,7 @@ class CompanyAboutScraper(Base):
                 # Extract country from address (last part after comma)
                 country = address_text.split(',')[-1].strip()
                 # Clean country code (e.g., "MZ" -> "Mozambique")
-                self.data["source_company_countries"] = self.map_country_code(country)
+                self.data["source_company_countries"] = country
 
     # def map_country_code(self, code):
     #     """Map country codes to full country names"""
@@ -145,3 +158,15 @@ class CompanyAboutScraper(Base):
             json.dump(self.data, f, indent=2, ensure_ascii=False)
 
         return str(filepath)
+
+    async def execute(self):
+        # Extract data
+        company_data = self.scrape()
+        self.logger.info(f'{company_data}')
+
+        # Save to JSON
+        json_path = self.save_to_json()
+        self.logger.info(f"Company data saved to: {json_path}")
+        self.logger.info(f"{company_data}")
+
+        return company_data
