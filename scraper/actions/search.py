@@ -60,6 +60,47 @@ class search(Base):
             self.logger.info(f"Search success for {self.name}")
             return True
 
+    async def handle_access_alert(self):
+        """
+        Detects and dismisses access restriction alerts with drop shadow.
+
+        Looks for an alert containing the message:
+        "You don't have access to this profile"
+        and attempts to click "Got it" or "X" to dismiss it.
+        """
+        try:
+            # Wait for the alert to appear within 3 seconds
+            await self.page.wait_for_selector("div[role='alert']", timeout=3000)
+
+            # Get the alert text
+            alert_text = await self.page.text_content("div[role='alert']")
+
+            if alert_text and "You don't have access to this profile" in alert_text:
+                self.logger.warning("Access restriction alert detected")
+
+                # Try clicking the "Got it" button if visible
+                got_it_button = self.page.locator("button:has-text('Got it')")
+                if await got_it_button.is_visible():
+                    await got_it_button.click()
+                    self.logger.info("Dismissed alert with 'Got it' button")
+                    return True
+
+                # Fallback: Try closing with 'X' button
+                close_button = self.page.locator("button[aria-label='Dismiss']")  # Adjust if needed
+                if await close_button.is_visible():
+                    await close_button.click()
+                    self.logger.info("Dismissed alert with 'X' button")
+                    return True
+
+                self.logger.warning("Alert was visible but no dismiss button was found")
+            else:
+                self.logger.debug("No relevant alert detected or different alert shown")
+
+        except Exception as e:
+            self.logger.error(f"Failed to handle access alert: {str(e)}")
+
+        return False
+
     # selects company filter
     async def company_filter(self, selector):
         """

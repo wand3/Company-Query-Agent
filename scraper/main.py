@@ -59,21 +59,31 @@ async def navigate():
         controller.add_command(loginAcct(page, context, "https://www.linkedin.com"))
         await controller.execute_commands()
         controller.clear_commands()
-
         logger.info("Auth complete")
+
         from scraper.actions.search import search
-        controller.add_command(search(page, context, name="Lapaire Glasses", logger=logger))
-        await controller.execute_commands()
+        # get and loop through company and country data
+        base_folder = Path(__name__).resolve().parent
+        results_dir = base_folder / "scraper" / "companies.json"
+        # Load the JSON file
+        with open(results_dir, "r", encoding="utf-8") as file:
+            companies = json.load(file)
 
-        # scrape page
-        from scraper.actions.scrape import CompanyAboutScraper
-        page_content = await page.content()
-        source_url = page.url
-        controller.clear_commands()
-        controller.add_command(CompanyAboutScraper(page_content, source_url,  logger=logger))
-        await controller.execute_commands()
+        # Loop through each company and call the function with the name
+        for company in companies:
 
-        controller.clear_commands()
+            controller.add_command(search(page, context, name=company["name"], logger=logger))
+            await controller.execute_commands()
+
+            # scrape page
+            from scraper.actions.scrape import CompanyAboutScraper
+            page_content = await page.content()
+            source_url = page.url
+            controller.clear_commands()
+            controller.add_command(CompanyAboutScraper(page_content, source_url,  logger=logger))
+            await controller.execute_commands()
+
+            controller.clear_commands()
 
         await page.close()
         await context.close()

@@ -154,7 +154,7 @@ class CompanyAboutScraper(Base):
         results_dir.mkdir(parents=True, exist_ok=True)
         # Now, define the full path to the file itself
         filepath = results_dir / filename
-        with open(filepath, 'w', encoding='utf-8') as f:
+        with open(filepath, 'a', encoding='utf-8') as f:
             json.dump(self.data, f, indent=2, ensure_ascii=False)
 
         return str(filepath)

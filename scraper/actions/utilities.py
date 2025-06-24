@@ -1,3 +1,5 @@
+import re
+
 from ..logger import setup_logger
 
 # logger = setup_logger("linkedn", "INFO")
@@ -348,4 +350,35 @@ async def select_first_company_result(page, selector, logger):
         except TimeoutError:
             logger.warning("Navigation to company page timed out")
             return False
+    return False
+
+
+# check and hover on a text
+async def hover_if_text(self, text: str):
+    try:
+        locator = self.page.locator(f"text={text}")
+        if await locator.is_visible():
+            await locator.hover()
+            self.logger.info(f"Hovered on element containing text: {text}")
+            return True
+
+        # Fallback using regex
+        escaped_text = re.escape(text)  # Escape regex metacharacters
+        locator = self.page.locator(f"text=/{escaped_text}/i")
+
+        if await locator.is_visible():
+            await locator.hover()
+            self.logger.info(f"Hovered using regex match: {text}")
+            return True
+
+        # Fallback using XPath
+        locator = self.page.locator(f"xpath=//*[contains(text(), \"{text}\")]")
+        if await locator.is_visible():
+            await locator.hover()
+            self.logger.info(f"Hovered using XPath fallback: {text}")
+            return True
+
+    except Exception as e:
+        self.logger.error(f"Failed to hover on text '{text}': {str(e)}")
+
     return False
