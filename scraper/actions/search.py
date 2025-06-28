@@ -70,35 +70,31 @@ class search(Base):
         """
         try:
             # Wait for the alert to appear within 3 seconds
-            await self.page.wait_for_selector("div[role='alert']", timeout=3000)
+            try:
+                from utilities import hover_if_text
+                seen = await hover_if_text(self, "You don't have access to this profile")
+                if seen:
+                    try:
+                        # self.logger.info(f"Restriction popup not visible {e}")
+                        # Try clicking the "Got it" button if visible
+                        got_it_button = self.page.locator("button:has-text('Got it')")
+                        if await got_it_button.is_visible():
+                            await got_it_button.click()
+                            self.logger.info("Dismissed alert with 'Got it' button")
+                            return True
 
-            # Get the alert text
-            alert_text = await self.page.text_content("div[role='alert']")
-
-            if alert_text and "You don't have access to this profile" in alert_text:
-                self.logger.warning("Access restriction alert detected")
-
-                # Try clicking the "Got it" button if visible
-                got_it_button = self.page.locator("button:has-text('Got it')")
-                if await got_it_button.is_visible():
-                    await got_it_button.click()
-                    self.logger.info("Dismissed alert with 'Got it' button")
-                    return True
-
-                # Fallback: Try closing with 'X' button
-                close_button = self.page.locator("button[aria-label='Dismiss']")  # Adjust if needed
-                if await close_button.is_visible():
-                    await close_button.click()
-                    self.logger.info("Dismissed alert with 'X' button")
-                    return True
-
-                self.logger.warning("Alert was visible but no dismiss button was found")
-            else:
-                self.logger.debug("No relevant alert detected or different alert shown")
-
+                        # Fallback: Try closing with 'X' button
+                        close_button = self.page.locator("button[aria-label='Dismiss']")  # Adjust if needed
+                        if await close_button.is_visible():
+                            await close_button.click()
+                            self.logger.info("Dismissed alert with 'X' button")
+                            return True
+                    except Exception as e:
+                        self.logger.warning(f"Alert was visible but no dismiss button was found {e}")
+            except Exception as e:
+                self.logger.error(f"Failed to handle access alert: {str(e)}")
         except Exception as e:
-            self.logger.error(f"Failed to handle access alert: {str(e)}")
-
+            self.logger.debug(f"No relevant alert detected or different alert shown {e}")
         return False
 
     # selects company filter
@@ -113,6 +109,13 @@ class search(Base):
         # check if filters section is loaded
         filters_bar = await check_if_its_visible(self.page, selector, self.logger)
         try:
+            try:
+                check_alert = await self.handle_access_alert()
+                if check_alert:
+                    pass
+            except Exception as e:
+                self.logger.debug(f"No relevant alert detected or different alert shown {e}")
+
             if filters_bar:
                 # Define URL pattern for verification
                 url_pattern = "https://www.linkedin.com/search/results/companies/**"
