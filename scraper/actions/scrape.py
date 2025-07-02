@@ -16,7 +16,7 @@ from ..logger import setup_logger
 
 class CompanyAboutScraper(Base):
 
-    logger = setup_logger("linkedn", "INFO")
+    # logger = setup_logger("linkedn", "INFO")
 
     def __init__(self, page_content, source_url, logger):
         self.soup = BeautifulSoup(page_content, 'html.parser')

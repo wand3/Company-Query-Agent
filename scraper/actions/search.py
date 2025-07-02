@@ -109,12 +109,6 @@ class search(Base):
         # check if filters section is loaded
         filters_bar = await check_if_its_visible(self.page, selector, self.logger)
         try:
-            try:
-                check_alert = await self.handle_access_alert()
-                if check_alert:
-                    pass
-            except Exception as e:
-                self.logger.debug(f"No relevant alert detected or different alert shown {e}")
 
             if filters_bar:
                 # Define URL pattern for verification
@@ -150,6 +144,14 @@ class search(Base):
                         if not click_success:
                             self.logger.error(f"Click failed for selector: {candidate} {click_success}")
                             continue
+
+                        # check and handle alert for dialog on expanding network
+                        try:
+                            check_alert = await self.handle_access_alert()
+                            if check_alert:
+                                pass
+                        except Exception as e:
+                            self.logger.debug(f"No relevant alert detected or different alert shown {e}")
 
                         # 4. Success verification
                         verified = await check_if_click_successful(

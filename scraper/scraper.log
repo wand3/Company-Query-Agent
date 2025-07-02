@@ -2867,3 +2867,1074 @@ DEBUG: 2025-06-28 01:45:45,591 INFO: {'source_company_name': '', 'source_company
 DEBUG: 2025-06-28 01:45:45,591 INFO: {'source_company_name': '', 'source_company_countries': '', 'source_company_phone': '', 'source_company_sector_or_activity': '', 'source_company_business_description': '', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/search/results/all/?keywords=SanLeiMoni-Shop&origin=GLOBAL_SEARCH_HEADER&sid=_)X', 'source_company_specialties': '', 'source_founding_date': '', 'source_company_size': '', 'source_company_website': ''}
 DEBUG: 2025-06-28 01:45:45,591 INFO: {'source_company_name': '', 'source_company_countries': '', 'source_company_phone': '', 'source_company_sector_or_activity': '', 'source_company_business_description': '', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/search/results/all/?keywords=SanLeiMoni-Shop&origin=GLOBAL_SEARCH_HEADER&sid=_)X', 'source_company_specialties': '', 'source_founding_date': '', 'source_company_size': '', 'source_company_website': ''}
 DEBUG: 2025-06-28 01:45:45,591 INFO: {'source_company_name': '', 'source_company_countries': '', 'source_company_phone': '', 'source_company_sector_or_activity': '', 'source_company_business_description': '', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/search/results/all/?keywords=SanLeiMoni-Shop&origin=GLOBAL_SEARCH_HEADER&sid=_)X', 'source_company_specialties': '', 'source_founding_date': '', 'source_company_size': '', 'source_company_website': ''}
+DEBUG: 2025-06-30 05:43:31,441 INFO: initialized successfully
+DEBUG: 2025-06-30 05:43:31,441 INFO: initialized successfully
+DEBUG: 2025-06-30 05:43:31,441 INFO: initialized successfully
+DEBUG: 2025-06-30 05:43:31,445 ERROR: not readable
+DEBUG: 2025-06-30 05:43:31,445 ERROR: not readable
+DEBUG: 2025-06-30 05:43:31,445 ERROR: not readable
+DEBUG: 2025-06-30 05:43:45,799 INFO: Login button spotted succesfully
+DEBUG: 2025-06-30 05:43:45,799 INFO: Login button spotted succesfully
+DEBUG: 2025-06-30 05:43:45,799 INFO: Login button spotted succesfully
+DEBUG: 2025-06-30 05:44:07,899 INFO: Login button click success
+DEBUG: 2025-06-30 05:44:07,899 INFO: Login button click success
+DEBUG: 2025-06-30 05:44:07,899 INFO: Login button click success
+DEBUG: 2025-06-30 05:44:07,904 INFO: Error checking card layout locator : check_if_its_visible() missing 1 required positional argument: 'logger'
+DEBUG: 2025-06-30 05:44:07,904 INFO: Error checking card layout locator : check_if_its_visible() missing 1 required positional argument: 'logger'
+DEBUG: 2025-06-30 05:44:07,904 INFO: Error checking card layout locator : check_if_its_visible() missing 1 required positional argument: 'logger'
+DEBUG: 2025-06-30 05:44:07,905 INFO: Session continued successful for
+DEBUG: 2025-06-30 05:44:07,905 INFO: Session continued successful for
+DEBUG: 2025-06-30 05:44:07,905 INFO: Session continued successful for
+DEBUG: 2025-06-30 05:44:07,951 INFO: Auth complete
+DEBUG: 2025-06-30 05:44:07,951 INFO: Auth complete
+DEBUG: 2025-06-30 05:44:07,951 INFO: Auth complete
+DEBUG: 2025-06-30 05:44:07,970 INFO: initialized successfully
+DEBUG: 2025-06-30 05:44:07,970 INFO: initialized successfully
+DEBUG: 2025-06-30 05:44:07,970 INFO: initialized successfully
+DEBUG: 2025-06-30 05:44:07,970 INFO: initialized successfully
+DEBUG: 2025-06-30 05:44:23,110 ERROR: CSS visibility check failed for div#global-nav-search.global-nav__search: Locator.evaluate: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("div#global-nav-search.global-nav__search")
+
+DEBUG: 2025-06-30 05:44:23,110 ERROR: CSS visibility check failed for div#global-nav-search.global-nav__search: Locator.evaluate: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("div#global-nav-search.global-nav__search")
+
+DEBUG: 2025-06-30 05:44:23,110 ERROR: CSS visibility check failed for div#global-nav-search.global-nav__search: Locator.evaluate: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("div#global-nav-search.global-nav__search")
+
+DEBUG: 2025-06-30 05:44:23,110 ERROR: CSS visibility check failed for div#global-nav-search.global-nav__search: Locator.evaluate: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("div#global-nav-search.global-nav__search")
+
+DEBUG: 2025-06-30 05:44:38,297 ERROR: Bounding box check failed for div#global-nav-search.global-nav__search: Locator.bounding_box: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("div#global-nav-search.global-nav__search")
+
+DEBUG: 2025-06-30 05:44:38,297 ERROR: Bounding box check failed for div#global-nav-search.global-nav__search: Locator.bounding_box: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("div#global-nav-search.global-nav__search")
+
+DEBUG: 2025-06-30 05:44:38,297 ERROR: Bounding box check failed for div#global-nav-search.global-nav__search: Locator.bounding_box: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("div#global-nav-search.global-nav__search")
+
+DEBUG: 2025-06-30 05:44:38,297 ERROR: Bounding box check failed for div#global-nav-search.global-nav__search: Locator.bounding_box: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("div#global-nav-search.global-nav__search")
+
+DEBUG: 2025-06-30 05:44:41,311 ERROR: Wait-based verification failed for div#global-nav-search.global-nav__search: Page.wait_for_selector: Timeout 3000ms exceeded.
+Call log:
+  - waiting for locator("div#global-nav-search.global-nav__search") to be visible
+
+DEBUG: 2025-06-30 05:44:41,311 ERROR: Wait-based verification failed for div#global-nav-search.global-nav__search: Page.wait_for_selector: Timeout 3000ms exceeded.
+Call log:
+  - waiting for locator("div#global-nav-search.global-nav__search") to be visible
+
+DEBUG: 2025-06-30 05:44:41,311 ERROR: Wait-based verification failed for div#global-nav-search.global-nav__search: Page.wait_for_selector: Timeout 3000ms exceeded.
+Call log:
+  - waiting for locator("div#global-nav-search.global-nav__search") to be visible
+
+DEBUG: 2025-06-30 05:44:41,311 ERROR: Wait-based verification failed for div#global-nav-search.global-nav__search: Page.wait_for_selector: Timeout 3000ms exceeded.
+Call log:
+  - waiting for locator("div#global-nav-search.global-nav__search") to be visible
+
+DEBUG: 2025-06-30 05:44:56,358 ERROR: Element handle check failed for div#global-nav-search.global-nav__search: Locator.element_handle: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("div#global-nav-search.global-nav__search")
+    - waiting for" https://www.linkedin.com/checkpoint/challenge/verifyV2" navigation to finish...
+
+DEBUG: 2025-06-30 05:44:56,358 ERROR: Element handle check failed for div#global-nav-search.global-nav__search: Locator.element_handle: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("div#global-nav-search.global-nav__search")
+    - waiting for" https://www.linkedin.com/checkpoint/challenge/verifyV2" navigation to finish...
+
+DEBUG: 2025-06-30 05:44:56,358 ERROR: Element handle check failed for div#global-nav-search.global-nav__search: Locator.element_handle: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("div#global-nav-search.global-nav__search")
+    - waiting for" https://www.linkedin.com/checkpoint/challenge/verifyV2" navigation to finish...
+
+DEBUG: 2025-06-30 05:44:56,358 ERROR: Element handle check failed for div#global-nav-search.global-nav__search: Locator.element_handle: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("div#global-nav-search.global-nav__search")
+    - waiting for" https://www.linkedin.com/checkpoint/challenge/verifyV2" navigation to finish...
+
+DEBUG: 2025-06-30 05:44:56,362 WARNING: All visibility checks failed for: div#global-nav-search.global-nav__search
+DEBUG: 2025-06-30 05:44:56,362 WARNING: All visibility checks failed for: div#global-nav-search.global-nav__search
+DEBUG: 2025-06-30 05:44:56,362 WARNING: All visibility checks failed for: div#global-nav-search.global-nav__search
+DEBUG: 2025-06-30 05:44:56,362 WARNING: All visibility checks failed for: div#global-nav-search.global-nav__search
+DEBUG: 2025-06-30 05:44:56,396 INFO: Search and filter success and about page
+DEBUG: 2025-06-30 05:44:56,396 INFO: Search and filter success and about page
+DEBUG: 2025-06-30 05:44:56,396 INFO: Search and filter success and about page
+DEBUG: 2025-06-30 05:44:56,396 INFO: Search and filter success and about page
+DEBUG: 2025-06-30 05:44:56,891 INFO: {'source_company_name': '', 'source_company_countries': '', 'source_company_phone': '', 'source_company_sector_or_activity': '', 'source_company_business_description': '', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/checkpoint/challengesV2/AQHG24Vd3MVLQwAAAZe_Jj3lSvdKvjisuzEjQJGkCm0Lm-oj7zG-TH5AKMGgn8WEeqtl1emHps8w8L5gVXlC2aWe2jc_W2agoA?ut=3tg5vEE50YnHQ1', 'source_company_specialties': '', 'source_founding_date': '', 'source_company_size': '', 'source_company_website': ''}
+DEBUG: 2025-06-30 05:44:56,891 INFO: {'source_company_name': '', 'source_company_countries': '', 'source_company_phone': '', 'source_company_sector_or_activity': '', 'source_company_business_description': '', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/checkpoint/challengesV2/AQHG24Vd3MVLQwAAAZe_Jj3lSvdKvjisuzEjQJGkCm0Lm-oj7zG-TH5AKMGgn8WEeqtl1emHps8w8L5gVXlC2aWe2jc_W2agoA?ut=3tg5vEE50YnHQ1', 'source_company_specialties': '', 'source_founding_date': '', 'source_company_size': '', 'source_company_website': ''}
+DEBUG: 2025-06-30 05:44:56,891 INFO: {'source_company_name': '', 'source_company_countries': '', 'source_company_phone': '', 'source_company_sector_or_activity': '', 'source_company_business_description': '', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/checkpoint/challengesV2/AQHG24Vd3MVLQwAAAZe_Jj3lSvdKvjisuzEjQJGkCm0Lm-oj7zG-TH5AKMGgn8WEeqtl1emHps8w8L5gVXlC2aWe2jc_W2agoA?ut=3tg5vEE50YnHQ1', 'source_company_specialties': '', 'source_founding_date': '', 'source_company_size': '', 'source_company_website': ''}
+DEBUG: 2025-06-30 05:44:56,891 INFO: {'source_company_name': '', 'source_company_countries': '', 'source_company_phone': '', 'source_company_sector_or_activity': '', 'source_company_business_description': '', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/checkpoint/challengesV2/AQHG24Vd3MVLQwAAAZe_Jj3lSvdKvjisuzEjQJGkCm0Lm-oj7zG-TH5AKMGgn8WEeqtl1emHps8w8L5gVXlC2aWe2jc_W2agoA?ut=3tg5vEE50YnHQ1', 'source_company_specialties': '', 'source_founding_date': '', 'source_company_size': '', 'source_company_website': ''}
+DEBUG: 2025-06-30 05:44:56,891 INFO: {'source_company_name': '', 'source_company_countries': '', 'source_company_phone': '', 'source_company_sector_or_activity': '', 'source_company_business_description': '', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/checkpoint/challengesV2/AQHG24Vd3MVLQwAAAZe_Jj3lSvdKvjisuzEjQJGkCm0Lm-oj7zG-TH5AKMGgn8WEeqtl1emHps8w8L5gVXlC2aWe2jc_W2agoA?ut=3tg5vEE50YnHQ1', 'source_company_specialties': '', 'source_founding_date': '', 'source_company_size': '', 'source_company_website': ''}
+DEBUG: 2025-06-30 05:44:56,898 INFO: Company data saved to: /Users/user/Desktop/Projects/Crapers/Company-Query-Agent/scraper/results/_about.json
+DEBUG: 2025-06-30 05:44:56,898 INFO: Company data saved to: /Users/user/Desktop/Projects/Crapers/Company-Query-Agent/scraper/results/_about.json
+DEBUG: 2025-06-30 05:44:56,898 INFO: Company data saved to: /Users/user/Desktop/Projects/Crapers/Company-Query-Agent/scraper/results/_about.json
+DEBUG: 2025-06-30 05:44:56,898 INFO: Company data saved to: /Users/user/Desktop/Projects/Crapers/Company-Query-Agent/scraper/results/_about.json
+DEBUG: 2025-06-30 05:44:56,898 INFO: Company data saved to: /Users/user/Desktop/Projects/Crapers/Company-Query-Agent/scraper/results/_about.json
+DEBUG: 2025-06-30 05:44:56,899 INFO: {'source_company_name': '', 'source_company_countries': '', 'source_company_phone': '', 'source_company_sector_or_activity': '', 'source_company_business_description': '', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/checkpoint/challengesV2/AQHG24Vd3MVLQwAAAZe_Jj3lSvdKvjisuzEjQJGkCm0Lm-oj7zG-TH5AKMGgn8WEeqtl1emHps8w8L5gVXlC2aWe2jc_W2agoA?ut=3tg5vEE50YnHQ1', 'source_company_specialties': '', 'source_founding_date': '', 'source_company_size': '', 'source_company_website': ''}
+DEBUG: 2025-06-30 05:44:56,899 INFO: {'source_company_name': '', 'source_company_countries': '', 'source_company_phone': '', 'source_company_sector_or_activity': '', 'source_company_business_description': '', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/checkpoint/challengesV2/AQHG24Vd3MVLQwAAAZe_Jj3lSvdKvjisuzEjQJGkCm0Lm-oj7zG-TH5AKMGgn8WEeqtl1emHps8w8L5gVXlC2aWe2jc_W2agoA?ut=3tg5vEE50YnHQ1', 'source_company_specialties': '', 'source_founding_date': '', 'source_company_size': '', 'source_company_website': ''}
+DEBUG: 2025-06-30 05:44:56,899 INFO: {'source_company_name': '', 'source_company_countries': '', 'source_company_phone': '', 'source_company_sector_or_activity': '', 'source_company_business_description': '', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/checkpoint/challengesV2/AQHG24Vd3MVLQwAAAZe_Jj3lSvdKvjisuzEjQJGkCm0Lm-oj7zG-TH5AKMGgn8WEeqtl1emHps8w8L5gVXlC2aWe2jc_W2agoA?ut=3tg5vEE50YnHQ1', 'source_company_specialties': '', 'source_founding_date': '', 'source_company_size': '', 'source_company_website': ''}
+DEBUG: 2025-06-30 05:44:56,899 INFO: {'source_company_name': '', 'source_company_countries': '', 'source_company_phone': '', 'source_company_sector_or_activity': '', 'source_company_business_description': '', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/checkpoint/challengesV2/AQHG24Vd3MVLQwAAAZe_Jj3lSvdKvjisuzEjQJGkCm0Lm-oj7zG-TH5AKMGgn8WEeqtl1emHps8w8L5gVXlC2aWe2jc_W2agoA?ut=3tg5vEE50YnHQ1', 'source_company_specialties': '', 'source_founding_date': '', 'source_company_size': '', 'source_company_website': ''}
+DEBUG: 2025-06-30 05:44:56,899 INFO: {'source_company_name': '', 'source_company_countries': '', 'source_company_phone': '', 'source_company_sector_or_activity': '', 'source_company_business_description': '', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/checkpoint/challengesV2/AQHG24Vd3MVLQwAAAZe_Jj3lSvdKvjisuzEjQJGkCm0Lm-oj7zG-TH5AKMGgn8WEeqtl1emHps8w8L5gVXlC2aWe2jc_W2agoA?ut=3tg5vEE50YnHQ1', 'source_company_specialties': '', 'source_founding_date': '', 'source_company_size': '', 'source_company_website': ''}
+DEBUG: 2025-06-30 05:44:56,899 INFO: initialized successfully
+DEBUG: 2025-06-30 05:44:56,899 INFO: initialized successfully
+DEBUG: 2025-06-30 05:44:56,899 INFO: initialized successfully
+DEBUG: 2025-06-30 05:44:56,899 INFO: initialized successfully
+DEBUG: 2025-06-30 05:44:56,899 INFO: initialized successfully
+DEBUG: 2025-06-30 05:45:11,965 ERROR: CSS visibility check failed for div#global-nav-search.global-nav__search: Locator.evaluate: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("div#global-nav-search.global-nav__search")
+    - waiting for" https://www.linkedin.com/feed/" navigation to finish...
+    - navigated to "https://www.linkedin.com/feed/"
+
+DEBUG: 2025-06-30 05:45:11,965 ERROR: CSS visibility check failed for div#global-nav-search.global-nav__search: Locator.evaluate: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("div#global-nav-search.global-nav__search")
+    - waiting for" https://www.linkedin.com/feed/" navigation to finish...
+    - navigated to "https://www.linkedin.com/feed/"
+
+DEBUG: 2025-06-30 05:45:11,965 ERROR: CSS visibility check failed for div#global-nav-search.global-nav__search: Locator.evaluate: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("div#global-nav-search.global-nav__search")
+    - waiting for" https://www.linkedin.com/feed/" navigation to finish...
+    - navigated to "https://www.linkedin.com/feed/"
+
+DEBUG: 2025-06-30 05:45:11,965 ERROR: CSS visibility check failed for div#global-nav-search.global-nav__search: Locator.evaluate: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("div#global-nav-search.global-nav__search")
+    - waiting for" https://www.linkedin.com/feed/" navigation to finish...
+    - navigated to "https://www.linkedin.com/feed/"
+
+DEBUG: 2025-06-30 05:45:11,965 ERROR: CSS visibility check failed for div#global-nav-search.global-nav__search: Locator.evaluate: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("div#global-nav-search.global-nav__search")
+    - waiting for" https://www.linkedin.com/feed/" navigation to finish...
+    - navigated to "https://www.linkedin.com/feed/"
+
+DEBUG: 2025-06-30 05:45:17,214 INFO: Bounding box confirmed visibility for: div#global-nav-search.global-nav__search
+DEBUG: 2025-06-30 05:45:17,214 INFO: Bounding box confirmed visibility for: div#global-nav-search.global-nav__search
+DEBUG: 2025-06-30 05:45:17,214 INFO: Bounding box confirmed visibility for: div#global-nav-search.global-nav__search
+DEBUG: 2025-06-30 05:45:17,214 INFO: Bounding box confirmed visibility for: div#global-nav-search.global-nav__search
+DEBUG: 2025-06-30 05:45:17,214 INFO: Bounding box confirmed visibility for: div#global-nav-search.global-nav__search
+DEBUG: 2025-06-30 05:45:17,215 INFO: Search box visible
+DEBUG: 2025-06-30 05:45:17,215 INFO: Search box visible
+DEBUG: 2025-06-30 05:45:17,215 INFO: Search box visible
+DEBUG: 2025-06-30 05:45:17,215 INFO: Search box visible
+DEBUG: 2025-06-30 05:45:17,215 INFO: Search box visible
+DEBUG: 2025-06-30 05:45:17,995 INFO: Basic hover succeeded
+DEBUG: 2025-06-30 05:45:17,995 INFO: Basic hover succeeded
+DEBUG: 2025-06-30 05:45:17,995 INFO: Basic hover succeeded
+DEBUG: 2025-06-30 05:45:17,995 INFO: Basic hover succeeded
+DEBUG: 2025-06-30 05:45:17,995 INFO: Basic hover succeeded
+DEBUG: 2025-06-30 05:45:17,997 INFO: Hover Search box visible True
+DEBUG: 2025-06-30 05:45:17,997 INFO: Hover Search box visible True
+DEBUG: 2025-06-30 05:45:17,997 INFO: Hover Search box visible True
+DEBUG: 2025-06-30 05:45:17,997 INFO: Hover Search box visible True
+DEBUG: 2025-06-30 05:45:17,997 INFO: Hover Search box visible True
+DEBUG: 2025-06-30 05:45:20,834 INFO: Method 1: Basic click succeeded
+DEBUG: 2025-06-30 05:45:20,834 INFO: Method 1: Basic click succeeded
+DEBUG: 2025-06-30 05:45:20,834 INFO: Method 1: Basic click succeeded
+DEBUG: 2025-06-30 05:45:20,834 INFO: Method 1: Basic click succeeded
+DEBUG: 2025-06-30 05:45:20,834 INFO: Method 1: Basic click succeeded
+DEBUG: 2025-06-30 05:45:20,834 INFO: Click Search box True
+DEBUG: 2025-06-30 05:45:20,834 INFO: Click Search box True
+DEBUG: 2025-06-30 05:45:20,834 INFO: Click Search box True
+DEBUG: 2025-06-30 05:45:20,834 INFO: Click Search box True
+DEBUG: 2025-06-30 05:45:20,834 INFO: Click Search box True
+DEBUG: 2025-06-30 05:45:28,518 INFO: Search box filled with company name Lapaire Glasses
+DEBUG: 2025-06-30 05:45:28,518 INFO: Search box filled with company name Lapaire Glasses
+DEBUG: 2025-06-30 05:45:28,518 INFO: Search box filled with company name Lapaire Glasses
+DEBUG: 2025-06-30 05:45:28,518 INFO: Search box filled with company name Lapaire Glasses
+DEBUG: 2025-06-30 05:45:28,518 INFO: Search box filled with company name Lapaire Glasses
+DEBUG: 2025-06-30 05:45:31,896 INFO: Search success for Lapaire Glasses
+DEBUG: 2025-06-30 05:45:31,896 INFO: Search success for Lapaire Glasses
+DEBUG: 2025-06-30 05:45:31,896 INFO: Search success for Lapaire Glasses
+DEBUG: 2025-06-30 05:45:31,896 INFO: Search success for Lapaire Glasses
+DEBUG: 2025-06-30 05:45:31,896 INFO: Search success for Lapaire Glasses
+DEBUG: 2025-06-30 05:45:31,897 INFO: Search Lapaire Glasses loading
+DEBUG: 2025-06-30 05:45:31,897 INFO: Search Lapaire Glasses loading
+DEBUG: 2025-06-30 05:45:31,897 INFO: Search Lapaire Glasses loading
+DEBUG: 2025-06-30 05:45:31,897 INFO: Search Lapaire Glasses loading
+DEBUG: 2025-06-30 05:45:31,897 INFO: Search Lapaire Glasses loading
+DEBUG: 2025-06-30 05:45:46,934 ERROR: CSS visibility check failed for section.scaffold-layout-toolbar: Locator.evaluate: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("section.scaffold-layout-toolbar")
+
+DEBUG: 2025-06-30 05:45:46,934 ERROR: CSS visibility check failed for section.scaffold-layout-toolbar: Locator.evaluate: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("section.scaffold-layout-toolbar")
+
+DEBUG: 2025-06-30 05:45:46,934 ERROR: CSS visibility check failed for section.scaffold-layout-toolbar: Locator.evaluate: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("section.scaffold-layout-toolbar")
+
+DEBUG: 2025-06-30 05:45:46,934 ERROR: CSS visibility check failed for section.scaffold-layout-toolbar: Locator.evaluate: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("section.scaffold-layout-toolbar")
+
+DEBUG: 2025-06-30 05:45:46,934 ERROR: CSS visibility check failed for section.scaffold-layout-toolbar: Locator.evaluate: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("section.scaffold-layout-toolbar")
+
+DEBUG: 2025-06-30 05:46:01,956 ERROR: Bounding box check failed for section.scaffold-layout-toolbar: Locator.bounding_box: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("section.scaffold-layout-toolbar")
+
+DEBUG: 2025-06-30 05:46:01,956 ERROR: Bounding box check failed for section.scaffold-layout-toolbar: Locator.bounding_box: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("section.scaffold-layout-toolbar")
+
+DEBUG: 2025-06-30 05:46:01,956 ERROR: Bounding box check failed for section.scaffold-layout-toolbar: Locator.bounding_box: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("section.scaffold-layout-toolbar")
+
+DEBUG: 2025-06-30 05:46:01,956 ERROR: Bounding box check failed for section.scaffold-layout-toolbar: Locator.bounding_box: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("section.scaffold-layout-toolbar")
+
+DEBUG: 2025-06-30 05:46:01,956 ERROR: Bounding box check failed for section.scaffold-layout-toolbar: Locator.bounding_box: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("section.scaffold-layout-toolbar")
+
+DEBUG: 2025-06-30 05:46:04,989 ERROR: Wait-based verification failed for section.scaffold-layout-toolbar: Page.wait_for_selector: Timeout 3000ms exceeded.
+Call log:
+  - waiting for locator("section.scaffold-layout-toolbar") to be visible
+
+DEBUG: 2025-06-30 05:46:04,989 ERROR: Wait-based verification failed for section.scaffold-layout-toolbar: Page.wait_for_selector: Timeout 3000ms exceeded.
+Call log:
+  - waiting for locator("section.scaffold-layout-toolbar") to be visible
+
+DEBUG: 2025-06-30 05:46:04,989 ERROR: Wait-based verification failed for section.scaffold-layout-toolbar: Page.wait_for_selector: Timeout 3000ms exceeded.
+Call log:
+  - waiting for locator("section.scaffold-layout-toolbar") to be visible
+
+DEBUG: 2025-06-30 05:46:04,989 ERROR: Wait-based verification failed for section.scaffold-layout-toolbar: Page.wait_for_selector: Timeout 3000ms exceeded.
+Call log:
+  - waiting for locator("section.scaffold-layout-toolbar") to be visible
+
+DEBUG: 2025-06-30 05:46:04,989 ERROR: Wait-based verification failed for section.scaffold-layout-toolbar: Page.wait_for_selector: Timeout 3000ms exceeded.
+Call log:
+  - waiting for locator("section.scaffold-layout-toolbar") to be visible
+
+DEBUG: 2025-06-30 05:46:20,014 ERROR: Element handle check failed for section.scaffold-layout-toolbar: Locator.element_handle: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("section.scaffold-layout-toolbar")
+
+DEBUG: 2025-06-30 05:46:20,014 ERROR: Element handle check failed for section.scaffold-layout-toolbar: Locator.element_handle: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("section.scaffold-layout-toolbar")
+
+DEBUG: 2025-06-30 05:46:20,014 ERROR: Element handle check failed for section.scaffold-layout-toolbar: Locator.element_handle: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("section.scaffold-layout-toolbar")
+
+DEBUG: 2025-06-30 05:46:20,014 ERROR: Element handle check failed for section.scaffold-layout-toolbar: Locator.element_handle: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("section.scaffold-layout-toolbar")
+
+DEBUG: 2025-06-30 05:46:20,014 ERROR: Element handle check failed for section.scaffold-layout-toolbar: Locator.element_handle: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("section.scaffold-layout-toolbar")
+
+DEBUG: 2025-06-30 05:46:20,017 WARNING: All visibility checks failed for: section.scaffold-layout-toolbar
+DEBUG: 2025-06-30 05:46:20,017 WARNING: All visibility checks failed for: section.scaffold-layout-toolbar
+DEBUG: 2025-06-30 05:46:20,017 WARNING: All visibility checks failed for: section.scaffold-layout-toolbar
+DEBUG: 2025-06-30 05:46:20,017 WARNING: All visibility checks failed for: section.scaffold-layout-toolbar
+DEBUG: 2025-06-30 05:46:20,017 WARNING: All visibility checks failed for: section.scaffold-layout-toolbar
+DEBUG: 2025-06-30 05:46:20,021 ERROR: Failed to handle access alert: No module named 'utilities'
+DEBUG: 2025-06-30 05:46:20,021 ERROR: Failed to handle access alert: No module named 'utilities'
+DEBUG: 2025-06-30 05:46:20,021 ERROR: Failed to handle access alert: No module named 'utilities'
+DEBUG: 2025-06-30 05:46:20,021 ERROR: Failed to handle access alert: No module named 'utilities'
+DEBUG: 2025-06-30 05:46:20,021 ERROR: Failed to handle access alert: No module named 'utilities'
+DEBUG: 2025-06-30 05:46:20,022 INFO: Apply filter None success
+DEBUG: 2025-06-30 05:46:20,022 INFO: Apply filter None success
+DEBUG: 2025-06-30 05:46:20,022 INFO: Apply filter None success
+DEBUG: 2025-06-30 05:46:20,022 INFO: Apply filter None success
+DEBUG: 2025-06-30 05:46:20,022 INFO: Apply filter None success
+DEBUG: 2025-06-30 05:46:20,056 INFO: Search and filter success and about page
+DEBUG: 2025-06-30 05:46:20,056 INFO: Search and filter success and about page
+DEBUG: 2025-06-30 05:46:20,056 INFO: Search and filter success and about page
+DEBUG: 2025-06-30 05:46:20,056 INFO: Search and filter success and about page
+DEBUG: 2025-06-30 05:46:20,056 INFO: Search and filter success and about page
+DEBUG: 2025-06-30 05:46:20,547 INFO: {'source_company_name': '', 'source_company_countries': '', 'source_company_phone': '', 'source_company_sector_or_activity': '', 'source_company_business_description': '', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/feed/', 'source_company_specialties': '', 'source_founding_date': '', 'source_company_size': '', 'source_company_website': ''}
+DEBUG: 2025-06-30 05:46:20,547 INFO: {'source_company_name': '', 'source_company_countries': '', 'source_company_phone': '', 'source_company_sector_or_activity': '', 'source_company_business_description': '', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/feed/', 'source_company_specialties': '', 'source_founding_date': '', 'source_company_size': '', 'source_company_website': ''}
+DEBUG: 2025-06-30 05:46:20,547 INFO: {'source_company_name': '', 'source_company_countries': '', 'source_company_phone': '', 'source_company_sector_or_activity': '', 'source_company_business_description': '', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/feed/', 'source_company_specialties': '', 'source_founding_date': '', 'source_company_size': '', 'source_company_website': ''}
+DEBUG: 2025-06-30 05:46:20,547 INFO: {'source_company_name': '', 'source_company_countries': '', 'source_company_phone': '', 'source_company_sector_or_activity': '', 'source_company_business_description': '', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/feed/', 'source_company_specialties': '', 'source_founding_date': '', 'source_company_size': '', 'source_company_website': ''}
+DEBUG: 2025-06-30 05:46:20,547 INFO: {'source_company_name': '', 'source_company_countries': '', 'source_company_phone': '', 'source_company_sector_or_activity': '', 'source_company_business_description': '', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/feed/', 'source_company_specialties': '', 'source_founding_date': '', 'source_company_size': '', 'source_company_website': ''}
+DEBUG: 2025-06-30 05:46:20,553 INFO: Company data saved to: /Users/user/Desktop/Projects/Crapers/Company-Query-Agent/scraper/results/_about.json
+DEBUG: 2025-06-30 05:46:20,553 INFO: Company data saved to: /Users/user/Desktop/Projects/Crapers/Company-Query-Agent/scraper/results/_about.json
+DEBUG: 2025-06-30 05:46:20,553 INFO: Company data saved to: /Users/user/Desktop/Projects/Crapers/Company-Query-Agent/scraper/results/_about.json
+DEBUG: 2025-06-30 05:46:20,553 INFO: Company data saved to: /Users/user/Desktop/Projects/Crapers/Company-Query-Agent/scraper/results/_about.json
+DEBUG: 2025-06-30 05:46:20,553 INFO: Company data saved to: /Users/user/Desktop/Projects/Crapers/Company-Query-Agent/scraper/results/_about.json
+DEBUG: 2025-06-30 05:46:20,553 INFO: {'source_company_name': '', 'source_company_countries': '', 'source_company_phone': '', 'source_company_sector_or_activity': '', 'source_company_business_description': '', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/feed/', 'source_company_specialties': '', 'source_founding_date': '', 'source_company_size': '', 'source_company_website': ''}
+DEBUG: 2025-06-30 05:46:20,553 INFO: {'source_company_name': '', 'source_company_countries': '', 'source_company_phone': '', 'source_company_sector_or_activity': '', 'source_company_business_description': '', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/feed/', 'source_company_specialties': '', 'source_founding_date': '', 'source_company_size': '', 'source_company_website': ''}
+DEBUG: 2025-06-30 05:46:20,553 INFO: {'source_company_name': '', 'source_company_countries': '', 'source_company_phone': '', 'source_company_sector_or_activity': '', 'source_company_business_description': '', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/feed/', 'source_company_specialties': '', 'source_founding_date': '', 'source_company_size': '', 'source_company_website': ''}
+DEBUG: 2025-06-30 05:46:20,553 INFO: {'source_company_name': '', 'source_company_countries': '', 'source_company_phone': '', 'source_company_sector_or_activity': '', 'source_company_business_description': '', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/feed/', 'source_company_specialties': '', 'source_founding_date': '', 'source_company_size': '', 'source_company_website': ''}
+DEBUG: 2025-06-30 05:46:20,553 INFO: {'source_company_name': '', 'source_company_countries': '', 'source_company_phone': '', 'source_company_sector_or_activity': '', 'source_company_business_description': '', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/feed/', 'source_company_specialties': '', 'source_founding_date': '', 'source_company_size': '', 'source_company_website': ''}
+DEBUG: 2025-06-30 05:46:20,553 INFO: initialized successfully
+DEBUG: 2025-06-30 05:46:20,553 INFO: initialized successfully
+DEBUG: 2025-06-30 05:46:20,553 INFO: initialized successfully
+DEBUG: 2025-06-30 05:46:20,553 INFO: initialized successfully
+DEBUG: 2025-06-30 05:46:20,553 INFO: initialized successfully
+DEBUG: 2025-06-30 05:46:20,571 INFO: is_visible() confirmed visibility for: div#global-nav-search.global-nav__search
+DEBUG: 2025-06-30 05:46:20,571 INFO: is_visible() confirmed visibility for: div#global-nav-search.global-nav__search
+DEBUG: 2025-06-30 05:46:20,571 INFO: is_visible() confirmed visibility for: div#global-nav-search.global-nav__search
+DEBUG: 2025-06-30 05:46:20,571 INFO: is_visible() confirmed visibility for: div#global-nav-search.global-nav__search
+DEBUG: 2025-06-30 05:46:20,571 INFO: is_visible() confirmed visibility for: div#global-nav-search.global-nav__search
+DEBUG: 2025-06-30 05:46:20,571 INFO: Search box visible
+DEBUG: 2025-06-30 05:46:20,571 INFO: Search box visible
+DEBUG: 2025-06-30 05:46:20,571 INFO: Search box visible
+DEBUG: 2025-06-30 05:46:20,571 INFO: Search box visible
+DEBUG: 2025-06-30 05:46:20,571 INFO: Search box visible
+DEBUG: 2025-06-30 05:46:20,671 INFO: Basic hover succeeded
+DEBUG: 2025-06-30 05:46:20,671 INFO: Basic hover succeeded
+DEBUG: 2025-06-30 05:46:20,671 INFO: Basic hover succeeded
+DEBUG: 2025-06-30 05:46:20,671 INFO: Basic hover succeeded
+DEBUG: 2025-06-30 05:46:20,671 INFO: Basic hover succeeded
+DEBUG: 2025-06-30 05:46:20,672 INFO: Hover Search box visible True
+DEBUG: 2025-06-30 05:46:20,672 INFO: Hover Search box visible True
+DEBUG: 2025-06-30 05:46:20,672 INFO: Hover Search box visible True
+DEBUG: 2025-06-30 05:46:20,672 INFO: Hover Search box visible True
+DEBUG: 2025-06-30 05:46:20,672 INFO: Hover Search box visible True
+DEBUG: 2025-06-30 05:46:20,805 INFO: Method 1: Basic click succeeded
+DEBUG: 2025-06-30 05:46:20,805 INFO: Method 1: Basic click succeeded
+DEBUG: 2025-06-30 05:46:20,805 INFO: Method 1: Basic click succeeded
+DEBUG: 2025-06-30 05:46:20,805 INFO: Method 1: Basic click succeeded
+DEBUG: 2025-06-30 05:46:20,805 INFO: Method 1: Basic click succeeded
+DEBUG: 2025-06-30 05:46:20,805 INFO: Click Search box True
+DEBUG: 2025-06-30 05:46:20,805 INFO: Click Search box True
+DEBUG: 2025-06-30 05:46:20,805 INFO: Click Search box True
+DEBUG: 2025-06-30 05:46:20,805 INFO: Click Search box True
+DEBUG: 2025-06-30 05:46:20,805 INFO: Click Search box True
+DEBUG: 2025-06-30 05:46:26,600 INFO: Search box filled with company name Merec Industries
+DEBUG: 2025-06-30 05:46:26,600 INFO: Search box filled with company name Merec Industries
+DEBUG: 2025-06-30 05:46:26,600 INFO: Search box filled with company name Merec Industries
+DEBUG: 2025-06-30 05:46:26,600 INFO: Search box filled with company name Merec Industries
+DEBUG: 2025-06-30 05:46:26,600 INFO: Search box filled with company name Merec Industries
+DEBUG: 2025-06-30 05:46:30,020 INFO: Search success for Merec Industries
+DEBUG: 2025-06-30 05:46:30,020 INFO: Search success for Merec Industries
+DEBUG: 2025-06-30 05:46:30,020 INFO: Search success for Merec Industries
+DEBUG: 2025-06-30 05:46:30,020 INFO: Search success for Merec Industries
+DEBUG: 2025-06-30 05:46:30,020 INFO: Search success for Merec Industries
+DEBUG: 2025-06-30 05:46:30,020 INFO: Search Merec Industries loading
+DEBUG: 2025-06-30 05:46:30,020 INFO: Search Merec Industries loading
+DEBUG: 2025-06-30 05:46:30,020 INFO: Search Merec Industries loading
+DEBUG: 2025-06-30 05:46:30,020 INFO: Search Merec Industries loading
+DEBUG: 2025-06-30 05:46:30,020 INFO: Search Merec Industries loading
+DEBUG: 2025-06-30 05:46:31,288 INFO: is_visible() confirmed visibility for: section.scaffold-layout-toolbar
+DEBUG: 2025-06-30 05:46:31,288 INFO: is_visible() confirmed visibility for: section.scaffold-layout-toolbar
+DEBUG: 2025-06-30 05:46:31,288 INFO: is_visible() confirmed visibility for: section.scaffold-layout-toolbar
+DEBUG: 2025-06-30 05:46:31,288 INFO: is_visible() confirmed visibility for: section.scaffold-layout-toolbar
+DEBUG: 2025-06-30 05:46:31,288 INFO: is_visible() confirmed visibility for: section.scaffold-layout-toolbar
+DEBUG: 2025-06-30 05:46:31,289 ERROR: Failed to handle access alert: No module named 'utilities'
+DEBUG: 2025-06-30 05:46:31,289 ERROR: Failed to handle access alert: No module named 'utilities'
+DEBUG: 2025-06-30 05:46:31,289 ERROR: Failed to handle access alert: No module named 'utilities'
+DEBUG: 2025-06-30 05:46:31,289 ERROR: Failed to handle access alert: No module named 'utilities'
+DEBUG: 2025-06-30 05:46:31,289 ERROR: Failed to handle access alert: No module named 'utilities'
+DEBUG: 2025-06-30 05:46:46,558 ERROR: CSS visibility check failed for ul[role='list'] li button:has-text('Companies'): Locator.evaluate: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("ul[role='list'] li button:has-text('Companies')")
+
+DEBUG: 2025-06-30 05:46:46,558 ERROR: CSS visibility check failed for ul[role='list'] li button:has-text('Companies'): Locator.evaluate: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("ul[role='list'] li button:has-text('Companies')")
+
+DEBUG: 2025-06-30 05:46:46,558 ERROR: CSS visibility check failed for ul[role='list'] li button:has-text('Companies'): Locator.evaluate: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("ul[role='list'] li button:has-text('Companies')")
+
+DEBUG: 2025-06-30 05:46:46,558 ERROR: CSS visibility check failed for ul[role='list'] li button:has-text('Companies'): Locator.evaluate: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("ul[role='list'] li button:has-text('Companies')")
+
+DEBUG: 2025-06-30 05:46:46,558 ERROR: CSS visibility check failed for ul[role='list'] li button:has-text('Companies'): Locator.evaluate: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("ul[role='list'] li button:has-text('Companies')")
+
+DEBUG: 2025-06-30 05:47:01,803 ERROR: Bounding box check failed for ul[role='list'] li button:has-text('Companies'): Locator.bounding_box: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("ul[role='list'] li button:has-text('Companies')")
+
+DEBUG: 2025-06-30 05:47:01,803 ERROR: Bounding box check failed for ul[role='list'] li button:has-text('Companies'): Locator.bounding_box: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("ul[role='list'] li button:has-text('Companies')")
+
+DEBUG: 2025-06-30 05:47:01,803 ERROR: Bounding box check failed for ul[role='list'] li button:has-text('Companies'): Locator.bounding_box: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("ul[role='list'] li button:has-text('Companies')")
+
+DEBUG: 2025-06-30 05:47:01,803 ERROR: Bounding box check failed for ul[role='list'] li button:has-text('Companies'): Locator.bounding_box: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("ul[role='list'] li button:has-text('Companies')")
+
+DEBUG: 2025-06-30 05:47:01,803 ERROR: Bounding box check failed for ul[role='list'] li button:has-text('Companies'): Locator.bounding_box: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("ul[role='list'] li button:has-text('Companies')")
+
+DEBUG: 2025-06-30 05:47:04,813 ERROR: Wait-based verification failed for ul[role='list'] li button:has-text('Companies'): Page.wait_for_selector: Timeout 3000ms exceeded.
+Call log:
+  - waiting for locator("ul[role='list'] li button:has-text('Companies')") to be visible
+
+DEBUG: 2025-06-30 05:47:04,813 ERROR: Wait-based verification failed for ul[role='list'] li button:has-text('Companies'): Page.wait_for_selector: Timeout 3000ms exceeded.
+Call log:
+  - waiting for locator("ul[role='list'] li button:has-text('Companies')") to be visible
+
+DEBUG: 2025-06-30 05:47:04,813 ERROR: Wait-based verification failed for ul[role='list'] li button:has-text('Companies'): Page.wait_for_selector: Timeout 3000ms exceeded.
+Call log:
+  - waiting for locator("ul[role='list'] li button:has-text('Companies')") to be visible
+
+DEBUG: 2025-06-30 05:47:04,813 ERROR: Wait-based verification failed for ul[role='list'] li button:has-text('Companies'): Page.wait_for_selector: Timeout 3000ms exceeded.
+Call log:
+  - waiting for locator("ul[role='list'] li button:has-text('Companies')") to be visible
+
+DEBUG: 2025-06-30 05:47:04,813 ERROR: Wait-based verification failed for ul[role='list'] li button:has-text('Companies'): Page.wait_for_selector: Timeout 3000ms exceeded.
+Call log:
+  - waiting for locator("ul[role='list'] li button:has-text('Companies')") to be visible
+
+DEBUG: 2025-06-30 05:47:19,833 ERROR: Element handle check failed for ul[role='list'] li button:has-text('Companies'): Locator.element_handle: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("ul[role='list'] li button:has-text('Companies')")
+
+DEBUG: 2025-06-30 05:47:19,833 ERROR: Element handle check failed for ul[role='list'] li button:has-text('Companies'): Locator.element_handle: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("ul[role='list'] li button:has-text('Companies')")
+
+DEBUG: 2025-06-30 05:47:19,833 ERROR: Element handle check failed for ul[role='list'] li button:has-text('Companies'): Locator.element_handle: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("ul[role='list'] li button:has-text('Companies')")
+
+DEBUG: 2025-06-30 05:47:19,833 ERROR: Element handle check failed for ul[role='list'] li button:has-text('Companies'): Locator.element_handle: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("ul[role='list'] li button:has-text('Companies')")
+
+DEBUG: 2025-06-30 05:47:19,833 ERROR: Element handle check failed for ul[role='list'] li button:has-text('Companies'): Locator.element_handle: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("ul[role='list'] li button:has-text('Companies')")
+
+DEBUG: 2025-06-30 05:47:19,836 WARNING: All visibility checks failed for: ul[role='list'] li button:has-text('Companies')
+DEBUG: 2025-06-30 05:47:19,836 WARNING: All visibility checks failed for: ul[role='list'] li button:has-text('Companies')
+DEBUG: 2025-06-30 05:47:19,836 WARNING: All visibility checks failed for: ul[role='list'] li button:has-text('Companies')
+DEBUG: 2025-06-30 05:47:19,836 WARNING: All visibility checks failed for: ul[role='list'] li button:has-text('Companies')
+DEBUG: 2025-06-30 05:47:19,836 WARNING: All visibility checks failed for: ul[role='list'] li button:has-text('Companies')
+DEBUG: 2025-06-30 05:47:19,836 WARNING: Selector not visible: ul[role='list'] li button:has-text('Companies') False
+DEBUG: 2025-06-30 05:47:19,836 WARNING: Selector not visible: ul[role='list'] li button:has-text('Companies') False
+DEBUG: 2025-06-30 05:47:19,836 WARNING: Selector not visible: ul[role='list'] li button:has-text('Companies') False
+DEBUG: 2025-06-30 05:47:19,836 WARNING: Selector not visible: ul[role='list'] li button:has-text('Companies') False
+DEBUG: 2025-06-30 05:47:19,836 WARNING: Selector not visible: ul[role='list'] li button:has-text('Companies') False
+DEBUG: 2025-06-30 05:47:19,884 INFO: is_visible() confirmed visibility for: button.artdeco-pill:has-text('Companies')
+DEBUG: 2025-06-30 05:47:19,884 INFO: is_visible() confirmed visibility for: button.artdeco-pill:has-text('Companies')
+DEBUG: 2025-06-30 05:47:19,884 INFO: is_visible() confirmed visibility for: button.artdeco-pill:has-text('Companies')
+DEBUG: 2025-06-30 05:47:19,884 INFO: is_visible() confirmed visibility for: button.artdeco-pill:has-text('Companies')
+DEBUG: 2025-06-30 05:47:19,884 INFO: is_visible() confirmed visibility for: button.artdeco-pill:has-text('Companies')
+DEBUG: 2025-06-30 05:47:19,884 INFO: Attempting filter with selector: button.artdeco-pill:has-text('Companies')
+DEBUG: 2025-06-30 05:47:19,884 INFO: Attempting filter with selector: button.artdeco-pill:has-text('Companies')
+DEBUG: 2025-06-30 05:47:19,884 INFO: Attempting filter with selector: button.artdeco-pill:has-text('Companies')
+DEBUG: 2025-06-30 05:47:19,884 INFO: Attempting filter with selector: button.artdeco-pill:has-text('Companies')
+DEBUG: 2025-06-30 05:47:19,884 INFO: Attempting filter with selector: button.artdeco-pill:has-text('Companies')
+DEBUG: 2025-06-30 05:47:20,004 INFO: Basic hover succeeded
+DEBUG: 2025-06-30 05:47:20,004 INFO: Basic hover succeeded
+DEBUG: 2025-06-30 05:47:20,004 INFO: Basic hover succeeded
+DEBUG: 2025-06-30 05:47:20,004 INFO: Basic hover succeeded
+DEBUG: 2025-06-30 05:47:20,004 INFO: Basic hover succeeded
+DEBUG: 2025-06-30 05:47:20,006 ERROR: Filter processing failed for button.artdeco-pill:has-text('Companies'): click_with_fallback() missing 1 required positional argument: 'logger'
+DEBUG: 2025-06-30 05:47:20,006 ERROR: Filter processing failed for button.artdeco-pill:has-text('Companies'): click_with_fallback() missing 1 required positional argument: 'logger'
+DEBUG: 2025-06-30 05:47:20,006 ERROR: Filter processing failed for button.artdeco-pill:has-text('Companies'): click_with_fallback() missing 1 required positional argument: 'logger'
+DEBUG: 2025-06-30 05:47:20,006 ERROR: Filter processing failed for button.artdeco-pill:has-text('Companies'): click_with_fallback() missing 1 required positional argument: 'logger'
+DEBUG: 2025-06-30 05:47:20,006 ERROR: Filter processing failed for button.artdeco-pill:has-text('Companies'): click_with_fallback() missing 1 required positional argument: 'logger'
+DEBUG: 2025-06-30 05:47:20,032 INFO: is_visible() confirmed visibility for: button.search-reusables__filter-pill-button:has-text('Companies')
+DEBUG: 2025-06-30 05:47:20,032 INFO: is_visible() confirmed visibility for: button.search-reusables__filter-pill-button:has-text('Companies')
+DEBUG: 2025-06-30 05:47:20,032 INFO: is_visible() confirmed visibility for: button.search-reusables__filter-pill-button:has-text('Companies')
+DEBUG: 2025-06-30 05:47:20,032 INFO: is_visible() confirmed visibility for: button.search-reusables__filter-pill-button:has-text('Companies')
+DEBUG: 2025-06-30 05:47:20,032 INFO: is_visible() confirmed visibility for: button.search-reusables__filter-pill-button:has-text('Companies')
+DEBUG: 2025-06-30 05:47:20,032 INFO: Attempting filter with selector: button.search-reusables__filter-pill-button:has-text('Companies')
+DEBUG: 2025-06-30 05:47:20,032 INFO: Attempting filter with selector: button.search-reusables__filter-pill-button:has-text('Companies')
+DEBUG: 2025-06-30 05:47:20,032 INFO: Attempting filter with selector: button.search-reusables__filter-pill-button:has-text('Companies')
+DEBUG: 2025-06-30 05:47:20,032 INFO: Attempting filter with selector: button.search-reusables__filter-pill-button:has-text('Companies')
+DEBUG: 2025-06-30 05:47:20,032 INFO: Attempting filter with selector: button.search-reusables__filter-pill-button:has-text('Companies')
+DEBUG: 2025-06-30 05:47:20,345 INFO: Basic hover succeeded
+DEBUG: 2025-06-30 05:47:20,345 INFO: Basic hover succeeded
+DEBUG: 2025-06-30 05:47:20,345 INFO: Basic hover succeeded
+DEBUG: 2025-06-30 05:47:20,345 INFO: Basic hover succeeded
+DEBUG: 2025-06-30 05:47:20,345 INFO: Basic hover succeeded
+DEBUG: 2025-06-30 05:47:20,346 ERROR: Filter processing failed for button.search-reusables__filter-pill-button:has-text('Companies'): click_with_fallback() missing 1 required positional argument: 'logger'
+DEBUG: 2025-06-30 05:47:20,346 ERROR: Filter processing failed for button.search-reusables__filter-pill-button:has-text('Companies'): click_with_fallback() missing 1 required positional argument: 'logger'
+DEBUG: 2025-06-30 05:47:20,346 ERROR: Filter processing failed for button.search-reusables__filter-pill-button:has-text('Companies'): click_with_fallback() missing 1 required positional argument: 'logger'
+DEBUG: 2025-06-30 05:47:20,346 ERROR: Filter processing failed for button.search-reusables__filter-pill-button:has-text('Companies'): click_with_fallback() missing 1 required positional argument: 'logger'
+DEBUG: 2025-06-30 05:47:20,346 ERROR: Filter processing failed for button.search-reusables__filter-pill-button:has-text('Companies'): click_with_fallback() missing 1 required positional argument: 'logger'
+DEBUG: 2025-06-30 05:47:20,450 INFO: is_visible() confirmed visibility for: button:has-text('Companies')
+DEBUG: 2025-06-30 05:47:20,450 INFO: is_visible() confirmed visibility for: button:has-text('Companies')
+DEBUG: 2025-06-30 05:47:20,450 INFO: is_visible() confirmed visibility for: button:has-text('Companies')
+DEBUG: 2025-06-30 05:47:20,450 INFO: is_visible() confirmed visibility for: button:has-text('Companies')
+DEBUG: 2025-06-30 05:47:20,450 INFO: is_visible() confirmed visibility for: button:has-text('Companies')
+DEBUG: 2025-06-30 05:47:20,451 INFO: Attempting filter with selector: button:has-text('Companies')
+DEBUG: 2025-06-30 05:47:20,451 INFO: Attempting filter with selector: button:has-text('Companies')
+DEBUG: 2025-06-30 05:47:20,451 INFO: Attempting filter with selector: button:has-text('Companies')
+DEBUG: 2025-06-30 05:47:20,451 INFO: Attempting filter with selector: button:has-text('Companies')
+DEBUG: 2025-06-30 05:47:20,451 INFO: Attempting filter with selector: button:has-text('Companies')
+DEBUG: 2025-06-30 05:47:20,546 INFO: Basic hover succeeded
+DEBUG: 2025-06-30 05:47:20,546 INFO: Basic hover succeeded
+DEBUG: 2025-06-30 05:47:20,546 INFO: Basic hover succeeded
+DEBUG: 2025-06-30 05:47:20,546 INFO: Basic hover succeeded
+DEBUG: 2025-06-30 05:47:20,546 INFO: Basic hover succeeded
+DEBUG: 2025-06-30 05:47:20,547 ERROR: Filter processing failed for button:has-text('Companies'): click_with_fallback() missing 1 required positional argument: 'logger'
+DEBUG: 2025-06-30 05:47:20,547 ERROR: Filter processing failed for button:has-text('Companies'): click_with_fallback() missing 1 required positional argument: 'logger'
+DEBUG: 2025-06-30 05:47:20,547 ERROR: Filter processing failed for button:has-text('Companies'): click_with_fallback() missing 1 required positional argument: 'logger'
+DEBUG: 2025-06-30 05:47:20,547 ERROR: Filter processing failed for button:has-text('Companies'): click_with_fallback() missing 1 required positional argument: 'logger'
+DEBUG: 2025-06-30 05:47:20,547 ERROR: Filter processing failed for button:has-text('Companies'): click_with_fallback() missing 1 required positional argument: 'logger'
+DEBUG: 2025-06-30 05:47:23,589 INFO: Apply filter True success
+DEBUG: 2025-06-30 05:47:23,589 INFO: Apply filter True success
+DEBUG: 2025-06-30 05:47:23,589 INFO: Apply filter True success
+DEBUG: 2025-06-30 05:47:23,589 INFO: Apply filter True success
+DEBUG: 2025-06-30 05:47:23,589 INFO: Apply filter True success
+DEBUG: 2025-06-30 05:47:23,590 INFO: Search filter about page in Merec Industries success
+DEBUG: 2025-06-30 05:47:23,590 INFO: Search filter about page in Merec Industries success
+DEBUG: 2025-06-30 05:47:23,590 INFO: Search filter about page in Merec Industries success
+DEBUG: 2025-06-30 05:47:23,590 INFO: Search filter about page in Merec Industries success
+DEBUG: 2025-06-30 05:47:23,590 INFO: Search filter about page in Merec Industries success
+DEBUG: 2025-06-30 05:47:23,637 INFO: Verified company page URL pattern
+DEBUG: 2025-06-30 05:47:23,637 INFO: Verified company page URL pattern
+DEBUG: 2025-06-30 05:47:23,637 INFO: Verified company page URL pattern
+DEBUG: 2025-06-30 05:47:23,637 INFO: Verified company page URL pattern
+DEBUG: 2025-06-30 05:47:23,637 INFO: Verified company page URL pattern
+DEBUG: 2025-06-30 05:47:23,997 INFO: is_visible() confirmed visibility for: ul.org-page-navigation__items
+DEBUG: 2025-06-30 05:47:23,997 INFO: is_visible() confirmed visibility for: ul.org-page-navigation__items
+DEBUG: 2025-06-30 05:47:23,997 INFO: is_visible() confirmed visibility for: ul.org-page-navigation__items
+DEBUG: 2025-06-30 05:47:23,997 INFO: is_visible() confirmed visibility for: ul.org-page-navigation__items
+DEBUG: 2025-06-30 05:47:23,997 INFO: is_visible() confirmed visibility for: ul.org-page-navigation__items
+DEBUG: 2025-06-30 05:47:23,997 INFO: Company navigation bar loaded
+DEBUG: 2025-06-30 05:47:23,997 INFO: Company navigation bar loaded
+DEBUG: 2025-06-30 05:47:23,997 INFO: Company navigation bar loaded
+DEBUG: 2025-06-30 05:47:23,997 INFO: Company navigation bar loaded
+DEBUG: 2025-06-30 05:47:23,997 INFO: Company navigation bar loaded
+DEBUG: 2025-06-30 05:47:23,998 INFO: Attempting with selector: ul.org-page-navigation__items >> text='About'
+DEBUG: 2025-06-30 05:47:23,998 INFO: Attempting with selector: ul.org-page-navigation__items >> text='About'
+DEBUG: 2025-06-30 05:47:23,998 INFO: Attempting with selector: ul.org-page-navigation__items >> text='About'
+DEBUG: 2025-06-30 05:47:23,998 INFO: Attempting with selector: ul.org-page-navigation__items >> text='About'
+DEBUG: 2025-06-30 05:47:23,998 INFO: Attempting with selector: ul.org-page-navigation__items >> text='About'
+DEBUG: 2025-06-30 05:47:24,117 INFO: is_visible() confirmed visibility for: ul.org-page-navigation__items >> text='About'
+DEBUG: 2025-06-30 05:47:24,117 INFO: is_visible() confirmed visibility for: ul.org-page-navigation__items >> text='About'
+DEBUG: 2025-06-30 05:47:24,117 INFO: is_visible() confirmed visibility for: ul.org-page-navigation__items >> text='About'
+DEBUG: 2025-06-30 05:47:24,117 INFO: is_visible() confirmed visibility for: ul.org-page-navigation__items >> text='About'
+DEBUG: 2025-06-30 05:47:24,117 INFO: is_visible() confirmed visibility for: ul.org-page-navigation__items >> text='About'
+DEBUG: 2025-06-30 05:47:26,030 INFO: Basic hover succeeded
+DEBUG: 2025-06-30 05:47:26,030 INFO: Basic hover succeeded
+DEBUG: 2025-06-30 05:47:26,030 INFO: Basic hover succeeded
+DEBUG: 2025-06-30 05:47:26,030 INFO: Basic hover succeeded
+DEBUG: 2025-06-30 05:47:26,030 INFO: Basic hover succeeded
+DEBUG: 2025-06-30 05:47:26,824 INFO: Method 1: Basic click succeeded
+DEBUG: 2025-06-30 05:47:26,824 INFO: Method 1: Basic click succeeded
+DEBUG: 2025-06-30 05:47:26,824 INFO: Method 1: Basic click succeeded
+DEBUG: 2025-06-30 05:47:26,824 INFO: Method 1: Basic click succeeded
+DEBUG: 2025-06-30 05:47:26,824 INFO: Method 1: Basic click succeeded
+DEBUG: 2025-06-30 05:47:31,902 ERROR: Timeout 5000ms exceeded.----- ---- ----- About page overview successful
+DEBUG: 2025-06-30 05:47:31,902 ERROR: Timeout 5000ms exceeded.----- ---- ----- About page overview successful
+DEBUG: 2025-06-30 05:47:31,902 ERROR: Timeout 5000ms exceeded.----- ---- ----- About page overview successful
+DEBUG: 2025-06-30 05:47:31,902 ERROR: Timeout 5000ms exceeded.----- ---- ----- About page overview successful
+DEBUG: 2025-06-30 05:47:31,902 ERROR: Timeout 5000ms exceeded.----- ---- ----- About page overview successful
+DEBUG: 2025-06-30 05:47:31,906 INFO: ----- ---- ----- About page overview successful
+DEBUG: 2025-06-30 05:47:31,906 INFO: ----- ---- ----- About page overview successful
+DEBUG: 2025-06-30 05:47:31,906 INFO: ----- ---- ----- About page overview successful
+DEBUG: 2025-06-30 05:47:31,906 INFO: ----- ---- ----- About page overview successful
+DEBUG: 2025-06-30 05:47:31,906 INFO: ----- ---- ----- About page overview successful
+DEBUG: 2025-06-30 05:47:31,908 INFO: ----- ---- ----- Scrape successful
+DEBUG: 2025-06-30 05:47:31,908 INFO: ----- ---- ----- Scrape successful
+DEBUG: 2025-06-30 05:47:31,908 INFO: ----- ---- ----- Scrape successful
+DEBUG: 2025-06-30 05:47:31,908 INFO: ----- ---- ----- Scrape successful
+DEBUG: 2025-06-30 05:47:31,908 INFO: ----- ---- ----- Scrape successful
+DEBUG: 2025-06-30 05:47:31,910 INFO: Company about page True
+DEBUG: 2025-06-30 05:47:31,910 INFO: Company about page True
+DEBUG: 2025-06-30 05:47:31,910 INFO: Company about page True
+DEBUG: 2025-06-30 05:47:31,910 INFO: Company about page True
+DEBUG: 2025-06-30 05:47:31,910 INFO: Company about page True
+DEBUG: 2025-06-30 05:47:31,911 INFO: About page loaded success
+DEBUG: 2025-06-30 05:47:31,911 INFO: About page loaded success
+DEBUG: 2025-06-30 05:47:31,911 INFO: About page loaded success
+DEBUG: 2025-06-30 05:47:31,911 INFO: About page loaded success
+DEBUG: 2025-06-30 05:47:31,911 INFO: About page loaded success
+DEBUG: 2025-06-30 05:47:31,911 INFO: Now on About page - scraping company data
+DEBUG: 2025-06-30 05:47:31,911 INFO: Now on About page - scraping company data
+DEBUG: 2025-06-30 05:47:31,911 INFO: Now on About page - scraping company data
+DEBUG: 2025-06-30 05:47:31,911 INFO: Now on About page - scraping company data
+DEBUG: 2025-06-30 05:47:31,911 INFO: Now on About page - scraping company data
+DEBUG: 2025-06-30 05:47:32,279 INFO: Extracting company Name Successful
+DEBUG: 2025-06-30 05:47:32,279 INFO: Extracting company Name Successful
+DEBUG: 2025-06-30 05:47:32,279 INFO: Extracting company Name Successful
+DEBUG: 2025-06-30 05:47:32,279 INFO: Extracting company Name Successful
+DEBUG: 2025-06-30 05:47:32,279 INFO: Extracting company Name Successful
+DEBUG: 2025-06-30 05:47:32,290 INFO: {'source_company_name': 'Merec Industries, SA', 'source_company_countries': '', 'source_company_phone': '', 'source_company_sector_or_activity': '', 'source_company_business_description': 'Merec Industries, SA was founded in 1998, and is actually a national reference in Maize and wheat flours, pastas, biscuits and animal feeds. We have 4 manufacture units, 2 in Matola, 1 in Beira and other in Nacala. Our products have high quality and can be found in all Mozambican', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/company/merec-industries-sa/about/', 'source_company_specialties': '', 'source_founding_date': '', 'source_company_size': '', 'source_company_website': 'http://www.merecindustries.com'}
+DEBUG: 2025-06-30 05:47:32,290 INFO: {'source_company_name': 'Merec Industries, SA', 'source_company_countries': '', 'source_company_phone': '', 'source_company_sector_or_activity': '', 'source_company_business_description': 'Merec Industries, SA was founded in 1998, and is actually a national reference in Maize and wheat flours, pastas, biscuits and animal feeds. We have 4 manufacture units, 2 in Matola, 1 in Beira and other in Nacala. Our products have high quality and can be found in all Mozambican', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/company/merec-industries-sa/about/', 'source_company_specialties': '', 'source_founding_date': '', 'source_company_size': '', 'source_company_website': 'http://www.merecindustries.com'}
+DEBUG: 2025-06-30 05:47:32,290 INFO: {'source_company_name': 'Merec Industries, SA', 'source_company_countries': '', 'source_company_phone': '', 'source_company_sector_or_activity': '', 'source_company_business_description': 'Merec Industries, SA was founded in 1998, and is actually a national reference in Maize and wheat flours, pastas, biscuits and animal feeds. We have 4 manufacture units, 2 in Matola, 1 in Beira and other in Nacala. Our products have high quality and can be found in all Mozambican', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/company/merec-industries-sa/about/', 'source_company_specialties': '', 'source_founding_date': '', 'source_company_size': '', 'source_company_website': 'http://www.merecindustries.com'}
+DEBUG: 2025-06-30 05:47:32,290 INFO: {'source_company_name': 'Merec Industries, SA', 'source_company_countries': '', 'source_company_phone': '', 'source_company_sector_or_activity': '', 'source_company_business_description': 'Merec Industries, SA was founded in 1998, and is actually a national reference in Maize and wheat flours, pastas, biscuits and animal feeds. We have 4 manufacture units, 2 in Matola, 1 in Beira and other in Nacala. Our products have high quality and can be found in all Mozambican', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/company/merec-industries-sa/about/', 'source_company_specialties': '', 'source_founding_date': '', 'source_company_size': '', 'source_company_website': 'http://www.merecindustries.com'}
+DEBUG: 2025-06-30 05:47:32,290 INFO: {'source_company_name': 'Merec Industries, SA', 'source_company_countries': '', 'source_company_phone': '', 'source_company_sector_or_activity': '', 'source_company_business_description': 'Merec Industries, SA was founded in 1998, and is actually a national reference in Maize and wheat flours, pastas, biscuits and animal feeds. We have 4 manufacture units, 2 in Matola, 1 in Beira and other in Nacala. Our products have high quality and can be found in all Mozambican', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/company/merec-industries-sa/about/', 'source_company_specialties': '', 'source_founding_date': '', 'source_company_size': '', 'source_company_website': 'http://www.merecindustries.com'}
+DEBUG: 2025-06-30 05:47:32,291 INFO: {'source_company_name': 'Merec Industries, SA', 'source_company_countries': '', 'source_company_phone': '+258 21750103Phone number is +258 21750103', 'source_company_sector_or_activity': '', 'source_company_business_description': 'Merec Industries, SA was founded in 1998, and is actually a national reference in Maize and wheat flours, pastas, biscuits and animal feeds. We have 4 manufacture units, 2 in Matola, 1 in Beira and other in Nacala. Our products have high quality and can be found in all Mozambican', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/company/merec-industries-sa/about/', 'source_company_specialties': '', 'source_founding_date': '', 'source_company_size': '', 'source_company_website': 'http://www.merecindustries.com'}
+DEBUG: 2025-06-30 05:47:32,291 INFO: {'source_company_name': 'Merec Industries, SA', 'source_company_countries': '', 'source_company_phone': '+258 21750103Phone number is +258 21750103', 'source_company_sector_or_activity': '', 'source_company_business_description': 'Merec Industries, SA was founded in 1998, and is actually a national reference in Maize and wheat flours, pastas, biscuits and animal feeds. We have 4 manufacture units, 2 in Matola, 1 in Beira and other in Nacala. Our products have high quality and can be found in all Mozambican', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/company/merec-industries-sa/about/', 'source_company_specialties': '', 'source_founding_date': '', 'source_company_size': '', 'source_company_website': 'http://www.merecindustries.com'}
+DEBUG: 2025-06-30 05:47:32,291 INFO: {'source_company_name': 'Merec Industries, SA', 'source_company_countries': '', 'source_company_phone': '+258 21750103Phone number is +258 21750103', 'source_company_sector_or_activity': '', 'source_company_business_description': 'Merec Industries, SA was founded in 1998, and is actually a national reference in Maize and wheat flours, pastas, biscuits and animal feeds. We have 4 manufacture units, 2 in Matola, 1 in Beira and other in Nacala. Our products have high quality and can be found in all Mozambican', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/company/merec-industries-sa/about/', 'source_company_specialties': '', 'source_founding_date': '', 'source_company_size': '', 'source_company_website': 'http://www.merecindustries.com'}
+DEBUG: 2025-06-30 05:47:32,291 INFO: {'source_company_name': 'Merec Industries, SA', 'source_company_countries': '', 'source_company_phone': '+258 21750103Phone number is +258 21750103', 'source_company_sector_or_activity': '', 'source_company_business_description': 'Merec Industries, SA was founded in 1998, and is actually a national reference in Maize and wheat flours, pastas, biscuits and animal feeds. We have 4 manufacture units, 2 in Matola, 1 in Beira and other in Nacala. Our products have high quality and can be found in all Mozambican', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/company/merec-industries-sa/about/', 'source_company_specialties': '', 'source_founding_date': '', 'source_company_size': '', 'source_company_website': 'http://www.merecindustries.com'}
+DEBUG: 2025-06-30 05:47:32,291 INFO: {'source_company_name': 'Merec Industries, SA', 'source_company_countries': '', 'source_company_phone': '+258 21750103Phone number is +258 21750103', 'source_company_sector_or_activity': '', 'source_company_business_description': 'Merec Industries, SA was founded in 1998, and is actually a national reference in Maize and wheat flours, pastas, biscuits and animal feeds. We have 4 manufacture units, 2 in Matola, 1 in Beira and other in Nacala. Our products have high quality and can be found in all Mozambican', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/company/merec-industries-sa/about/', 'source_company_specialties': '', 'source_founding_date': '', 'source_company_size': '', 'source_company_website': 'http://www.merecindustries.com'}
+DEBUG: 2025-06-30 05:47:32,291 INFO: {'source_company_name': 'Merec Industries, SA', 'source_company_countries': '', 'source_company_phone': '+258 21750103Phone number is +258 21750103', 'source_company_sector_or_activity': '', 'source_company_business_description': 'Merec Industries, SA was founded in 1998, and is actually a national reference in Maize and wheat flours, pastas, biscuits and animal feeds. We have 4 manufacture units, 2 in Matola, 1 in Beira and other in Nacala. Our products have high quality and can be found in all Mozambican', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/company/merec-industries-sa/about/', 'source_company_specialties': '', 'source_founding_date': '', 'source_company_size': '', 'source_company_website': 'http://www.merecindustries.com'}
+DEBUG: 2025-06-30 05:47:32,291 INFO: {'source_company_name': 'Merec Industries, SA', 'source_company_countries': '', 'source_company_phone': '+258 21750103Phone number is +258 21750103', 'source_company_sector_or_activity': '', 'source_company_business_description': 'Merec Industries, SA was founded in 1998, and is actually a national reference in Maize and wheat flours, pastas, biscuits and animal feeds. We have 4 manufacture units, 2 in Matola, 1 in Beira and other in Nacala. Our products have high quality and can be found in all Mozambican', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/company/merec-industries-sa/about/', 'source_company_specialties': '', 'source_founding_date': '', 'source_company_size': '', 'source_company_website': 'http://www.merecindustries.com'}
+DEBUG: 2025-06-30 05:47:32,291 INFO: {'source_company_name': 'Merec Industries, SA', 'source_company_countries': '', 'source_company_phone': '+258 21750103Phone number is +258 21750103', 'source_company_sector_or_activity': '', 'source_company_business_description': 'Merec Industries, SA was founded in 1998, and is actually a national reference in Maize and wheat flours, pastas, biscuits and animal feeds. We have 4 manufacture units, 2 in Matola, 1 in Beira and other in Nacala. Our products have high quality and can be found in all Mozambican', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/company/merec-industries-sa/about/', 'source_company_specialties': '', 'source_founding_date': '', 'source_company_size': '', 'source_company_website': 'http://www.merecindustries.com'}
+DEBUG: 2025-06-30 05:47:32,291 INFO: {'source_company_name': 'Merec Industries, SA', 'source_company_countries': '', 'source_company_phone': '+258 21750103Phone number is +258 21750103', 'source_company_sector_or_activity': '', 'source_company_business_description': 'Merec Industries, SA was founded in 1998, and is actually a national reference in Maize and wheat flours, pastas, biscuits and animal feeds. We have 4 manufacture units, 2 in Matola, 1 in Beira and other in Nacala. Our products have high quality and can be found in all Mozambican', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/company/merec-industries-sa/about/', 'source_company_specialties': '', 'source_founding_date': '', 'source_company_size': '', 'source_company_website': 'http://www.merecindustries.com'}
+DEBUG: 2025-06-30 05:47:32,291 INFO: {'source_company_name': 'Merec Industries, SA', 'source_company_countries': '', 'source_company_phone': '+258 21750103Phone number is +258 21750103', 'source_company_sector_or_activity': '', 'source_company_business_description': 'Merec Industries, SA was founded in 1998, and is actually a national reference in Maize and wheat flours, pastas, biscuits and animal feeds. We have 4 manufacture units, 2 in Matola, 1 in Beira and other in Nacala. Our products have high quality and can be found in all Mozambican', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/company/merec-industries-sa/about/', 'source_company_specialties': '', 'source_founding_date': '', 'source_company_size': '', 'source_company_website': 'http://www.merecindustries.com'}
+DEBUG: 2025-06-30 05:47:32,291 INFO: {'source_company_name': 'Merec Industries, SA', 'source_company_countries': '', 'source_company_phone': '+258 21750103Phone number is +258 21750103', 'source_company_sector_or_activity': 'Food and Beverage Manufacturing', 'source_company_business_description': 'Merec Industries, SA was founded in 1998, and is actually a national reference in Maize and wheat flours, pastas, biscuits and animal feeds. We have 4 manufacture units, 2 in Matola, 1 in Beira and other in Nacala. Our products have high quality and can be found in all Mozambican', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/company/merec-industries-sa/about/', 'source_company_specialties': '', 'source_founding_date': '', 'source_company_size': '', 'source_company_website': 'http://www.merecindustries.com'}
+DEBUG: 2025-06-30 05:47:32,291 INFO: {'source_company_name': 'Merec Industries, SA', 'source_company_countries': '', 'source_company_phone': '+258 21750103Phone number is +258 21750103', 'source_company_sector_or_activity': 'Food and Beverage Manufacturing', 'source_company_business_description': 'Merec Industries, SA was founded in 1998, and is actually a national reference in Maize and wheat flours, pastas, biscuits and animal feeds. We have 4 manufacture units, 2 in Matola, 1 in Beira and other in Nacala. Our products have high quality and can be found in all Mozambican', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/company/merec-industries-sa/about/', 'source_company_specialties': '', 'source_founding_date': '', 'source_company_size': '', 'source_company_website': 'http://www.merecindustries.com'}
+DEBUG: 2025-06-30 05:47:32,291 INFO: {'source_company_name': 'Merec Industries, SA', 'source_company_countries': '', 'source_company_phone': '+258 21750103Phone number is +258 21750103', 'source_company_sector_or_activity': 'Food and Beverage Manufacturing', 'source_company_business_description': 'Merec Industries, SA was founded in 1998, and is actually a national reference in Maize and wheat flours, pastas, biscuits and animal feeds. We have 4 manufacture units, 2 in Matola, 1 in Beira and other in Nacala. Our products have high quality and can be found in all Mozambican', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/company/merec-industries-sa/about/', 'source_company_specialties': '', 'source_founding_date': '', 'source_company_size': '', 'source_company_website': 'http://www.merecindustries.com'}
+DEBUG: 2025-06-30 05:47:32,291 INFO: {'source_company_name': 'Merec Industries, SA', 'source_company_countries': '', 'source_company_phone': '+258 21750103Phone number is +258 21750103', 'source_company_sector_or_activity': 'Food and Beverage Manufacturing', 'source_company_business_description': 'Merec Industries, SA was founded in 1998, and is actually a national reference in Maize and wheat flours, pastas, biscuits and animal feeds. We have 4 manufacture units, 2 in Matola, 1 in Beira and other in Nacala. Our products have high quality and can be found in all Mozambican', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/company/merec-industries-sa/about/', 'source_company_specialties': '', 'source_founding_date': '', 'source_company_size': '', 'source_company_website': 'http://www.merecindustries.com'}
+DEBUG: 2025-06-30 05:47:32,291 INFO: {'source_company_name': 'Merec Industries, SA', 'source_company_countries': '', 'source_company_phone': '+258 21750103Phone number is +258 21750103', 'source_company_sector_or_activity': 'Food and Beverage Manufacturing', 'source_company_business_description': 'Merec Industries, SA was founded in 1998, and is actually a national reference in Maize and wheat flours, pastas, biscuits and animal feeds. We have 4 manufacture units, 2 in Matola, 1 in Beira and other in Nacala. Our products have high quality and can be found in all Mozambican', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/company/merec-industries-sa/about/', 'source_company_specialties': '', 'source_founding_date': '', 'source_company_size': '', 'source_company_website': 'http://www.merecindustries.com'}
+DEBUG: 2025-06-30 05:47:32,292 INFO: {'source_company_name': 'Merec Industries, SA', 'source_company_countries': '', 'source_company_phone': '+258 21750103Phone number is +258 21750103', 'source_company_sector_or_activity': 'Food and Beverage Manufacturing', 'source_company_business_description': 'Merec Industries, SA was founded in 1998, and is actually a national reference in Maize and wheat flours, pastas, biscuits and animal feeds. We have 4 manufacture units, 2 in Matola, 1 in Beira and other in Nacala. Our products have high quality and can be found in all Mozambican', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/company/merec-industries-sa/about/', 'source_company_specialties': '', 'source_founding_date': '', 'source_company_size': '201-500 employees', 'source_company_website': 'http://www.merecindustries.com'}
+DEBUG: 2025-06-30 05:47:32,292 INFO: {'source_company_name': 'Merec Industries, SA', 'source_company_countries': '', 'source_company_phone': '+258 21750103Phone number is +258 21750103', 'source_company_sector_or_activity': 'Food and Beverage Manufacturing', 'source_company_business_description': 'Merec Industries, SA was founded in 1998, and is actually a national reference in Maize and wheat flours, pastas, biscuits and animal feeds. We have 4 manufacture units, 2 in Matola, 1 in Beira and other in Nacala. Our products have high quality and can be found in all Mozambican', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/company/merec-industries-sa/about/', 'source_company_specialties': '', 'source_founding_date': '', 'source_company_size': '201-500 employees', 'source_company_website': 'http://www.merecindustries.com'}
+DEBUG: 2025-06-30 05:47:32,292 INFO: {'source_company_name': 'Merec Industries, SA', 'source_company_countries': '', 'source_company_phone': '+258 21750103Phone number is +258 21750103', 'source_company_sector_or_activity': 'Food and Beverage Manufacturing', 'source_company_business_description': 'Merec Industries, SA was founded in 1998, and is actually a national reference in Maize and wheat flours, pastas, biscuits and animal feeds. We have 4 manufacture units, 2 in Matola, 1 in Beira and other in Nacala. Our products have high quality and can be found in all Mozambican', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/company/merec-industries-sa/about/', 'source_company_specialties': '', 'source_founding_date': '', 'source_company_size': '201-500 employees', 'source_company_website': 'http://www.merecindustries.com'}
+DEBUG: 2025-06-30 05:47:32,292 INFO: {'source_company_name': 'Merec Industries, SA', 'source_company_countries': '', 'source_company_phone': '+258 21750103Phone number is +258 21750103', 'source_company_sector_or_activity': 'Food and Beverage Manufacturing', 'source_company_business_description': 'Merec Industries, SA was founded in 1998, and is actually a national reference in Maize and wheat flours, pastas, biscuits and animal feeds. We have 4 manufacture units, 2 in Matola, 1 in Beira and other in Nacala. Our products have high quality and can be found in all Mozambican', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/company/merec-industries-sa/about/', 'source_company_specialties': '', 'source_founding_date': '', 'source_company_size': '201-500 employees', 'source_company_website': 'http://www.merecindustries.com'}
+DEBUG: 2025-06-30 05:47:32,292 INFO: {'source_company_name': 'Merec Industries, SA', 'source_company_countries': '', 'source_company_phone': '+258 21750103Phone number is +258 21750103', 'source_company_sector_or_activity': 'Food and Beverage Manufacturing', 'source_company_business_description': 'Merec Industries, SA was founded in 1998, and is actually a national reference in Maize and wheat flours, pastas, biscuits and animal feeds. We have 4 manufacture units, 2 in Matola, 1 in Beira and other in Nacala. Our products have high quality and can be found in all Mozambican', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/company/merec-industries-sa/about/', 'source_company_specialties': '', 'source_founding_date': '', 'source_company_size': '201-500 employees', 'source_company_website': 'http://www.merecindustries.com'}
+DEBUG: 2025-06-30 05:47:32,292 INFO: {'source_company_name': 'Merec Industries, SA', 'source_company_countries': '', 'source_company_phone': '+258 21750103Phone number is +258 21750103', 'source_company_sector_or_activity': 'Food and Beverage Manufacturing', 'source_company_business_description': 'Merec Industries, SA was founded in 1998, and is actually a national reference in Maize and wheat flours, pastas, biscuits and animal feeds. We have 4 manufacture units, 2 in Matola, 1 in Beira and other in Nacala. Our products have high quality and can be found in all Mozambican', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/company/merec-industries-sa/about/', 'source_company_specialties': '', 'source_founding_date': '1998', 'source_company_size': '201-500 employees', 'source_company_website': 'http://www.merecindustries.com'}
+DEBUG: 2025-06-30 05:47:32,292 INFO: {'source_company_name': 'Merec Industries, SA', 'source_company_countries': '', 'source_company_phone': '+258 21750103Phone number is +258 21750103', 'source_company_sector_or_activity': 'Food and Beverage Manufacturing', 'source_company_business_description': 'Merec Industries, SA was founded in 1998, and is actually a national reference in Maize and wheat flours, pastas, biscuits and animal feeds. We have 4 manufacture units, 2 in Matola, 1 in Beira and other in Nacala. Our products have high quality and can be found in all Mozambican', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/company/merec-industries-sa/about/', 'source_company_specialties': '', 'source_founding_date': '1998', 'source_company_size': '201-500 employees', 'source_company_website': 'http://www.merecindustries.com'}
+DEBUG: 2025-06-30 05:47:32,292 INFO: {'source_company_name': 'Merec Industries, SA', 'source_company_countries': '', 'source_company_phone': '+258 21750103Phone number is +258 21750103', 'source_company_sector_or_activity': 'Food and Beverage Manufacturing', 'source_company_business_description': 'Merec Industries, SA was founded in 1998, and is actually a national reference in Maize and wheat flours, pastas, biscuits and animal feeds. We have 4 manufacture units, 2 in Matola, 1 in Beira and other in Nacala. Our products have high quality and can be found in all Mozambican', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/company/merec-industries-sa/about/', 'source_company_specialties': '', 'source_founding_date': '1998', 'source_company_size': '201-500 employees', 'source_company_website': 'http://www.merecindustries.com'}
+DEBUG: 2025-06-30 05:47:32,292 INFO: {'source_company_name': 'Merec Industries, SA', 'source_company_countries': '', 'source_company_phone': '+258 21750103Phone number is +258 21750103', 'source_company_sector_or_activity': 'Food and Beverage Manufacturing', 'source_company_business_description': 'Merec Industries, SA was founded in 1998, and is actually a national reference in Maize and wheat flours, pastas, biscuits and animal feeds. We have 4 manufacture units, 2 in Matola, 1 in Beira and other in Nacala. Our products have high quality and can be found in all Mozambican', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/company/merec-industries-sa/about/', 'source_company_specialties': '', 'source_founding_date': '1998', 'source_company_size': '201-500 employees', 'source_company_website': 'http://www.merecindustries.com'}
+DEBUG: 2025-06-30 05:47:32,292 INFO: {'source_company_name': 'Merec Industries, SA', 'source_company_countries': '', 'source_company_phone': '+258 21750103Phone number is +258 21750103', 'source_company_sector_or_activity': 'Food and Beverage Manufacturing', 'source_company_business_description': 'Merec Industries, SA was founded in 1998, and is actually a national reference in Maize and wheat flours, pastas, biscuits and animal feeds. We have 4 manufacture units, 2 in Matola, 1 in Beira and other in Nacala. Our products have high quality and can be found in all Mozambican', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/company/merec-industries-sa/about/', 'source_company_specialties': '', 'source_founding_date': '1998', 'source_company_size': '201-500 employees', 'source_company_website': 'http://www.merecindustries.com'}
+DEBUG: 2025-06-30 05:47:32,292 INFO: {'source_company_name': 'Merec Industries, SA', 'source_company_countries': '', 'source_company_phone': '+258 21750103Phone number is +258 21750103', 'source_company_sector_or_activity': 'Food and Beverage Manufacturing', 'source_company_business_description': 'Merec Industries, SA was founded in 1998, and is actually a national reference in Maize and wheat flours, pastas, biscuits and animal feeds. We have 4 manufacture units, 2 in Matola, 1 in Beira and other in Nacala. Our products have high quality and can be found in all Mozambican', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/company/merec-industries-sa/about/', 'source_company_specialties': 'Moagem, Soluções Agrárias, Rações, Farinhas, Massas, and Bolachas', 'source_founding_date': '1998', 'source_company_size': '201-500 employees', 'source_company_website': 'http://www.merecindustries.com'}
+DEBUG: 2025-06-30 05:47:32,292 INFO: {'source_company_name': 'Merec Industries, SA', 'source_company_countries': '', 'source_company_phone': '+258 21750103Phone number is +258 21750103', 'source_company_sector_or_activity': 'Food and Beverage Manufacturing', 'source_company_business_description': 'Merec Industries, SA was founded in 1998, and is actually a national reference in Maize and wheat flours, pastas, biscuits and animal feeds. We have 4 manufacture units, 2 in Matola, 1 in Beira and other in Nacala. Our products have high quality and can be found in all Mozambican', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/company/merec-industries-sa/about/', 'source_company_specialties': 'Moagem, Soluções Agrárias, Rações, Farinhas, Massas, and Bolachas', 'source_founding_date': '1998', 'source_company_size': '201-500 employees', 'source_company_website': 'http://www.merecindustries.com'}
+DEBUG: 2025-06-30 05:47:32,292 INFO: {'source_company_name': 'Merec Industries, SA', 'source_company_countries': '', 'source_company_phone': '+258 21750103Phone number is +258 21750103', 'source_company_sector_or_activity': 'Food and Beverage Manufacturing', 'source_company_business_description': 'Merec Industries, SA was founded in 1998, and is actually a national reference in Maize and wheat flours, pastas, biscuits and animal feeds. We have 4 manufacture units, 2 in Matola, 1 in Beira and other in Nacala. Our products have high quality and can be found in all Mozambican', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/company/merec-industries-sa/about/', 'source_company_specialties': 'Moagem, Soluções Agrárias, Rações, Farinhas, Massas, and Bolachas', 'source_founding_date': '1998', 'source_company_size': '201-500 employees', 'source_company_website': 'http://www.merecindustries.com'}
+DEBUG: 2025-06-30 05:47:32,292 INFO: {'source_company_name': 'Merec Industries, SA', 'source_company_countries': '', 'source_company_phone': '+258 21750103Phone number is +258 21750103', 'source_company_sector_or_activity': 'Food and Beverage Manufacturing', 'source_company_business_description': 'Merec Industries, SA was founded in 1998, and is actually a national reference in Maize and wheat flours, pastas, biscuits and animal feeds. We have 4 manufacture units, 2 in Matola, 1 in Beira and other in Nacala. Our products have high quality and can be found in all Mozambican', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/company/merec-industries-sa/about/', 'source_company_specialties': 'Moagem, Soluções Agrárias, Rações, Farinhas, Massas, and Bolachas', 'source_founding_date': '1998', 'source_company_size': '201-500 employees', 'source_company_website': 'http://www.merecindustries.com'}
+DEBUG: 2025-06-30 05:47:32,292 INFO: {'source_company_name': 'Merec Industries, SA', 'source_company_countries': '', 'source_company_phone': '+258 21750103Phone number is +258 21750103', 'source_company_sector_or_activity': 'Food and Beverage Manufacturing', 'source_company_business_description': 'Merec Industries, SA was founded in 1998, and is actually a national reference in Maize and wheat flours, pastas, biscuits and animal feeds. We have 4 manufacture units, 2 in Matola, 1 in Beira and other in Nacala. Our products have high quality and can be found in all Mozambican', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/company/merec-industries-sa/about/', 'source_company_specialties': 'Moagem, Soluções Agrárias, Rações, Farinhas, Massas, and Bolachas', 'source_founding_date': '1998', 'source_company_size': '201-500 employees', 'source_company_website': 'http://www.merecindustries.com'}
+DEBUG: 2025-06-30 05:47:32,296 INFO: {'source_company_name': 'Merec Industries, SA', 'source_company_countries': 'MZ', 'source_company_phone': '+258 21750103Phone number is +258 21750103', 'source_company_sector_or_activity': 'Food and Beverage Manufacturing', 'source_company_business_description': 'Merec Industries, SA was founded in 1998, and is actually a national reference in Maize and wheat flours, pastas, biscuits and animal feeds. We have 4 manufacture units, 2 in Matola, 1 in Beira and other in Nacala. Our products have high quality and can be found in all Mozambican', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/company/merec-industries-sa/about/', 'source_company_specialties': 'Moagem, Soluções Agrárias, Rações, Farinhas, Massas, and Bolachas', 'source_founding_date': '1998', 'source_company_size': '201-500 employees', 'source_company_website': 'http://www.merecindustries.com'}
+DEBUG: 2025-06-30 05:47:32,296 INFO: {'source_company_name': 'Merec Industries, SA', 'source_company_countries': 'MZ', 'source_company_phone': '+258 21750103Phone number is +258 21750103', 'source_company_sector_or_activity': 'Food and Beverage Manufacturing', 'source_company_business_description': 'Merec Industries, SA was founded in 1998, and is actually a national reference in Maize and wheat flours, pastas, biscuits and animal feeds. We have 4 manufacture units, 2 in Matola, 1 in Beira and other in Nacala. Our products have high quality and can be found in all Mozambican', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/company/merec-industries-sa/about/', 'source_company_specialties': 'Moagem, Soluções Agrárias, Rações, Farinhas, Massas, and Bolachas', 'source_founding_date': '1998', 'source_company_size': '201-500 employees', 'source_company_website': 'http://www.merecindustries.com'}
+DEBUG: 2025-06-30 05:47:32,296 INFO: {'source_company_name': 'Merec Industries, SA', 'source_company_countries': 'MZ', 'source_company_phone': '+258 21750103Phone number is +258 21750103', 'source_company_sector_or_activity': 'Food and Beverage Manufacturing', 'source_company_business_description': 'Merec Industries, SA was founded in 1998, and is actually a national reference in Maize and wheat flours, pastas, biscuits and animal feeds. We have 4 manufacture units, 2 in Matola, 1 in Beira and other in Nacala. Our products have high quality and can be found in all Mozambican', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/company/merec-industries-sa/about/', 'source_company_specialties': 'Moagem, Soluções Agrárias, Rações, Farinhas, Massas, and Bolachas', 'source_founding_date': '1998', 'source_company_size': '201-500 employees', 'source_company_website': 'http://www.merecindustries.com'}
+DEBUG: 2025-06-30 05:47:32,296 INFO: {'source_company_name': 'Merec Industries, SA', 'source_company_countries': 'MZ', 'source_company_phone': '+258 21750103Phone number is +258 21750103', 'source_company_sector_or_activity': 'Food and Beverage Manufacturing', 'source_company_business_description': 'Merec Industries, SA was founded in 1998, and is actually a national reference in Maize and wheat flours, pastas, biscuits and animal feeds. We have 4 manufacture units, 2 in Matola, 1 in Beira and other in Nacala. Our products have high quality and can be found in all Mozambican', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/company/merec-industries-sa/about/', 'source_company_specialties': 'Moagem, Soluções Agrárias, Rações, Farinhas, Massas, and Bolachas', 'source_founding_date': '1998', 'source_company_size': '201-500 employees', 'source_company_website': 'http://www.merecindustries.com'}
+DEBUG: 2025-06-30 05:47:32,296 INFO: {'source_company_name': 'Merec Industries, SA', 'source_company_countries': 'MZ', 'source_company_phone': '+258 21750103Phone number is +258 21750103', 'source_company_sector_or_activity': 'Food and Beverage Manufacturing', 'source_company_business_description': 'Merec Industries, SA was founded in 1998, and is actually a national reference in Maize and wheat flours, pastas, biscuits and animal feeds. We have 4 manufacture units, 2 in Matola, 1 in Beira and other in Nacala. Our products have high quality and can be found in all Mozambican', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/company/merec-industries-sa/about/', 'source_company_specialties': 'Moagem, Soluções Agrárias, Rações, Farinhas, Massas, and Bolachas', 'source_founding_date': '1998', 'source_company_size': '201-500 employees', 'source_company_website': 'http://www.merecindustries.com'}
+DEBUG: 2025-06-30 05:47:32,299 INFO: Company data saved to: /Users/user/Desktop/Projects/Crapers/Company-Query-Agent/scraper/results/Merec-Industries-SA_about.json
+DEBUG: 2025-06-30 05:47:32,299 INFO: Company data saved to: /Users/user/Desktop/Projects/Crapers/Company-Query-Agent/scraper/results/Merec-Industries-SA_about.json
+DEBUG: 2025-06-30 05:47:32,299 INFO: Company data saved to: /Users/user/Desktop/Projects/Crapers/Company-Query-Agent/scraper/results/Merec-Industries-SA_about.json
+DEBUG: 2025-06-30 05:47:32,299 INFO: Company data saved to: /Users/user/Desktop/Projects/Crapers/Company-Query-Agent/scraper/results/Merec-Industries-SA_about.json
+DEBUG: 2025-06-30 05:47:32,299 INFO: Company data saved to: /Users/user/Desktop/Projects/Crapers/Company-Query-Agent/scraper/results/Merec-Industries-SA_about.json
+DEBUG: 2025-06-30 05:47:32,299 INFO: {'source_company_name': 'Merec Industries, SA', 'source_company_countries': 'MZ', 'source_company_phone': '+258 21750103Phone number is +258 21750103', 'source_company_sector_or_activity': 'Food and Beverage Manufacturing', 'source_company_business_description': 'Merec Industries, SA was founded in 1998, and is actually a national reference in Maize and wheat flours, pastas, biscuits and animal feeds. We have 4 manufacture units, 2 in Matola, 1 in Beira and other in Nacala. Our products have high quality and can be found in all Mozambican', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/company/merec-industries-sa/about/', 'source_company_specialties': 'Moagem, Soluções Agrárias, Rações, Farinhas, Massas, and Bolachas', 'source_founding_date': '1998', 'source_company_size': '201-500 employees', 'source_company_website': 'http://www.merecindustries.com'}
+DEBUG: 2025-06-30 05:47:32,299 INFO: {'source_company_name': 'Merec Industries, SA', 'source_company_countries': 'MZ', 'source_company_phone': '+258 21750103Phone number is +258 21750103', 'source_company_sector_or_activity': 'Food and Beverage Manufacturing', 'source_company_business_description': 'Merec Industries, SA was founded in 1998, and is actually a national reference in Maize and wheat flours, pastas, biscuits and animal feeds. We have 4 manufacture units, 2 in Matola, 1 in Beira and other in Nacala. Our products have high quality and can be found in all Mozambican', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/company/merec-industries-sa/about/', 'source_company_specialties': 'Moagem, Soluções Agrárias, Rações, Farinhas, Massas, and Bolachas', 'source_founding_date': '1998', 'source_company_size': '201-500 employees', 'source_company_website': 'http://www.merecindustries.com'}
+DEBUG: 2025-06-30 05:47:32,299 INFO: {'source_company_name': 'Merec Industries, SA', 'source_company_countries': 'MZ', 'source_company_phone': '+258 21750103Phone number is +258 21750103', 'source_company_sector_or_activity': 'Food and Beverage Manufacturing', 'source_company_business_description': 'Merec Industries, SA was founded in 1998, and is actually a national reference in Maize and wheat flours, pastas, biscuits and animal feeds. We have 4 manufacture units, 2 in Matola, 1 in Beira and other in Nacala. Our products have high quality and can be found in all Mozambican', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/company/merec-industries-sa/about/', 'source_company_specialties': 'Moagem, Soluções Agrárias, Rações, Farinhas, Massas, and Bolachas', 'source_founding_date': '1998', 'source_company_size': '201-500 employees', 'source_company_website': 'http://www.merecindustries.com'}
+DEBUG: 2025-06-30 05:47:32,299 INFO: {'source_company_name': 'Merec Industries, SA', 'source_company_countries': 'MZ', 'source_company_phone': '+258 21750103Phone number is +258 21750103', 'source_company_sector_or_activity': 'Food and Beverage Manufacturing', 'source_company_business_description': 'Merec Industries, SA was founded in 1998, and is actually a national reference in Maize and wheat flours, pastas, biscuits and animal feeds. We have 4 manufacture units, 2 in Matola, 1 in Beira and other in Nacala. Our products have high quality and can be found in all Mozambican', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/company/merec-industries-sa/about/', 'source_company_specialties': 'Moagem, Soluções Agrárias, Rações, Farinhas, Massas, and Bolachas', 'source_founding_date': '1998', 'source_company_size': '201-500 employees', 'source_company_website': 'http://www.merecindustries.com'}
+DEBUG: 2025-06-30 05:47:32,299 INFO: {'source_company_name': 'Merec Industries, SA', 'source_company_countries': 'MZ', 'source_company_phone': '+258 21750103Phone number is +258 21750103', 'source_company_sector_or_activity': 'Food and Beverage Manufacturing', 'source_company_business_description': 'Merec Industries, SA was founded in 1998, and is actually a national reference in Maize and wheat flours, pastas, biscuits and animal feeds. We have 4 manufacture units, 2 in Matola, 1 in Beira and other in Nacala. Our products have high quality and can be found in all Mozambican', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/company/merec-industries-sa/about/', 'source_company_specialties': 'Moagem, Soluções Agrárias, Rações, Farinhas, Massas, and Bolachas', 'source_founding_date': '1998', 'source_company_size': '201-500 employees', 'source_company_website': 'http://www.merecindustries.com'}
+DEBUG: 2025-06-30 05:47:32,299 INFO: initialized successfully
+DEBUG: 2025-06-30 05:47:32,299 INFO: initialized successfully
+DEBUG: 2025-06-30 05:47:32,299 INFO: initialized successfully
+DEBUG: 2025-06-30 05:47:32,299 INFO: initialized successfully
+DEBUG: 2025-06-30 05:47:32,299 INFO: initialized successfully
+DEBUG: 2025-06-30 05:47:32,334 INFO: is_visible() confirmed visibility for: div#global-nav-search.global-nav__search
+DEBUG: 2025-06-30 05:47:32,334 INFO: is_visible() confirmed visibility for: div#global-nav-search.global-nav__search
+DEBUG: 2025-06-30 05:47:32,334 INFO: is_visible() confirmed visibility for: div#global-nav-search.global-nav__search
+DEBUG: 2025-06-30 05:47:32,334 INFO: is_visible() confirmed visibility for: div#global-nav-search.global-nav__search
+DEBUG: 2025-06-30 05:47:32,334 INFO: is_visible() confirmed visibility for: div#global-nav-search.global-nav__search
+DEBUG: 2025-06-30 05:47:32,335 INFO: Search box visible
+DEBUG: 2025-06-30 05:47:32,335 INFO: Search box visible
+DEBUG: 2025-06-30 05:47:32,335 INFO: Search box visible
+DEBUG: 2025-06-30 05:47:32,335 INFO: Search box visible
+DEBUG: 2025-06-30 05:47:32,335 INFO: Search box visible
+DEBUG: 2025-06-30 05:47:32,398 INFO: Basic hover succeeded
+DEBUG: 2025-06-30 05:47:32,398 INFO: Basic hover succeeded
+DEBUG: 2025-06-30 05:47:32,398 INFO: Basic hover succeeded
+DEBUG: 2025-06-30 05:47:32,398 INFO: Basic hover succeeded
+DEBUG: 2025-06-30 05:47:32,398 INFO: Basic hover succeeded
+DEBUG: 2025-06-30 05:47:32,398 INFO: Hover Search box visible True
+DEBUG: 2025-06-30 05:47:32,398 INFO: Hover Search box visible True
+DEBUG: 2025-06-30 05:47:32,398 INFO: Hover Search box visible True
+DEBUG: 2025-06-30 05:47:32,398 INFO: Hover Search box visible True
+DEBUG: 2025-06-30 05:47:32,398 INFO: Hover Search box visible True
+DEBUG: 2025-06-30 05:47:32,741 INFO: Method 1: Basic click succeeded
+DEBUG: 2025-06-30 05:47:32,741 INFO: Method 1: Basic click succeeded
+DEBUG: 2025-06-30 05:47:32,741 INFO: Method 1: Basic click succeeded
+DEBUG: 2025-06-30 05:47:32,741 INFO: Method 1: Basic click succeeded
+DEBUG: 2025-06-30 05:47:32,741 INFO: Method 1: Basic click succeeded
+DEBUG: 2025-06-30 05:47:32,742 INFO: Click Search box True
+DEBUG: 2025-06-30 05:47:32,742 INFO: Click Search box True
+DEBUG: 2025-06-30 05:47:32,742 INFO: Click Search box True
+DEBUG: 2025-06-30 05:47:32,742 INFO: Click Search box True
+DEBUG: 2025-06-30 05:47:32,742 INFO: Click Search box True
+DEBUG: 2025-06-30 05:47:36,419 INFO: Search box filled with company name SanLei
+DEBUG: 2025-06-30 05:47:36,419 INFO: Search box filled with company name SanLei
+DEBUG: 2025-06-30 05:47:36,419 INFO: Search box filled with company name SanLei
+DEBUG: 2025-06-30 05:47:36,419 INFO: Search box filled with company name SanLei
+DEBUG: 2025-06-30 05:47:36,419 INFO: Search box filled with company name SanLei
+DEBUG: 2025-06-30 05:47:39,979 INFO: Search success for SanLei
+DEBUG: 2025-06-30 05:47:39,979 INFO: Search success for SanLei
+DEBUG: 2025-06-30 05:47:39,979 INFO: Search success for SanLei
+DEBUG: 2025-06-30 05:47:39,979 INFO: Search success for SanLei
+DEBUG: 2025-06-30 05:47:39,979 INFO: Search success for SanLei
+DEBUG: 2025-06-30 05:47:39,981 INFO: Search SanLei loading
+DEBUG: 2025-06-30 05:47:39,981 INFO: Search SanLei loading
+DEBUG: 2025-06-30 05:47:39,981 INFO: Search SanLei loading
+DEBUG: 2025-06-30 05:47:39,981 INFO: Search SanLei loading
+DEBUG: 2025-06-30 05:47:39,981 INFO: Search SanLei loading
+DEBUG: 2025-06-30 05:47:40,085 INFO: is_visible() confirmed visibility for: section.scaffold-layout-toolbar
+DEBUG: 2025-06-30 05:47:40,085 INFO: is_visible() confirmed visibility for: section.scaffold-layout-toolbar
+DEBUG: 2025-06-30 05:47:40,085 INFO: is_visible() confirmed visibility for: section.scaffold-layout-toolbar
+DEBUG: 2025-06-30 05:47:40,085 INFO: is_visible() confirmed visibility for: section.scaffold-layout-toolbar
+DEBUG: 2025-06-30 05:47:40,085 INFO: is_visible() confirmed visibility for: section.scaffold-layout-toolbar
+DEBUG: 2025-06-30 05:47:40,086 ERROR: Failed to handle access alert: No module named 'utilities'
+DEBUG: 2025-06-30 05:47:40,086 ERROR: Failed to handle access alert: No module named 'utilities'
+DEBUG: 2025-06-30 05:47:40,086 ERROR: Failed to handle access alert: No module named 'utilities'
+DEBUG: 2025-06-30 05:47:40,086 ERROR: Failed to handle access alert: No module named 'utilities'
+DEBUG: 2025-06-30 05:47:40,086 ERROR: Failed to handle access alert: No module named 'utilities'
+DEBUG: 2025-06-30 05:47:55,159 ERROR: CSS visibility check failed for ul[role='list'] li button:has-text('Companies'): Locator.evaluate: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("ul[role='list'] li button:has-text('Companies')")
+
+DEBUG: 2025-06-30 05:47:55,159 ERROR: CSS visibility check failed for ul[role='list'] li button:has-text('Companies'): Locator.evaluate: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("ul[role='list'] li button:has-text('Companies')")
+
+DEBUG: 2025-06-30 05:47:55,159 ERROR: CSS visibility check failed for ul[role='list'] li button:has-text('Companies'): Locator.evaluate: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("ul[role='list'] li button:has-text('Companies')")
+
+DEBUG: 2025-06-30 05:47:55,159 ERROR: CSS visibility check failed for ul[role='list'] li button:has-text('Companies'): Locator.evaluate: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("ul[role='list'] li button:has-text('Companies')")
+
+DEBUG: 2025-06-30 05:47:55,159 ERROR: CSS visibility check failed for ul[role='list'] li button:has-text('Companies'): Locator.evaluate: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("ul[role='list'] li button:has-text('Companies')")
+
+DEBUG: 2025-06-30 05:48:10,170 ERROR: Bounding box check failed for ul[role='list'] li button:has-text('Companies'): Locator.bounding_box: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("ul[role='list'] li button:has-text('Companies')")
+
+DEBUG: 2025-06-30 05:48:10,170 ERROR: Bounding box check failed for ul[role='list'] li button:has-text('Companies'): Locator.bounding_box: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("ul[role='list'] li button:has-text('Companies')")
+
+DEBUG: 2025-06-30 05:48:10,170 ERROR: Bounding box check failed for ul[role='list'] li button:has-text('Companies'): Locator.bounding_box: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("ul[role='list'] li button:has-text('Companies')")
+
+DEBUG: 2025-06-30 05:48:10,170 ERROR: Bounding box check failed for ul[role='list'] li button:has-text('Companies'): Locator.bounding_box: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("ul[role='list'] li button:has-text('Companies')")
+
+DEBUG: 2025-06-30 05:48:10,170 ERROR: Bounding box check failed for ul[role='list'] li button:has-text('Companies'): Locator.bounding_box: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("ul[role='list'] li button:has-text('Companies')")
+
+DEBUG: 2025-06-30 05:48:13,184 ERROR: Wait-based verification failed for ul[role='list'] li button:has-text('Companies'): Page.wait_for_selector: Timeout 3000ms exceeded.
+Call log:
+  - waiting for locator("ul[role='list'] li button:has-text('Companies')") to be visible
+
+DEBUG: 2025-06-30 05:48:13,184 ERROR: Wait-based verification failed for ul[role='list'] li button:has-text('Companies'): Page.wait_for_selector: Timeout 3000ms exceeded.
+Call log:
+  - waiting for locator("ul[role='list'] li button:has-text('Companies')") to be visible
+
+DEBUG: 2025-06-30 05:48:13,184 ERROR: Wait-based verification failed for ul[role='list'] li button:has-text('Companies'): Page.wait_for_selector: Timeout 3000ms exceeded.
+Call log:
+  - waiting for locator("ul[role='list'] li button:has-text('Companies')") to be visible
+
+DEBUG: 2025-06-30 05:48:13,184 ERROR: Wait-based verification failed for ul[role='list'] li button:has-text('Companies'): Page.wait_for_selector: Timeout 3000ms exceeded.
+Call log:
+  - waiting for locator("ul[role='list'] li button:has-text('Companies')") to be visible
+
+DEBUG: 2025-06-30 05:48:13,184 ERROR: Wait-based verification failed for ul[role='list'] li button:has-text('Companies'): Page.wait_for_selector: Timeout 3000ms exceeded.
+Call log:
+  - waiting for locator("ul[role='list'] li button:has-text('Companies')") to be visible
+
+DEBUG: 2025-06-30 05:48:28,196 ERROR: Element handle check failed for ul[role='list'] li button:has-text('Companies'): Locator.element_handle: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("ul[role='list'] li button:has-text('Companies')")
+
+DEBUG: 2025-06-30 05:48:28,196 ERROR: Element handle check failed for ul[role='list'] li button:has-text('Companies'): Locator.element_handle: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("ul[role='list'] li button:has-text('Companies')")
+
+DEBUG: 2025-06-30 05:48:28,196 ERROR: Element handle check failed for ul[role='list'] li button:has-text('Companies'): Locator.element_handle: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("ul[role='list'] li button:has-text('Companies')")
+
+DEBUG: 2025-06-30 05:48:28,196 ERROR: Element handle check failed for ul[role='list'] li button:has-text('Companies'): Locator.element_handle: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("ul[role='list'] li button:has-text('Companies')")
+
+DEBUG: 2025-06-30 05:48:28,196 ERROR: Element handle check failed for ul[role='list'] li button:has-text('Companies'): Locator.element_handle: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("ul[role='list'] li button:has-text('Companies')")
+
+DEBUG: 2025-06-30 05:48:28,198 WARNING: All visibility checks failed for: ul[role='list'] li button:has-text('Companies')
+DEBUG: 2025-06-30 05:48:28,198 WARNING: All visibility checks failed for: ul[role='list'] li button:has-text('Companies')
+DEBUG: 2025-06-30 05:48:28,198 WARNING: All visibility checks failed for: ul[role='list'] li button:has-text('Companies')
+DEBUG: 2025-06-30 05:48:28,198 WARNING: All visibility checks failed for: ul[role='list'] li button:has-text('Companies')
+DEBUG: 2025-06-30 05:48:28,198 WARNING: All visibility checks failed for: ul[role='list'] li button:has-text('Companies')
+DEBUG: 2025-06-30 05:48:28,198 WARNING: Selector not visible: ul[role='list'] li button:has-text('Companies') False
+DEBUG: 2025-06-30 05:48:28,198 WARNING: Selector not visible: ul[role='list'] li button:has-text('Companies') False
+DEBUG: 2025-06-30 05:48:28,198 WARNING: Selector not visible: ul[role='list'] li button:has-text('Companies') False
+DEBUG: 2025-06-30 05:48:28,198 WARNING: Selector not visible: ul[role='list'] li button:has-text('Companies') False
+DEBUG: 2025-06-30 05:48:28,198 WARNING: Selector not visible: ul[role='list'] li button:has-text('Companies') False
+DEBUG: 2025-06-30 05:48:28,218 INFO: is_visible() confirmed visibility for: button.artdeco-pill:has-text('Companies')
+DEBUG: 2025-06-30 05:48:28,218 INFO: is_visible() confirmed visibility for: button.artdeco-pill:has-text('Companies')
+DEBUG: 2025-06-30 05:48:28,218 INFO: is_visible() confirmed visibility for: button.artdeco-pill:has-text('Companies')
+DEBUG: 2025-06-30 05:48:28,218 INFO: is_visible() confirmed visibility for: button.artdeco-pill:has-text('Companies')
+DEBUG: 2025-06-30 05:48:28,218 INFO: is_visible() confirmed visibility for: button.artdeco-pill:has-text('Companies')
+DEBUG: 2025-06-30 05:48:28,219 INFO: Attempting filter with selector: button.artdeco-pill:has-text('Companies')
+DEBUG: 2025-06-30 05:48:28,219 INFO: Attempting filter with selector: button.artdeco-pill:has-text('Companies')
+DEBUG: 2025-06-30 05:48:28,219 INFO: Attempting filter with selector: button.artdeco-pill:has-text('Companies')
+DEBUG: 2025-06-30 05:48:28,219 INFO: Attempting filter with selector: button.artdeco-pill:has-text('Companies')
+DEBUG: 2025-06-30 05:48:28,219 INFO: Attempting filter with selector: button.artdeco-pill:has-text('Companies')
+DEBUG: 2025-06-30 05:48:28,310 INFO: Basic hover succeeded
+DEBUG: 2025-06-30 05:48:28,310 INFO: Basic hover succeeded
+DEBUG: 2025-06-30 05:48:28,310 INFO: Basic hover succeeded
+DEBUG: 2025-06-30 05:48:28,310 INFO: Basic hover succeeded
+DEBUG: 2025-06-30 05:48:28,310 INFO: Basic hover succeeded
+DEBUG: 2025-06-30 05:48:28,310 ERROR: Filter processing failed for button.artdeco-pill:has-text('Companies'): click_with_fallback() missing 1 required positional argument: 'logger'
+DEBUG: 2025-06-30 05:48:28,310 ERROR: Filter processing failed for button.artdeco-pill:has-text('Companies'): click_with_fallback() missing 1 required positional argument: 'logger'
+DEBUG: 2025-06-30 05:48:28,310 ERROR: Filter processing failed for button.artdeco-pill:has-text('Companies'): click_with_fallback() missing 1 required positional argument: 'logger'
+DEBUG: 2025-06-30 05:48:28,310 ERROR: Filter processing failed for button.artdeco-pill:has-text('Companies'): click_with_fallback() missing 1 required positional argument: 'logger'
+DEBUG: 2025-06-30 05:48:28,310 ERROR: Filter processing failed for button.artdeco-pill:has-text('Companies'): click_with_fallback() missing 1 required positional argument: 'logger'
+DEBUG: 2025-06-30 05:48:28,333 INFO: is_visible() confirmed visibility for: button.search-reusables__filter-pill-button:has-text('Companies')
+DEBUG: 2025-06-30 05:48:28,333 INFO: is_visible() confirmed visibility for: button.search-reusables__filter-pill-button:has-text('Companies')
+DEBUG: 2025-06-30 05:48:28,333 INFO: is_visible() confirmed visibility for: button.search-reusables__filter-pill-button:has-text('Companies')
+DEBUG: 2025-06-30 05:48:28,333 INFO: is_visible() confirmed visibility for: button.search-reusables__filter-pill-button:has-text('Companies')
+DEBUG: 2025-06-30 05:48:28,333 INFO: is_visible() confirmed visibility for: button.search-reusables__filter-pill-button:has-text('Companies')
+DEBUG: 2025-06-30 05:48:28,333 INFO: Attempting filter with selector: button.search-reusables__filter-pill-button:has-text('Companies')
+DEBUG: 2025-06-30 05:48:28,333 INFO: Attempting filter with selector: button.search-reusables__filter-pill-button:has-text('Companies')
+DEBUG: 2025-06-30 05:48:28,333 INFO: Attempting filter with selector: button.search-reusables__filter-pill-button:has-text('Companies')
+DEBUG: 2025-06-30 05:48:28,333 INFO: Attempting filter with selector: button.search-reusables__filter-pill-button:has-text('Companies')
+DEBUG: 2025-06-30 05:48:28,333 INFO: Attempting filter with selector: button.search-reusables__filter-pill-button:has-text('Companies')
+DEBUG: 2025-06-30 05:48:28,596 INFO: Basic hover succeeded
+DEBUG: 2025-06-30 05:48:28,596 INFO: Basic hover succeeded
+DEBUG: 2025-06-30 05:48:28,596 INFO: Basic hover succeeded
+DEBUG: 2025-06-30 05:48:28,596 INFO: Basic hover succeeded
+DEBUG: 2025-06-30 05:48:28,596 INFO: Basic hover succeeded
+DEBUG: 2025-06-30 05:48:28,597 ERROR: Filter processing failed for button.search-reusables__filter-pill-button:has-text('Companies'): click_with_fallback() missing 1 required positional argument: 'logger'
+DEBUG: 2025-06-30 05:48:28,597 ERROR: Filter processing failed for button.search-reusables__filter-pill-button:has-text('Companies'): click_with_fallback() missing 1 required positional argument: 'logger'
+DEBUG: 2025-06-30 05:48:28,597 ERROR: Filter processing failed for button.search-reusables__filter-pill-button:has-text('Companies'): click_with_fallback() missing 1 required positional argument: 'logger'
+DEBUG: 2025-06-30 05:48:28,597 ERROR: Filter processing failed for button.search-reusables__filter-pill-button:has-text('Companies'): click_with_fallback() missing 1 required positional argument: 'logger'
+DEBUG: 2025-06-30 05:48:28,597 ERROR: Filter processing failed for button.search-reusables__filter-pill-button:has-text('Companies'): click_with_fallback() missing 1 required positional argument: 'logger'
+DEBUG: 2025-06-30 05:48:28,655 INFO: is_visible() confirmed visibility for: button:has-text('Companies')
+DEBUG: 2025-06-30 05:48:28,655 INFO: is_visible() confirmed visibility for: button:has-text('Companies')
+DEBUG: 2025-06-30 05:48:28,655 INFO: is_visible() confirmed visibility for: button:has-text('Companies')
+DEBUG: 2025-06-30 05:48:28,655 INFO: is_visible() confirmed visibility for: button:has-text('Companies')
+DEBUG: 2025-06-30 05:48:28,655 INFO: is_visible() confirmed visibility for: button:has-text('Companies')
+DEBUG: 2025-06-30 05:48:28,655 INFO: Attempting filter with selector: button:has-text('Companies')
+DEBUG: 2025-06-30 05:48:28,655 INFO: Attempting filter with selector: button:has-text('Companies')
+DEBUG: 2025-06-30 05:48:28,655 INFO: Attempting filter with selector: button:has-text('Companies')
+DEBUG: 2025-06-30 05:48:28,655 INFO: Attempting filter with selector: button:has-text('Companies')
+DEBUG: 2025-06-30 05:48:28,655 INFO: Attempting filter with selector: button:has-text('Companies')
+DEBUG: 2025-06-30 05:48:28,734 INFO: Basic hover succeeded
+DEBUG: 2025-06-30 05:48:28,734 INFO: Basic hover succeeded
+DEBUG: 2025-06-30 05:48:28,734 INFO: Basic hover succeeded
+DEBUG: 2025-06-30 05:48:28,734 INFO: Basic hover succeeded
+DEBUG: 2025-06-30 05:48:28,734 INFO: Basic hover succeeded
+DEBUG: 2025-06-30 05:48:28,734 ERROR: Filter processing failed for button:has-text('Companies'): click_with_fallback() missing 1 required positional argument: 'logger'
+DEBUG: 2025-06-30 05:48:28,734 ERROR: Filter processing failed for button:has-text('Companies'): click_with_fallback() missing 1 required positional argument: 'logger'
+DEBUG: 2025-06-30 05:48:28,734 ERROR: Filter processing failed for button:has-text('Companies'): click_with_fallback() missing 1 required positional argument: 'logger'
+DEBUG: 2025-06-30 05:48:28,734 ERROR: Filter processing failed for button:has-text('Companies'): click_with_fallback() missing 1 required positional argument: 'logger'
+DEBUG: 2025-06-30 05:48:28,734 ERROR: Filter processing failed for button:has-text('Companies'): click_with_fallback() missing 1 required positional argument: 'logger'
+DEBUG: 2025-06-30 05:48:39,213 ERROR: Result click failed Timeout 10000ms exceeded.
+=========================== logs ===========================
+waiting for navigation to "https://www.linkedin.com/company/**" until 'domcontentloaded'
+============================================================
+DEBUG: 2025-06-30 05:48:39,213 ERROR: Result click failed Timeout 10000ms exceeded.
+=========================== logs ===========================
+waiting for navigation to "https://www.linkedin.com/company/**" until 'domcontentloaded'
+============================================================
+DEBUG: 2025-06-30 05:48:39,213 ERROR: Result click failed Timeout 10000ms exceeded.
+=========================== logs ===========================
+waiting for navigation to "https://www.linkedin.com/company/**" until 'domcontentloaded'
+============================================================
+DEBUG: 2025-06-30 05:48:39,213 ERROR: Result click failed Timeout 10000ms exceeded.
+=========================== logs ===========================
+waiting for navigation to "https://www.linkedin.com/company/**" until 'domcontentloaded'
+============================================================
+DEBUG: 2025-06-30 05:48:39,213 ERROR: Result click failed Timeout 10000ms exceeded.
+=========================== logs ===========================
+waiting for navigation to "https://www.linkedin.com/company/**" until 'domcontentloaded'
+============================================================
+DEBUG: 2025-06-30 05:48:39,214 ERROR: All company filter methods failed
+DEBUG: 2025-06-30 05:48:39,214 ERROR: All company filter methods failed
+DEBUG: 2025-06-30 05:48:39,214 ERROR: All company filter methods failed
+DEBUG: 2025-06-30 05:48:39,214 ERROR: All company filter methods failed
+DEBUG: 2025-06-30 05:48:39,214 ERROR: All company filter methods failed
+DEBUG: 2025-06-30 05:48:39,214 INFO: Apply filter False success
+DEBUG: 2025-06-30 05:48:39,214 INFO: Apply filter False success
+DEBUG: 2025-06-30 05:48:39,214 INFO: Apply filter False success
+DEBUG: 2025-06-30 05:48:39,214 INFO: Apply filter False success
+DEBUG: 2025-06-30 05:48:39,214 INFO: Apply filter False success
+DEBUG: 2025-06-30 05:48:39,229 INFO: Search and filter success and about page
+DEBUG: 2025-06-30 05:48:39,229 INFO: Search and filter success and about page
+DEBUG: 2025-06-30 05:48:39,229 INFO: Search and filter success and about page
+DEBUG: 2025-06-30 05:48:39,229 INFO: Search and filter success and about page
+DEBUG: 2025-06-30 05:48:39,229 INFO: Search and filter success and about page
+DEBUG: 2025-06-30 05:48:40,276 INFO: {'source_company_name': '', 'source_company_countries': '', 'source_company_phone': '', 'source_company_sector_or_activity': '', 'source_company_business_description': '', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/search/results/all/?keywords=SanLei&origin=GLOBAL_SEARCH_HEADER&sid=Iw6', 'source_company_specialties': '', 'source_founding_date': '', 'source_company_size': '', 'source_company_website': ''}
+DEBUG: 2025-06-30 05:48:40,276 INFO: {'source_company_name': '', 'source_company_countries': '', 'source_company_phone': '', 'source_company_sector_or_activity': '', 'source_company_business_description': '', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/search/results/all/?keywords=SanLei&origin=GLOBAL_SEARCH_HEADER&sid=Iw6', 'source_company_specialties': '', 'source_founding_date': '', 'source_company_size': '', 'source_company_website': ''}
+DEBUG: 2025-06-30 05:48:40,276 INFO: {'source_company_name': '', 'source_company_countries': '', 'source_company_phone': '', 'source_company_sector_or_activity': '', 'source_company_business_description': '', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/search/results/all/?keywords=SanLei&origin=GLOBAL_SEARCH_HEADER&sid=Iw6', 'source_company_specialties': '', 'source_founding_date': '', 'source_company_size': '', 'source_company_website': ''}
+DEBUG: 2025-06-30 05:48:40,276 INFO: {'source_company_name': '', 'source_company_countries': '', 'source_company_phone': '', 'source_company_sector_or_activity': '', 'source_company_business_description': '', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/search/results/all/?keywords=SanLei&origin=GLOBAL_SEARCH_HEADER&sid=Iw6', 'source_company_specialties': '', 'source_founding_date': '', 'source_company_size': '', 'source_company_website': ''}
+DEBUG: 2025-06-30 05:48:40,276 INFO: {'source_company_name': '', 'source_company_countries': '', 'source_company_phone': '', 'source_company_sector_or_activity': '', 'source_company_business_description': '', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/search/results/all/?keywords=SanLei&origin=GLOBAL_SEARCH_HEADER&sid=Iw6', 'source_company_specialties': '', 'source_founding_date': '', 'source_company_size': '', 'source_company_website': ''}
+DEBUG: 2025-06-30 05:48:40,277 INFO: Company data saved to: /Users/user/Desktop/Projects/Crapers/Company-Query-Agent/scraper/results/_about.json
+DEBUG: 2025-06-30 05:48:40,277 INFO: Company data saved to: /Users/user/Desktop/Projects/Crapers/Company-Query-Agent/scraper/results/_about.json
+DEBUG: 2025-06-30 05:48:40,277 INFO: Company data saved to: /Users/user/Desktop/Projects/Crapers/Company-Query-Agent/scraper/results/_about.json
+DEBUG: 2025-06-30 05:48:40,277 INFO: Company data saved to: /Users/user/Desktop/Projects/Crapers/Company-Query-Agent/scraper/results/_about.json
+DEBUG: 2025-06-30 05:48:40,277 INFO: Company data saved to: /Users/user/Desktop/Projects/Crapers/Company-Query-Agent/scraper/results/_about.json
+DEBUG: 2025-06-30 05:48:40,278 INFO: {'source_company_name': '', 'source_company_countries': '', 'source_company_phone': '', 'source_company_sector_or_activity': '', 'source_company_business_description': '', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/search/results/all/?keywords=SanLei&origin=GLOBAL_SEARCH_HEADER&sid=Iw6', 'source_company_specialties': '', 'source_founding_date': '', 'source_company_size': '', 'source_company_website': ''}
+DEBUG: 2025-06-30 05:48:40,278 INFO: {'source_company_name': '', 'source_company_countries': '', 'source_company_phone': '', 'source_company_sector_or_activity': '', 'source_company_business_description': '', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/search/results/all/?keywords=SanLei&origin=GLOBAL_SEARCH_HEADER&sid=Iw6', 'source_company_specialties': '', 'source_founding_date': '', 'source_company_size': '', 'source_company_website': ''}
+DEBUG: 2025-06-30 05:48:40,278 INFO: {'source_company_name': '', 'source_company_countries': '', 'source_company_phone': '', 'source_company_sector_or_activity': '', 'source_company_business_description': '', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/search/results/all/?keywords=SanLei&origin=GLOBAL_SEARCH_HEADER&sid=Iw6', 'source_company_specialties': '', 'source_founding_date': '', 'source_company_size': '', 'source_company_website': ''}
+DEBUG: 2025-06-30 05:48:40,278 INFO: {'source_company_name': '', 'source_company_countries': '', 'source_company_phone': '', 'source_company_sector_or_activity': '', 'source_company_business_description': '', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/search/results/all/?keywords=SanLei&origin=GLOBAL_SEARCH_HEADER&sid=Iw6', 'source_company_specialties': '', 'source_founding_date': '', 'source_company_size': '', 'source_company_website': ''}
+DEBUG: 2025-06-30 05:48:40,278 INFO: {'source_company_name': '', 'source_company_countries': '', 'source_company_phone': '', 'source_company_sector_or_activity': '', 'source_company_business_description': '', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/search/results/all/?keywords=SanLei&origin=GLOBAL_SEARCH_HEADER&sid=Iw6', 'source_company_specialties': '', 'source_founding_date': '', 'source_company_size': '', 'source_company_website': ''}
+DEBUG: 2025-06-30 05:48:40,278 INFO: initialized successfully
+DEBUG: 2025-06-30 05:48:40,278 INFO: initialized successfully
+DEBUG: 2025-06-30 05:48:40,278 INFO: initialized successfully
+DEBUG: 2025-06-30 05:48:40,278 INFO: initialized successfully
+DEBUG: 2025-06-30 05:48:40,278 INFO: initialized successfully
+DEBUG: 2025-06-30 05:48:40,296 INFO: is_visible() confirmed visibility for: div#global-nav-search.global-nav__search
+DEBUG: 2025-06-30 05:48:40,296 INFO: is_visible() confirmed visibility for: div#global-nav-search.global-nav__search
+DEBUG: 2025-06-30 05:48:40,296 INFO: is_visible() confirmed visibility for: div#global-nav-search.global-nav__search
+DEBUG: 2025-06-30 05:48:40,296 INFO: is_visible() confirmed visibility for: div#global-nav-search.global-nav__search
+DEBUG: 2025-06-30 05:48:40,296 INFO: is_visible() confirmed visibility for: div#global-nav-search.global-nav__search
+DEBUG: 2025-06-30 05:48:40,297 INFO: Search box visible
+DEBUG: 2025-06-30 05:48:40,297 INFO: Search box visible
+DEBUG: 2025-06-30 05:48:40,297 INFO: Search box visible
+DEBUG: 2025-06-30 05:48:40,297 INFO: Search box visible
+DEBUG: 2025-06-30 05:48:40,297 INFO: Search box visible
+DEBUG: 2025-06-30 05:48:55,326 ERROR: Basic hover failed: Locator.hover: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("div#global-nav-search.global-nav__search")
+    - locator resolved to <div id="global-nav-search" class="global-nav__search↵            ">…</div>
+  - attempting hover action
+    2 × waiting for element to be visible and stable
+      - element is visible and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div id="ember1164" aria-hidden="false" data-test-modal-container="" class="artdeco-modal-overlay artdeco-modal-overlay--layer-default artdeco-modal-overlay--is-top-layer  ember-view">…</div> from <div id="artdeco-modal-outlet">…</div> subtree intercepts pointer events
+    - retrying hover action
+    - waiting 20ms
+    2 × waiting for element to be visible and stable
+      - element is visible and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div id="ember1164" aria-hidden="false" data-test-modal-container="" class="artdeco-modal-overlay artdeco-modal-overlay--layer-default artdeco-modal-overlay--is-top-layer  ember-view">…</div> from <div id="artdeco-modal-outlet">…</div> subtree intercepts pointer events
+    - retrying hover action
+      - waiting 100ms
+    27 × waiting for element to be visible and stable
+       - element is visible and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <div id="ember1164" aria-hidden="false" data-test-modal-container="" class="artdeco-modal-overlay artdeco-modal-overlay--layer-default artdeco-modal-overlay--is-top-layer  ember-view">…</div> from <div id="artdeco-modal-outlet">…</div> subtree intercepts pointer events
+     - retrying hover action
+       - waiting 500ms
+
+DEBUG: 2025-06-30 05:48:55,326 ERROR: Basic hover failed: Locator.hover: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("div#global-nav-search.global-nav__search")
+    - locator resolved to <div id="global-nav-search" class="global-nav__search↵            ">…</div>
+  - attempting hover action
+    2 × waiting for element to be visible and stable
+      - element is visible and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div id="ember1164" aria-hidden="false" data-test-modal-container="" class="artdeco-modal-overlay artdeco-modal-overlay--layer-default artdeco-modal-overlay--is-top-layer  ember-view">…</div> from <div id="artdeco-modal-outlet">…</div> subtree intercepts pointer events
+    - retrying hover action
+    - waiting 20ms
+    2 × waiting for element to be visible and stable
+      - element is visible and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div id="ember1164" aria-hidden="false" data-test-modal-container="" class="artdeco-modal-overlay artdeco-modal-overlay--layer-default artdeco-modal-overlay--is-top-layer  ember-view">…</div> from <div id="artdeco-modal-outlet">…</div> subtree intercepts pointer events
+    - retrying hover action
+      - waiting 100ms
+    27 × waiting for element to be visible and stable
+       - element is visible and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <div id="ember1164" aria-hidden="false" data-test-modal-container="" class="artdeco-modal-overlay artdeco-modal-overlay--layer-default artdeco-modal-overlay--is-top-layer  ember-view">…</div> from <div id="artdeco-modal-outlet">…</div> subtree intercepts pointer events
+     - retrying hover action
+       - waiting 500ms
+
+DEBUG: 2025-06-30 05:48:55,326 ERROR: Basic hover failed: Locator.hover: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("div#global-nav-search.global-nav__search")
+    - locator resolved to <div id="global-nav-search" class="global-nav__search↵            ">…</div>
+  - attempting hover action
+    2 × waiting for element to be visible and stable
+      - element is visible and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div id="ember1164" aria-hidden="false" data-test-modal-container="" class="artdeco-modal-overlay artdeco-modal-overlay--layer-default artdeco-modal-overlay--is-top-layer  ember-view">…</div> from <div id="artdeco-modal-outlet">…</div> subtree intercepts pointer events
+    - retrying hover action
+    - waiting 20ms
+    2 × waiting for element to be visible and stable
+      - element is visible and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div id="ember1164" aria-hidden="false" data-test-modal-container="" class="artdeco-modal-overlay artdeco-modal-overlay--layer-default artdeco-modal-overlay--is-top-layer  ember-view">…</div> from <div id="artdeco-modal-outlet">…</div> subtree intercepts pointer events
+    - retrying hover action
+      - waiting 100ms
+    27 × waiting for element to be visible and stable
+       - element is visible and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <div id="ember1164" aria-hidden="false" data-test-modal-container="" class="artdeco-modal-overlay artdeco-modal-overlay--layer-default artdeco-modal-overlay--is-top-layer  ember-view">…</div> from <div id="artdeco-modal-outlet">…</div> subtree intercepts pointer events
+     - retrying hover action
+       - waiting 500ms
+
+DEBUG: 2025-06-30 05:48:55,326 ERROR: Basic hover failed: Locator.hover: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("div#global-nav-search.global-nav__search")
+    - locator resolved to <div id="global-nav-search" class="global-nav__search↵            ">…</div>
+  - attempting hover action
+    2 × waiting for element to be visible and stable
+      - element is visible and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div id="ember1164" aria-hidden="false" data-test-modal-container="" class="artdeco-modal-overlay artdeco-modal-overlay--layer-default artdeco-modal-overlay--is-top-layer  ember-view">…</div> from <div id="artdeco-modal-outlet">…</div> subtree intercepts pointer events
+    - retrying hover action
+    - waiting 20ms
+    2 × waiting for element to be visible and stable
+      - element is visible and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div id="ember1164" aria-hidden="false" data-test-modal-container="" class="artdeco-modal-overlay artdeco-modal-overlay--layer-default artdeco-modal-overlay--is-top-layer  ember-view">…</div> from <div id="artdeco-modal-outlet">…</div> subtree intercepts pointer events
+    - retrying hover action
+      - waiting 100ms
+    27 × waiting for element to be visible and stable
+       - element is visible and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <div id="ember1164" aria-hidden="false" data-test-modal-container="" class="artdeco-modal-overlay artdeco-modal-overlay--layer-default artdeco-modal-overlay--is-top-layer  ember-view">…</div> from <div id="artdeco-modal-outlet">…</div> subtree intercepts pointer events
+     - retrying hover action
+       - waiting 500ms
+
+DEBUG: 2025-06-30 05:48:55,326 ERROR: Basic hover failed: Locator.hover: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("div#global-nav-search.global-nav__search")
+    - locator resolved to <div id="global-nav-search" class="global-nav__search↵            ">…</div>
+  - attempting hover action
+    2 × waiting for element to be visible and stable
+      - element is visible and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div id="ember1164" aria-hidden="false" data-test-modal-container="" class="artdeco-modal-overlay artdeco-modal-overlay--layer-default artdeco-modal-overlay--is-top-layer  ember-view">…</div> from <div id="artdeco-modal-outlet">…</div> subtree intercepts pointer events
+    - retrying hover action
+    - waiting 20ms
+    2 × waiting for element to be visible and stable
+      - element is visible and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div id="ember1164" aria-hidden="false" data-test-modal-container="" class="artdeco-modal-overlay artdeco-modal-overlay--layer-default artdeco-modal-overlay--is-top-layer  ember-view">…</div> from <div id="artdeco-modal-outlet">…</div> subtree intercepts pointer events
+    - retrying hover action
+      - waiting 100ms
+    27 × waiting for element to be visible and stable
+       - element is visible and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <div id="ember1164" aria-hidden="false" data-test-modal-container="" class="artdeco-modal-overlay artdeco-modal-overlay--layer-default artdeco-modal-overlay--is-top-layer  ember-view">…</div> from <div id="artdeco-modal-outlet">…</div> subtree intercepts pointer events
+     - retrying hover action
+       - waiting 500ms
+
+DEBUG: 2025-06-30 05:48:55,730 INFO: Precise mouse movement hover succeeded
+DEBUG: 2025-06-30 05:48:55,730 INFO: Precise mouse movement hover succeeded
+DEBUG: 2025-06-30 05:48:55,730 INFO: Precise mouse movement hover succeeded
+DEBUG: 2025-06-30 05:48:55,730 INFO: Precise mouse movement hover succeeded
+DEBUG: 2025-06-30 05:48:55,730 INFO: Precise mouse movement hover succeeded
+DEBUG: 2025-06-30 05:48:55,730 INFO: Hover Search box visible True
+DEBUG: 2025-06-30 05:48:55,730 INFO: Hover Search box visible True
+DEBUG: 2025-06-30 05:48:55,730 INFO: Hover Search box visible True
+DEBUG: 2025-06-30 05:48:55,730 INFO: Hover Search box visible True
+DEBUG: 2025-06-30 05:48:55,730 INFO: Hover Search box visible True
