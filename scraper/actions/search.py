@@ -28,7 +28,7 @@ class search(Base):
     # logger = setup_logger("linkedn", "INFO")
 
     def __init__(self, page, context, name: str, logger):
-        super().__init__(page=page)  # <--- ADD THIS LINE! Pass the 'page' argument up to Base.__init__
+        super().__init__()  # <--- ADD THIS LINE! Pass the 'page' argument up to Base.__init__
         self.page = page
         self.name = name
         self.context = context

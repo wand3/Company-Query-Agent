@@ -1,0 +1,600 @@
+DEBUG: 2025-07-04 13:05:12,036 INFO: Cookies loaded for successfully
+DEBUG: 2025-07-04 13:05:51,905 INFO: Cookies loaded for successfully
+DEBUG: 2025-07-04 13:07:18,697 INFO: Cookies loaded for successfully
+DEBUG: 2025-07-04 13:07:36,160 ERROR: Page.goto: Timeout 15000ms exceeded.
+Call log:
+  - navigating to "https://www.linkedin.com/feed", waiting until "load"
+
+DEBUG: 2025-07-04 13:07:36,195 INFO: initialized successfully
+DEBUG: 2025-07-04 13:07:36,195 INFO: initialized successfully
+DEBUG: 2025-07-04 13:07:36,963 INFO: is_visible() confirmed visibility for: div#global-nav-search.global-nav__search
+DEBUG: 2025-07-04 13:07:36,963 INFO: is_visible() confirmed visibility for: div#global-nav-search.global-nav__search
+DEBUG: 2025-07-04 13:07:36,963 INFO: Search box visible
+DEBUG: 2025-07-04 13:07:36,963 INFO: Search box visible
+DEBUG: 2025-07-04 13:07:40,491 INFO: Basic hover succeeded
+DEBUG: 2025-07-04 13:07:40,491 INFO: Basic hover succeeded
+DEBUG: 2025-07-04 13:07:40,491 INFO: Hover Search box visible True
+DEBUG: 2025-07-04 13:07:40,491 INFO: Hover Search box visible True
+DEBUG: 2025-07-04 13:07:41,066 INFO: Method 1: Basic click succeeded
+DEBUG: 2025-07-04 13:07:41,066 INFO: Method 1: Basic click succeeded
+DEBUG: 2025-07-04 13:07:41,066 INFO: Click Search box True
+DEBUG: 2025-07-04 13:07:41,066 INFO: Click Search box True
+DEBUG: 2025-07-04 13:07:46,815 INFO: Search box filled with company name Sylndr
+DEBUG: 2025-07-04 13:07:46,815 INFO: Search box filled with company name Sylndr
+DEBUG: 2025-07-04 13:07:52,662 INFO: Search success for Sylndr
+DEBUG: 2025-07-04 13:07:52,662 INFO: Search success for Sylndr
+DEBUG: 2025-07-04 13:07:52,663 INFO: Search Sylndr loading
+DEBUG: 2025-07-04 13:07:52,663 INFO: Search Sylndr loading
+DEBUG: 2025-07-04 13:11:31,202 INFO: Cookies loaded for successfully
+DEBUG: 2025-07-04 13:11:50,386 ERROR: Page.goto: Timeout 15000ms exceeded.
+Call log:
+  - navigating to "https://www.linkedin.com/feed", waiting until "load"
+
+DEBUG: 2025-07-04 13:11:50,439 INFO: initialized successfully
+DEBUG: 2025-07-04 13:11:50,439 INFO: initialized successfully
+DEBUG: 2025-07-04 13:12:05,571 ERROR: CSS visibility check failed for div#global-nav-search.global-nav__search: Locator.evaluate: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("div#global-nav-search.global-nav__search")
+
+DEBUG: 2025-07-04 13:12:05,571 ERROR: CSS visibility check failed for div#global-nav-search.global-nav__search: Locator.evaluate: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("div#global-nav-search.global-nav__search")
+
+DEBUG: 2025-07-04 13:12:09,737 INFO: Bounding box confirmed visibility for: div#global-nav-search.global-nav__search
+DEBUG: 2025-07-04 13:12:09,737 INFO: Bounding box confirmed visibility for: div#global-nav-search.global-nav__search
+DEBUG: 2025-07-04 13:12:09,740 INFO: Search box visible
+DEBUG: 2025-07-04 13:12:09,740 INFO: Search box visible
+DEBUG: 2025-07-04 13:12:11,358 INFO: Basic hover succeeded
+DEBUG: 2025-07-04 13:12:11,358 INFO: Basic hover succeeded
+DEBUG: 2025-07-04 13:12:11,360 INFO: Hover Search box visible True
+DEBUG: 2025-07-04 13:12:11,360 INFO: Hover Search box visible True
+DEBUG: 2025-07-04 13:12:12,071 INFO: Method 1: Basic click succeeded
+DEBUG: 2025-07-04 13:12:12,071 INFO: Method 1: Basic click succeeded
+DEBUG: 2025-07-04 13:12:12,071 INFO: Click Search box True
+DEBUG: 2025-07-04 13:12:12,071 INFO: Click Search box True
+DEBUG: 2025-07-04 13:12:17,624 INFO: Search box filled with company name Sylndr
+DEBUG: 2025-07-04 13:12:17,624 INFO: Search box filled with company name Sylndr
+DEBUG: 2025-07-04 13:12:23,970 INFO: Search success for Sylndr
+DEBUG: 2025-07-04 13:12:23,970 INFO: Search success for Sylndr
+DEBUG: 2025-07-04 13:12:23,973 INFO: Search Sylndr loading
+DEBUG: 2025-07-04 13:12:23,973 INFO: Search Sylndr loading
+DEBUG: 2025-07-04 13:12:23,999 INFO: is_visible() confirmed visibility for: section.scaffold-layout-toolbar
+DEBUG: 2025-07-04 13:12:23,999 INFO: is_visible() confirmed visibility for: section.scaffold-layout-toolbar
+DEBUG: 2025-07-04 13:12:39,049 ERROR: CSS visibility check failed for ul[role='list'] li button:has-text('Companies'): Locator.evaluate: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("ul[role='list'] li button:has-text('Companies')")
+
+DEBUG: 2025-07-04 13:12:39,049 ERROR: CSS visibility check failed for ul[role='list'] li button:has-text('Companies'): Locator.evaluate: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("ul[role='list'] li button:has-text('Companies')")
+
+DEBUG: 2025-07-04 13:12:54,082 ERROR: Bounding box check failed for ul[role='list'] li button:has-text('Companies'): Locator.bounding_box: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("ul[role='list'] li button:has-text('Companies')")
+
+DEBUG: 2025-07-04 13:12:54,082 ERROR: Bounding box check failed for ul[role='list'] li button:has-text('Companies'): Locator.bounding_box: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("ul[role='list'] li button:has-text('Companies')")
+
+DEBUG: 2025-07-04 13:12:57,100 ERROR: Wait-based verification failed for ul[role='list'] li button:has-text('Companies'): Page.wait_for_selector: Timeout 3000ms exceeded.
+Call log:
+  - waiting for locator("ul[role='list'] li button:has-text('Companies')") to be visible
+
+DEBUG: 2025-07-04 13:12:57,100 ERROR: Wait-based verification failed for ul[role='list'] li button:has-text('Companies'): Page.wait_for_selector: Timeout 3000ms exceeded.
+Call log:
+  - waiting for locator("ul[role='list'] li button:has-text('Companies')") to be visible
+
+DEBUG: 2025-07-04 13:13:12,110 ERROR: Element handle check failed for ul[role='list'] li button:has-text('Companies'): Locator.element_handle: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("ul[role='list'] li button:has-text('Companies')")
+
+DEBUG: 2025-07-04 13:13:12,110 ERROR: Element handle check failed for ul[role='list'] li button:has-text('Companies'): Locator.element_handle: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("ul[role='list'] li button:has-text('Companies')")
+
+DEBUG: 2025-07-04 13:13:12,112 WARNING: All visibility checks failed for: ul[role='list'] li button:has-text('Companies')
+DEBUG: 2025-07-04 13:13:12,112 WARNING: All visibility checks failed for: ul[role='list'] li button:has-text('Companies')
+DEBUG: 2025-07-04 13:13:12,112 WARNING: Selector not visible: ul[role='list'] li button:has-text('Companies') False
+DEBUG: 2025-07-04 13:13:12,112 WARNING: Selector not visible: ul[role='list'] li button:has-text('Companies') False
+DEBUG: 2025-07-04 13:13:12,130 INFO: is_visible() confirmed visibility for: button.artdeco-pill:has-text('Companies')
+DEBUG: 2025-07-04 13:13:12,130 INFO: is_visible() confirmed visibility for: button.artdeco-pill:has-text('Companies')
+DEBUG: 2025-07-04 13:13:12,131 INFO: Attempting filter with selector: button.artdeco-pill:has-text('Companies')
+DEBUG: 2025-07-04 13:13:12,131 INFO: Attempting filter with selector: button.artdeco-pill:has-text('Companies')
+DEBUG: 2025-07-04 13:13:12,206 INFO: Basic hover succeeded
+DEBUG: 2025-07-04 13:13:12,206 INFO: Basic hover succeeded
+DEBUG: 2025-07-04 13:13:12,208 ERROR: Filter processing failed for button.artdeco-pill:has-text('Companies'): click_with_fallback() missing 1 required positional argument: 'logger'
+DEBUG: 2025-07-04 13:13:12,208 ERROR: Filter processing failed for button.artdeco-pill:has-text('Companies'): click_with_fallback() missing 1 required positional argument: 'logger'
+DEBUG: 2025-07-04 13:13:12,244 INFO: is_visible() confirmed visibility for: button.search-reusables__filter-pill-button:has-text('Companies')
+DEBUG: 2025-07-04 13:13:12,244 INFO: is_visible() confirmed visibility for: button.search-reusables__filter-pill-button:has-text('Companies')
+DEBUG: 2025-07-04 13:13:12,245 INFO: Attempting filter with selector: button.search-reusables__filter-pill-button:has-text('Companies')
+DEBUG: 2025-07-04 13:13:12,245 INFO: Attempting filter with selector: button.search-reusables__filter-pill-button:has-text('Companies')
+DEBUG: 2025-07-04 13:13:12,358 INFO: Basic hover succeeded
+DEBUG: 2025-07-04 13:13:12,358 INFO: Basic hover succeeded
+DEBUG: 2025-07-04 13:13:12,358 ERROR: Filter processing failed for button.search-reusables__filter-pill-button:has-text('Companies'): click_with_fallback() missing 1 required positional argument: 'logger'
+DEBUG: 2025-07-04 13:13:12,358 ERROR: Filter processing failed for button.search-reusables__filter-pill-button:has-text('Companies'): click_with_fallback() missing 1 required positional argument: 'logger'
+DEBUG: 2025-07-04 13:13:12,390 INFO: is_visible() confirmed visibility for: button:has-text('Companies')
+DEBUG: 2025-07-04 13:13:12,390 INFO: is_visible() confirmed visibility for: button:has-text('Companies')
+DEBUG: 2025-07-04 13:13:12,391 INFO: Attempting filter with selector: button:has-text('Companies')
+DEBUG: 2025-07-04 13:13:12,391 INFO: Attempting filter with selector: button:has-text('Companies')
+DEBUG: 2025-07-04 13:13:12,466 INFO: Basic hover succeeded
+DEBUG: 2025-07-04 13:13:12,466 INFO: Basic hover succeeded
+DEBUG: 2025-07-04 13:13:12,467 ERROR: Filter processing failed for button:has-text('Companies'): click_with_fallback() missing 1 required positional argument: 'logger'
+DEBUG: 2025-07-04 13:13:12,467 ERROR: Filter processing failed for button:has-text('Companies'): click_with_fallback() missing 1 required positional argument: 'logger'
+DEBUG: 2025-07-04 13:13:19,446 INFO: Apply filter True success
+DEBUG: 2025-07-04 13:13:19,446 INFO: Apply filter True success
+DEBUG: 2025-07-04 13:13:19,448 INFO: Search filter about page in Sylndr success
+DEBUG: 2025-07-04 13:13:19,448 INFO: Search filter about page in Sylndr success
+DEBUG: 2025-07-04 13:13:19,481 INFO: Verified company page URL pattern
+DEBUG: 2025-07-04 13:13:19,481 INFO: Verified company page URL pattern
+DEBUG: 2025-07-04 13:13:19,845 INFO: is_visible() confirmed visibility for: ul.org-page-navigation__items
+DEBUG: 2025-07-04 13:13:19,845 INFO: is_visible() confirmed visibility for: ul.org-page-navigation__items
+DEBUG: 2025-07-04 13:13:19,845 INFO: Company navigation bar loaded
+DEBUG: 2025-07-04 13:13:19,845 INFO: Company navigation bar loaded
+DEBUG: 2025-07-04 13:13:19,845 INFO: Attempting with selector: ul.org-page-navigation__items >> text='About'
+DEBUG: 2025-07-04 13:13:19,845 INFO: Attempting with selector: ul.org-page-navigation__items >> text='About'
+DEBUG: 2025-07-04 13:13:20,490 INFO: is_visible() confirmed visibility for: ul.org-page-navigation__items >> text='About'
+DEBUG: 2025-07-04 13:13:20,490 INFO: is_visible() confirmed visibility for: ul.org-page-navigation__items >> text='About'
+DEBUG: 2025-07-04 13:13:20,641 INFO: Basic hover succeeded
+DEBUG: 2025-07-04 13:13:20,641 INFO: Basic hover succeeded
+DEBUG: 2025-07-04 13:13:20,942 INFO: Method 1: Basic click succeeded
+DEBUG: 2025-07-04 13:13:20,942 INFO: Method 1: Basic click succeeded
+DEBUG: 2025-07-04 13:13:26,002 ERROR: Timeout 5000ms exceeded.----- ---- ----- About page overview successful
+DEBUG: 2025-07-04 13:13:26,002 ERROR: Timeout 5000ms exceeded.----- ---- ----- About page overview successful
+DEBUG: 2025-07-04 13:13:26,003 INFO: ----- ---- ----- About page overview successful
+DEBUG: 2025-07-04 13:13:26,003 INFO: ----- ---- ----- About page overview successful
+DEBUG: 2025-07-04 13:13:26,004 INFO: ----- ---- ----- Scrape successful
+DEBUG: 2025-07-04 13:13:26,004 INFO: ----- ---- ----- Scrape successful
+DEBUG: 2025-07-04 13:13:26,004 INFO: Company about page True
+DEBUG: 2025-07-04 13:13:26,004 INFO: Company about page True
+DEBUG: 2025-07-04 13:13:26,005 INFO: About page loaded success
+DEBUG: 2025-07-04 13:13:26,005 INFO: About page loaded success
+DEBUG: 2025-07-04 13:13:26,005 INFO: Now on About page - scraping company data
+DEBUG: 2025-07-04 13:13:26,005 INFO: Now on About page - scraping company data
+DEBUG: 2025-07-04 13:13:26,558 INFO: Extracting company Name Successful
+DEBUG: 2025-07-04 13:13:26,558 INFO: Extracting company Name Successful
+DEBUG: 2025-07-04 13:13:26,568 INFO: {'source_company_name': 'Sylndr', 'source_company_countries': '', 'source_company_phone': '', 'source_company_sector_or_activity': '', 'source_company_business_description': '', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/company/sylndr/', 'source_company_specialties': '', 'source_founding_date': '', 'source_company_size': '', 'source_company_website': ''}
+DEBUG: 2025-07-04 13:13:26,568 INFO: {'source_company_name': 'Sylndr', 'source_company_countries': '', 'source_company_phone': '', 'source_company_sector_or_activity': '', 'source_company_business_description': '', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/company/sylndr/', 'source_company_specialties': '', 'source_founding_date': '', 'source_company_size': '', 'source_company_website': ''}
+DEBUG: 2025-07-04 13:13:26,571 INFO: Company data saved to: /Users/user/Desktop/Projects/Crapers/Company-Query-Agent/scraper/results/Sylndr_about.json
+DEBUG: 2025-07-04 13:13:26,571 INFO: Company data saved to: /Users/user/Desktop/Projects/Crapers/Company-Query-Agent/scraper/results/Sylndr_about.json
+DEBUG: 2025-07-04 13:13:26,571 INFO: {'source_company_name': 'Sylndr', 'source_company_countries': '', 'source_company_phone': '', 'source_company_sector_or_activity': '', 'source_company_business_description': '', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/company/sylndr/', 'source_company_specialties': '', 'source_founding_date': '', 'source_company_size': '', 'source_company_website': ''}
+DEBUG: 2025-07-04 13:13:26,571 INFO: {'source_company_name': 'Sylndr', 'source_company_countries': '', 'source_company_phone': '', 'source_company_sector_or_activity': '', 'source_company_business_description': '', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/company/sylndr/', 'source_company_specialties': '', 'source_founding_date': '', 'source_company_size': '', 'source_company_website': ''}
+DEBUG: 2025-07-04 13:13:26,571 INFO: initialized successfully
+DEBUG: 2025-07-04 13:13:26,571 INFO: initialized successfully
+DEBUG: 2025-07-04 13:13:26,589 INFO: is_visible() confirmed visibility for: div#global-nav-search.global-nav__search
+DEBUG: 2025-07-04 13:13:26,589 INFO: is_visible() confirmed visibility for: div#global-nav-search.global-nav__search
+DEBUG: 2025-07-04 13:13:26,589 INFO: Search box visible
+DEBUG: 2025-07-04 13:13:26,589 INFO: Search box visible
+DEBUG: 2025-07-04 13:13:26,682 INFO: Basic hover succeeded
+DEBUG: 2025-07-04 13:13:26,682 INFO: Basic hover succeeded
+DEBUG: 2025-07-04 13:13:26,682 INFO: Hover Search box visible True
+DEBUG: 2025-07-04 13:13:26,682 INFO: Hover Search box visible True
+DEBUG: 2025-07-04 13:13:27,234 INFO: Method 1: Basic click succeeded
+DEBUG: 2025-07-04 13:13:27,234 INFO: Method 1: Basic click succeeded
+DEBUG: 2025-07-04 13:13:27,234 INFO: Click Search box True
+DEBUG: 2025-07-04 13:13:27,234 INFO: Click Search box True
+DEBUG: 2025-07-04 13:13:32,286 INFO: Search box filled with company name Lapaire Glasses
+DEBUG: 2025-07-04 13:13:32,286 INFO: Search box filled with company name Lapaire Glasses
+DEBUG: 2025-07-04 13:13:38,572 INFO: Search success for Lapaire Glasses
+DEBUG: 2025-07-04 13:13:38,572 INFO: Search success for Lapaire Glasses
+DEBUG: 2025-07-04 13:13:38,573 INFO: Search Lapaire Glasses loading
+DEBUG: 2025-07-04 13:13:38,573 INFO: Search Lapaire Glasses loading
+DEBUG: 2025-07-04 13:13:53,603 ERROR: CSS visibility check failed for section.scaffold-layout-toolbar: Locator.evaluate: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("section.scaffold-layout-toolbar")
+
+DEBUG: 2025-07-04 13:13:53,603 ERROR: CSS visibility check failed for section.scaffold-layout-toolbar: Locator.evaluate: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("section.scaffold-layout-toolbar")
+
+DEBUG: 2025-07-04 13:14:08,640 ERROR: Bounding box check failed for section.scaffold-layout-toolbar: Locator.bounding_box: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("section.scaffold-layout-toolbar")
+
+DEBUG: 2025-07-04 13:14:08,640 ERROR: Bounding box check failed for section.scaffold-layout-toolbar: Locator.bounding_box: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("section.scaffold-layout-toolbar")
+
+DEBUG: 2025-07-04 13:14:11,652 ERROR: Wait-based verification failed for section.scaffold-layout-toolbar: Page.wait_for_selector: Timeout 3000ms exceeded.
+Call log:
+  - waiting for locator("section.scaffold-layout-toolbar") to be visible
+
+DEBUG: 2025-07-04 13:14:11,652 ERROR: Wait-based verification failed for section.scaffold-layout-toolbar: Page.wait_for_selector: Timeout 3000ms exceeded.
+Call log:
+  - waiting for locator("section.scaffold-layout-toolbar") to be visible
+
+DEBUG: 2025-07-04 13:14:26,713 ERROR: Element handle check failed for section.scaffold-layout-toolbar: Locator.element_handle: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("section.scaffold-layout-toolbar")
+
+DEBUG: 2025-07-04 13:14:26,713 ERROR: Element handle check failed for section.scaffold-layout-toolbar: Locator.element_handle: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("section.scaffold-layout-toolbar")
+
+DEBUG: 2025-07-04 13:14:26,717 WARNING: All visibility checks failed for: section.scaffold-layout-toolbar
+DEBUG: 2025-07-04 13:14:26,717 WARNING: All visibility checks failed for: section.scaffold-layout-toolbar
+DEBUG: 2025-07-04 13:14:26,720 INFO: Apply filter None success
+DEBUG: 2025-07-04 13:14:26,720 INFO: Apply filter None success
+DEBUG: 2025-07-04 13:14:26,778 INFO: Search and filter success and about page
+DEBUG: 2025-07-04 13:14:26,778 INFO: Search and filter success and about page
+DEBUG: 2025-07-04 13:14:27,542 INFO: Extracting company Name Successful
+DEBUG: 2025-07-04 13:14:27,542 INFO: Extracting company Name Successful
+DEBUG: 2025-07-04 13:14:27,548 INFO: {'source_company_name': 'Sylndr', 'source_company_countries': '', 'source_company_phone': '', 'source_company_sector_or_activity': '', 'source_company_business_description': 'Sylndr is automotive focused e-commerce marketplace bringing innovation to the used-cars market, where customers can reliably and transparently sell and buy used cars. The company is aiming to build trust in the used-car market by becoming the go-to place for customers seeking to sell and buy their cars, through an', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/company/sylndr/about/', 'source_company_specialties': '', 'source_founding_date': '', 'source_company_size': '', 'source_company_website': 'https://www.sylndr.com'}
+DEBUG: 2025-07-04 13:14:27,548 INFO: {'source_company_name': 'Sylndr', 'source_company_countries': '', 'source_company_phone': '', 'source_company_sector_or_activity': '', 'source_company_business_description': 'Sylndr is automotive focused e-commerce marketplace bringing innovation to the used-cars market, where customers can reliably and transparently sell and buy used cars. The company is aiming to build trust in the used-car market by becoming the go-to place for customers seeking to sell and buy their cars, through an', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/company/sylndr/about/', 'source_company_specialties': '', 'source_founding_date': '', 'source_company_size': '', 'source_company_website': 'https://www.sylndr.com'}
+DEBUG: 2025-07-04 13:14:27,548 INFO: {'source_company_name': 'Sylndr', 'source_company_countries': '', 'source_company_phone': '17188Phone number is 17188', 'source_company_sector_or_activity': '', 'source_company_business_description': 'Sylndr is automotive focused e-commerce marketplace bringing innovation to the used-cars market, where customers can reliably and transparently sell and buy used cars. The company is aiming to build trust in the used-car market by becoming the go-to place for customers seeking to sell and buy their cars, through an', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/company/sylndr/about/', 'source_company_specialties': '', 'source_founding_date': '', 'source_company_size': '', 'source_company_website': 'https://www.sylndr.com'}
+DEBUG: 2025-07-04 13:14:27,548 INFO: {'source_company_name': 'Sylndr', 'source_company_countries': '', 'source_company_phone': '17188Phone number is 17188', 'source_company_sector_or_activity': '', 'source_company_business_description': 'Sylndr is automotive focused e-commerce marketplace bringing innovation to the used-cars market, where customers can reliably and transparently sell and buy used cars. The company is aiming to build trust in the used-car market by becoming the go-to place for customers seeking to sell and buy their cars, through an', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/company/sylndr/about/', 'source_company_specialties': '', 'source_founding_date': '', 'source_company_size': '', 'source_company_website': 'https://www.sylndr.com'}
+DEBUG: 2025-07-04 13:14:27,549 INFO: {'source_company_name': 'Sylndr', 'source_company_countries': '', 'source_company_phone': '17188Phone number is 17188', 'source_company_sector_or_activity': '', 'source_company_business_description': 'Sylndr is automotive focused e-commerce marketplace bringing innovation to the used-cars market, where customers can reliably and transparently sell and buy used cars. The company is aiming to build trust in the used-car market by becoming the go-to place for customers seeking to sell and buy their cars, through an', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/company/sylndr/about/', 'source_company_specialties': '', 'source_founding_date': '', 'source_company_size': '', 'source_company_website': 'https://www.sylndr.com'}
+DEBUG: 2025-07-04 13:14:27,549 INFO: {'source_company_name': 'Sylndr', 'source_company_countries': '', 'source_company_phone': '17188Phone number is 17188', 'source_company_sector_or_activity': '', 'source_company_business_description': 'Sylndr is automotive focused e-commerce marketplace bringing innovation to the used-cars market, where customers can reliably and transparently sell and buy used cars. The company is aiming to build trust in the used-car market by becoming the go-to place for customers seeking to sell and buy their cars, through an', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/company/sylndr/about/', 'source_company_specialties': '', 'source_founding_date': '', 'source_company_size': '', 'source_company_website': 'https://www.sylndr.com'}
+DEBUG: 2025-07-04 13:14:27,549 INFO: {'source_company_name': 'Sylndr', 'source_company_countries': '', 'source_company_phone': '17188Phone number is 17188', 'source_company_sector_or_activity': 'Retail Motor Vehicles', 'source_company_business_description': 'Sylndr is automotive focused e-commerce marketplace bringing innovation to the used-cars market, where customers can reliably and transparently sell and buy used cars. The company is aiming to build trust in the used-car market by becoming the go-to place for customers seeking to sell and buy their cars, through an', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/company/sylndr/about/', 'source_company_specialties': '', 'source_founding_date': '', 'source_company_size': '', 'source_company_website': 'https://www.sylndr.com'}
+DEBUG: 2025-07-04 13:14:27,549 INFO: {'source_company_name': 'Sylndr', 'source_company_countries': '', 'source_company_phone': '17188Phone number is 17188', 'source_company_sector_or_activity': 'Retail Motor Vehicles', 'source_company_business_description': 'Sylndr is automotive focused e-commerce marketplace bringing innovation to the used-cars market, where customers can reliably and transparently sell and buy used cars. The company is aiming to build trust in the used-car market by becoming the go-to place for customers seeking to sell and buy their cars, through an', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/company/sylndr/about/', 'source_company_specialties': '', 'source_founding_date': '', 'source_company_size': '', 'source_company_website': 'https://www.sylndr.com'}
+DEBUG: 2025-07-04 13:14:27,549 INFO: {'source_company_name': 'Sylndr', 'source_company_countries': '', 'source_company_phone': '17188Phone number is 17188', 'source_company_sector_or_activity': 'Retail Motor Vehicles', 'source_company_business_description': 'Sylndr is automotive focused e-commerce marketplace bringing innovation to the used-cars market, where customers can reliably and transparently sell and buy used cars. The company is aiming to build trust in the used-car market by becoming the go-to place for customers seeking to sell and buy their cars, through an', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/company/sylndr/about/', 'source_company_specialties': '', 'source_founding_date': '', 'source_company_size': '51-200 employees', 'source_company_website': 'https://www.sylndr.com'}
+DEBUG: 2025-07-04 13:14:27,549 INFO: {'source_company_name': 'Sylndr', 'source_company_countries': '', 'source_company_phone': '17188Phone number is 17188', 'source_company_sector_or_activity': 'Retail Motor Vehicles', 'source_company_business_description': 'Sylndr is automotive focused e-commerce marketplace bringing innovation to the used-cars market, where customers can reliably and transparently sell and buy used cars. The company is aiming to build trust in the used-car market by becoming the go-to place for customers seeking to sell and buy their cars, through an', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/company/sylndr/about/', 'source_company_specialties': '', 'source_founding_date': '', 'source_company_size': '51-200 employees', 'source_company_website': 'https://www.sylndr.com'}
+DEBUG: 2025-07-04 13:14:27,549 INFO: {'source_company_name': 'Sylndr', 'source_company_countries': '', 'source_company_phone': '17188Phone number is 17188', 'source_company_sector_or_activity': 'Retail Motor Vehicles', 'source_company_business_description': 'Sylndr is automotive focused e-commerce marketplace bringing innovation to the used-cars market, where customers can reliably and transparently sell and buy used cars. The company is aiming to build trust in the used-car market by becoming the go-to place for customers seeking to sell and buy their cars, through an', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/company/sylndr/about/', 'source_company_specialties': '', 'source_founding_date': '2022', 'source_company_size': '51-200 employees', 'source_company_website': 'https://www.sylndr.com'}
+DEBUG: 2025-07-04 13:14:27,549 INFO: {'source_company_name': 'Sylndr', 'source_company_countries': '', 'source_company_phone': '17188Phone number is 17188', 'source_company_sector_or_activity': 'Retail Motor Vehicles', 'source_company_business_description': 'Sylndr is automotive focused e-commerce marketplace bringing innovation to the used-cars market, where customers can reliably and transparently sell and buy used cars. The company is aiming to build trust in the used-car market by becoming the go-to place for customers seeking to sell and buy their cars, through an', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/company/sylndr/about/', 'source_company_specialties': '', 'source_founding_date': '2022', 'source_company_size': '51-200 employees', 'source_company_website': 'https://www.sylndr.com'}
+DEBUG: 2025-07-04 13:14:27,553 INFO: {'source_company_name': 'Sylndr', 'source_company_countries': 'EG', 'source_company_phone': '17188Phone number is 17188', 'source_company_sector_or_activity': 'Retail Motor Vehicles', 'source_company_business_description': 'Sylndr is automotive focused e-commerce marketplace bringing innovation to the used-cars market, where customers can reliably and transparently sell and buy used cars. The company is aiming to build trust in the used-car market by becoming the go-to place for customers seeking to sell and buy their cars, through an', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/company/sylndr/about/', 'source_company_specialties': '', 'source_founding_date': '2022', 'source_company_size': '51-200 employees', 'source_company_website': 'https://www.sylndr.com'}
+DEBUG: 2025-07-04 13:14:27,553 INFO: {'source_company_name': 'Sylndr', 'source_company_countries': 'EG', 'source_company_phone': '17188Phone number is 17188', 'source_company_sector_or_activity': 'Retail Motor Vehicles', 'source_company_business_description': 'Sylndr is automotive focused e-commerce marketplace bringing innovation to the used-cars market, where customers can reliably and transparently sell and buy used cars. The company is aiming to build trust in the used-car market by becoming the go-to place for customers seeking to sell and buy their cars, through an', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/company/sylndr/about/', 'source_company_specialties': '', 'source_founding_date': '2022', 'source_company_size': '51-200 employees', 'source_company_website': 'https://www.sylndr.com'}
+DEBUG: 2025-07-04 13:14:27,560 INFO: Company data saved to: /Users/user/Desktop/Projects/Crapers/Company-Query-Agent/scraper/results/Sylndr_about.json
+DEBUG: 2025-07-04 13:14:27,560 INFO: Company data saved to: /Users/user/Desktop/Projects/Crapers/Company-Query-Agent/scraper/results/Sylndr_about.json
+DEBUG: 2025-07-04 13:14:27,560 INFO: {'source_company_name': 'Sylndr', 'source_company_countries': 'EG', 'source_company_phone': '17188Phone number is 17188', 'source_company_sector_or_activity': 'Retail Motor Vehicles', 'source_company_business_description': 'Sylndr is automotive focused e-commerce marketplace bringing innovation to the used-cars market, where customers can reliably and transparently sell and buy used cars. The company is aiming to build trust in the used-car market by becoming the go-to place for customers seeking to sell and buy their cars, through an', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/company/sylndr/about/', 'source_company_specialties': '', 'source_founding_date': '2022', 'source_company_size': '51-200 employees', 'source_company_website': 'https://www.sylndr.com'}
+DEBUG: 2025-07-04 13:14:27,560 INFO: {'source_company_name': 'Sylndr', 'source_company_countries': 'EG', 'source_company_phone': '17188Phone number is 17188', 'source_company_sector_or_activity': 'Retail Motor Vehicles', 'source_company_business_description': 'Sylndr is automotive focused e-commerce marketplace bringing innovation to the used-cars market, where customers can reliably and transparently sell and buy used cars. The company is aiming to build trust in the used-car market by becoming the go-to place for customers seeking to sell and buy their cars, through an', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/company/sylndr/about/', 'source_company_specialties': '', 'source_founding_date': '2022', 'source_company_size': '51-200 employees', 'source_company_website': 'https://www.sylndr.com'}
+DEBUG: 2025-07-04 13:14:27,561 INFO: initialized successfully
+DEBUG: 2025-07-04 13:14:27,561 INFO: initialized successfully
+DEBUG: 2025-07-04 13:14:27,594 INFO: is_visible() confirmed visibility for: div#global-nav-search.global-nav__search
+DEBUG: 2025-07-04 13:14:27,594 INFO: is_visible() confirmed visibility for: div#global-nav-search.global-nav__search
+DEBUG: 2025-07-04 13:14:27,594 INFO: Search box visible
+DEBUG: 2025-07-04 13:14:27,594 INFO: Search box visible
+DEBUG: 2025-07-04 13:14:27,831 INFO: Basic hover succeeded
+DEBUG: 2025-07-04 13:14:27,831 INFO: Basic hover succeeded
+DEBUG: 2025-07-04 13:14:27,831 INFO: Hover Search box visible True
+DEBUG: 2025-07-04 13:14:27,831 INFO: Hover Search box visible True
+DEBUG: 2025-07-04 13:14:28,895 INFO: Method 1: Basic click succeeded
+DEBUG: 2025-07-04 13:14:28,895 INFO: Method 1: Basic click succeeded
+DEBUG: 2025-07-04 13:14:28,896 INFO: Click Search box True
+DEBUG: 2025-07-04 13:14:28,896 INFO: Click Search box True
+DEBUG: 2025-07-04 13:14:34,449 INFO: Search box filled with company name Merec Industries
+DEBUG: 2025-07-04 13:14:34,449 INFO: Search box filled with company name Merec Industries
+DEBUG: 2025-07-04 13:14:40,800 INFO: Search success for Merec Industries
+DEBUG: 2025-07-04 13:14:40,800 INFO: Search success for Merec Industries
+DEBUG: 2025-07-04 13:14:40,802 INFO: Search Merec Industries loading
+DEBUG: 2025-07-04 13:14:40,802 INFO: Search Merec Industries loading
+DEBUG: 2025-07-04 13:14:40,936 INFO: is_visible() confirmed visibility for: section.scaffold-layout-toolbar
+DEBUG: 2025-07-04 13:14:40,936 INFO: is_visible() confirmed visibility for: section.scaffold-layout-toolbar
+DEBUG: 2025-07-04 13:14:56,430 ERROR: CSS visibility check failed for ul[role='list'] li button:has-text('Companies'): Locator.evaluate: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("ul[role='list'] li button:has-text('Companies')")
+
+DEBUG: 2025-07-04 13:14:56,430 ERROR: CSS visibility check failed for ul[role='list'] li button:has-text('Companies'): Locator.evaluate: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("ul[role='list'] li button:has-text('Companies')")
+
+DEBUG: 2025-07-04 13:15:11,477 ERROR: Bounding box check failed for ul[role='list'] li button:has-text('Companies'): Locator.bounding_box: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("ul[role='list'] li button:has-text('Companies')")
+
+DEBUG: 2025-07-04 13:15:11,477 ERROR: Bounding box check failed for ul[role='list'] li button:has-text('Companies'): Locator.bounding_box: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("ul[role='list'] li button:has-text('Companies')")
+
+DEBUG: 2025-07-04 13:15:14,506 ERROR: Wait-based verification failed for ul[role='list'] li button:has-text('Companies'): Page.wait_for_selector: Timeout 3000ms exceeded.
+Call log:
+  - waiting for locator("ul[role='list'] li button:has-text('Companies')") to be visible
+
+DEBUG: 2025-07-04 13:15:14,506 ERROR: Wait-based verification failed for ul[role='list'] li button:has-text('Companies'): Page.wait_for_selector: Timeout 3000ms exceeded.
+Call log:
+  - waiting for locator("ul[role='list'] li button:has-text('Companies')") to be visible
+
+DEBUG: 2025-07-04 13:15:29,519 ERROR: Element handle check failed for ul[role='list'] li button:has-text('Companies'): Locator.element_handle: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("ul[role='list'] li button:has-text('Companies')")
+
+DEBUG: 2025-07-04 13:15:29,519 ERROR: Element handle check failed for ul[role='list'] li button:has-text('Companies'): Locator.element_handle: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("ul[role='list'] li button:has-text('Companies')")
+
+DEBUG: 2025-07-04 13:15:29,520 WARNING: All visibility checks failed for: ul[role='list'] li button:has-text('Companies')
+DEBUG: 2025-07-04 13:15:29,520 WARNING: All visibility checks failed for: ul[role='list'] li button:has-text('Companies')
+DEBUG: 2025-07-04 13:15:29,523 WARNING: Selector not visible: ul[role='list'] li button:has-text('Companies') False
+DEBUG: 2025-07-04 13:15:29,523 WARNING: Selector not visible: ul[role='list'] li button:has-text('Companies') False
+DEBUG: 2025-07-04 13:15:29,596 INFO: is_visible() confirmed visibility for: button.artdeco-pill:has-text('Companies')
+DEBUG: 2025-07-04 13:15:29,596 INFO: is_visible() confirmed visibility for: button.artdeco-pill:has-text('Companies')
+DEBUG: 2025-07-04 13:15:29,596 INFO: Attempting filter with selector: button.artdeco-pill:has-text('Companies')
+DEBUG: 2025-07-04 13:15:29,596 INFO: Attempting filter with selector: button.artdeco-pill:has-text('Companies')
+DEBUG: 2025-07-04 13:15:29,801 INFO: Basic hover succeeded
+DEBUG: 2025-07-04 13:15:29,801 INFO: Basic hover succeeded
+DEBUG: 2025-07-04 13:15:29,805 ERROR: Filter processing failed for button.artdeco-pill:has-text('Companies'): click_with_fallback() missing 1 required positional argument: 'logger'
+DEBUG: 2025-07-04 13:15:29,805 ERROR: Filter processing failed for button.artdeco-pill:has-text('Companies'): click_with_fallback() missing 1 required positional argument: 'logger'
+DEBUG: 2025-07-04 13:15:29,824 INFO: is_visible() confirmed visibility for: button.search-reusables__filter-pill-button:has-text('Companies')
+DEBUG: 2025-07-04 13:15:29,824 INFO: is_visible() confirmed visibility for: button.search-reusables__filter-pill-button:has-text('Companies')
+DEBUG: 2025-07-04 13:15:29,825 INFO: Attempting filter with selector: button.search-reusables__filter-pill-button:has-text('Companies')
+DEBUG: 2025-07-04 13:15:29,825 INFO: Attempting filter with selector: button.search-reusables__filter-pill-button:has-text('Companies')
+DEBUG: 2025-07-04 13:15:30,036 INFO: Basic hover succeeded
+DEBUG: 2025-07-04 13:15:30,036 INFO: Basic hover succeeded
+DEBUG: 2025-07-04 13:15:30,036 ERROR: Filter processing failed for button.search-reusables__filter-pill-button:has-text('Companies'): click_with_fallback() missing 1 required positional argument: 'logger'
+DEBUG: 2025-07-04 13:15:30,036 ERROR: Filter processing failed for button.search-reusables__filter-pill-button:has-text('Companies'): click_with_fallback() missing 1 required positional argument: 'logger'
+DEBUG: 2025-07-04 13:15:30,101 INFO: is_visible() confirmed visibility for: button:has-text('Companies')
+DEBUG: 2025-07-04 13:15:30,101 INFO: is_visible() confirmed visibility for: button:has-text('Companies')
+DEBUG: 2025-07-04 13:15:30,101 INFO: Attempting filter with selector: button:has-text('Companies')
+DEBUG: 2025-07-04 13:15:30,101 INFO: Attempting filter with selector: button:has-text('Companies')
+DEBUG: 2025-07-04 13:15:30,425 INFO: Basic hover succeeded
+DEBUG: 2025-07-04 13:15:30,425 INFO: Basic hover succeeded
+DEBUG: 2025-07-04 13:15:30,425 ERROR: Filter processing failed for button:has-text('Companies'): click_with_fallback() missing 1 required positional argument: 'logger'
+DEBUG: 2025-07-04 13:15:30,425 ERROR: Filter processing failed for button:has-text('Companies'): click_with_fallback() missing 1 required positional argument: 'logger'
+DEBUG: 2025-07-04 13:15:32,411 INFO: Apply filter True success
+DEBUG: 2025-07-04 13:15:32,411 INFO: Apply filter True success
+DEBUG: 2025-07-04 13:15:32,411 INFO: Search filter about page in Merec Industries success
+DEBUG: 2025-07-04 13:15:32,411 INFO: Search filter about page in Merec Industries success
+DEBUG: 2025-07-04 13:15:32,446 INFO: Verified company page URL pattern
+DEBUG: 2025-07-04 13:15:32,446 INFO: Verified company page URL pattern
+DEBUG: 2025-07-04 13:15:32,872 INFO: is_visible() confirmed visibility for: ul.org-page-navigation__items
+DEBUG: 2025-07-04 13:15:32,872 INFO: is_visible() confirmed visibility for: ul.org-page-navigation__items
+DEBUG: 2025-07-04 13:15:32,873 INFO: Company navigation bar loaded
+DEBUG: 2025-07-04 13:15:32,873 INFO: Company navigation bar loaded
+DEBUG: 2025-07-04 13:15:32,873 INFO: Attempting with selector: ul.org-page-navigation__items >> text='About'
+DEBUG: 2025-07-04 13:15:32,873 INFO: Attempting with selector: ul.org-page-navigation__items >> text='About'
+DEBUG: 2025-07-04 13:15:33,596 INFO: is_visible() confirmed visibility for: ul.org-page-navigation__items >> text='About'
+DEBUG: 2025-07-04 13:15:33,596 INFO: is_visible() confirmed visibility for: ul.org-page-navigation__items >> text='About'
+DEBUG: 2025-07-04 13:15:34,717 INFO: Basic hover succeeded
+DEBUG: 2025-07-04 13:15:34,717 INFO: Basic hover succeeded
+DEBUG: 2025-07-04 13:15:35,115 INFO: Method 1: Basic click succeeded
+DEBUG: 2025-07-04 13:15:35,115 INFO: Method 1: Basic click succeeded
+DEBUG: 2025-07-04 13:15:40,187 ERROR: Timeout 5000ms exceeded.----- ---- ----- About page overview successful
+DEBUG: 2025-07-04 13:15:40,187 ERROR: Timeout 5000ms exceeded.----- ---- ----- About page overview successful
+DEBUG: 2025-07-04 13:15:40,189 INFO: ----- ---- ----- About page overview successful
+DEBUG: 2025-07-04 13:15:40,189 INFO: ----- ---- ----- About page overview successful
+DEBUG: 2025-07-04 13:15:40,189 INFO: ----- ---- ----- Scrape successful
+DEBUG: 2025-07-04 13:15:40,189 INFO: ----- ---- ----- Scrape successful
+DEBUG: 2025-07-04 13:15:40,189 INFO: Company about page True
+DEBUG: 2025-07-04 13:15:40,189 INFO: Company about page True
+DEBUG: 2025-07-04 13:15:40,189 INFO: About page loaded success
+DEBUG: 2025-07-04 13:15:40,189 INFO: About page loaded success
+DEBUG: 2025-07-04 13:15:40,189 INFO: Now on About page - scraping company data
+DEBUG: 2025-07-04 13:15:40,189 INFO: Now on About page - scraping company data
+DEBUG: 2025-07-04 13:15:40,568 INFO: Extracting company Name Successful
+DEBUG: 2025-07-04 13:15:40,568 INFO: Extracting company Name Successful
+DEBUG: 2025-07-04 13:15:40,571 INFO: {'source_company_name': 'Merec Industries, SA', 'source_company_countries': '', 'source_company_phone': '', 'source_company_sector_or_activity': '', 'source_company_business_description': 'Merec Industries, SA was founded in 1998, and is actually a national reference in Maize and wheat flours, pastas, biscuits and animal feeds. We have 4 manufacture units, 2 in Matola, 1 in Beira and other in Nacala. Our products have high quality and can be found in all Mozambican', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/company/merec-industries-sa/about/', 'source_company_specialties': '', 'source_founding_date': '', 'source_company_size': '', 'source_company_website': 'http://www.merecindustries.com'}
+DEBUG: 2025-07-04 13:15:40,571 INFO: {'source_company_name': 'Merec Industries, SA', 'source_company_countries': '', 'source_company_phone': '', 'source_company_sector_or_activity': '', 'source_company_business_description': 'Merec Industries, SA was founded in 1998, and is actually a national reference in Maize and wheat flours, pastas, biscuits and animal feeds. We have 4 manufacture units, 2 in Matola, 1 in Beira and other in Nacala. Our products have high quality and can be found in all Mozambican', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/company/merec-industries-sa/about/', 'source_company_specialties': '', 'source_founding_date': '', 'source_company_size': '', 'source_company_website': 'http://www.merecindustries.com'}
+DEBUG: 2025-07-04 13:15:40,573 INFO: {'source_company_name': 'Merec Industries, SA', 'source_company_countries': '', 'source_company_phone': '+258 21750103Phone number is +258 21750103', 'source_company_sector_or_activity': '', 'source_company_business_description': 'Merec Industries, SA was founded in 1998, and is actually a national reference in Maize and wheat flours, pastas, biscuits and animal feeds. We have 4 manufacture units, 2 in Matola, 1 in Beira and other in Nacala. Our products have high quality and can be found in all Mozambican', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/company/merec-industries-sa/about/', 'source_company_specialties': '', 'source_founding_date': '', 'source_company_size': '', 'source_company_website': 'http://www.merecindustries.com'}
+DEBUG: 2025-07-04 13:15:40,573 INFO: {'source_company_name': 'Merec Industries, SA', 'source_company_countries': '', 'source_company_phone': '+258 21750103Phone number is +258 21750103', 'source_company_sector_or_activity': '', 'source_company_business_description': 'Merec Industries, SA was founded in 1998, and is actually a national reference in Maize and wheat flours, pastas, biscuits and animal feeds. We have 4 manufacture units, 2 in Matola, 1 in Beira and other in Nacala. Our products have high quality and can be found in all Mozambican', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/company/merec-industries-sa/about/', 'source_company_specialties': '', 'source_founding_date': '', 'source_company_size': '', 'source_company_website': 'http://www.merecindustries.com'}
+DEBUG: 2025-07-04 13:15:40,574 INFO: {'source_company_name': 'Merec Industries, SA', 'source_company_countries': '', 'source_company_phone': '+258 21750103Phone number is +258 21750103', 'source_company_sector_or_activity': '', 'source_company_business_description': 'Merec Industries, SA was founded in 1998, and is actually a national reference in Maize and wheat flours, pastas, biscuits and animal feeds. We have 4 manufacture units, 2 in Matola, 1 in Beira and other in Nacala. Our products have high quality and can be found in all Mozambican', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/company/merec-industries-sa/about/', 'source_company_specialties': '', 'source_founding_date': '', 'source_company_size': '', 'source_company_website': 'http://www.merecindustries.com'}
+DEBUG: 2025-07-04 13:15:40,574 INFO: {'source_company_name': 'Merec Industries, SA', 'source_company_countries': '', 'source_company_phone': '+258 21750103Phone number is +258 21750103', 'source_company_sector_or_activity': '', 'source_company_business_description': 'Merec Industries, SA was founded in 1998, and is actually a national reference in Maize and wheat flours, pastas, biscuits and animal feeds. We have 4 manufacture units, 2 in Matola, 1 in Beira and other in Nacala. Our products have high quality and can be found in all Mozambican', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/company/merec-industries-sa/about/', 'source_company_specialties': '', 'source_founding_date': '', 'source_company_size': '', 'source_company_website': 'http://www.merecindustries.com'}
+DEBUG: 2025-07-04 13:15:40,574 INFO: {'source_company_name': 'Merec Industries, SA', 'source_company_countries': '', 'source_company_phone': '+258 21750103Phone number is +258 21750103', 'source_company_sector_or_activity': 'Food and Beverage Manufacturing', 'source_company_business_description': 'Merec Industries, SA was founded in 1998, and is actually a national reference in Maize and wheat flours, pastas, biscuits and animal feeds. We have 4 manufacture units, 2 in Matola, 1 in Beira and other in Nacala. Our products have high quality and can be found in all Mozambican', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/company/merec-industries-sa/about/', 'source_company_specialties': '', 'source_founding_date': '', 'source_company_size': '', 'source_company_website': 'http://www.merecindustries.com'}
+DEBUG: 2025-07-04 13:15:40,574 INFO: {'source_company_name': 'Merec Industries, SA', 'source_company_countries': '', 'source_company_phone': '+258 21750103Phone number is +258 21750103', 'source_company_sector_or_activity': 'Food and Beverage Manufacturing', 'source_company_business_description': 'Merec Industries, SA was founded in 1998, and is actually a national reference in Maize and wheat flours, pastas, biscuits and animal feeds. We have 4 manufacture units, 2 in Matola, 1 in Beira and other in Nacala. Our products have high quality and can be found in all Mozambican', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/company/merec-industries-sa/about/', 'source_company_specialties': '', 'source_founding_date': '', 'source_company_size': '', 'source_company_website': 'http://www.merecindustries.com'}
+DEBUG: 2025-07-04 13:15:40,574 INFO: {'source_company_name': 'Merec Industries, SA', 'source_company_countries': '', 'source_company_phone': '+258 21750103Phone number is +258 21750103', 'source_company_sector_or_activity': 'Food and Beverage Manufacturing', 'source_company_business_description': 'Merec Industries, SA was founded in 1998, and is actually a national reference in Maize and wheat flours, pastas, biscuits and animal feeds. We have 4 manufacture units, 2 in Matola, 1 in Beira and other in Nacala. Our products have high quality and can be found in all Mozambican', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/company/merec-industries-sa/about/', 'source_company_specialties': '', 'source_founding_date': '', 'source_company_size': '201-500 employees', 'source_company_website': 'http://www.merecindustries.com'}
+DEBUG: 2025-07-04 13:15:40,574 INFO: {'source_company_name': 'Merec Industries, SA', 'source_company_countries': '', 'source_company_phone': '+258 21750103Phone number is +258 21750103', 'source_company_sector_or_activity': 'Food and Beverage Manufacturing', 'source_company_business_description': 'Merec Industries, SA was founded in 1998, and is actually a national reference in Maize and wheat flours, pastas, biscuits and animal feeds. We have 4 manufacture units, 2 in Matola, 1 in Beira and other in Nacala. Our products have high quality and can be found in all Mozambican', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/company/merec-industries-sa/about/', 'source_company_specialties': '', 'source_founding_date': '', 'source_company_size': '201-500 employees', 'source_company_website': 'http://www.merecindustries.com'}
+DEBUG: 2025-07-04 13:15:40,574 INFO: {'source_company_name': 'Merec Industries, SA', 'source_company_countries': '', 'source_company_phone': '+258 21750103Phone number is +258 21750103', 'source_company_sector_or_activity': 'Food and Beverage Manufacturing', 'source_company_business_description': 'Merec Industries, SA was founded in 1998, and is actually a national reference in Maize and wheat flours, pastas, biscuits and animal feeds. We have 4 manufacture units, 2 in Matola, 1 in Beira and other in Nacala. Our products have high quality and can be found in all Mozambican', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/company/merec-industries-sa/about/', 'source_company_specialties': '', 'source_founding_date': '1998', 'source_company_size': '201-500 employees', 'source_company_website': 'http://www.merecindustries.com'}
+DEBUG: 2025-07-04 13:15:40,574 INFO: {'source_company_name': 'Merec Industries, SA', 'source_company_countries': '', 'source_company_phone': '+258 21750103Phone number is +258 21750103', 'source_company_sector_or_activity': 'Food and Beverage Manufacturing', 'source_company_business_description': 'Merec Industries, SA was founded in 1998, and is actually a national reference in Maize and wheat flours, pastas, biscuits and animal feeds. We have 4 manufacture units, 2 in Matola, 1 in Beira and other in Nacala. Our products have high quality and can be found in all Mozambican', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/company/merec-industries-sa/about/', 'source_company_specialties': '', 'source_founding_date': '1998', 'source_company_size': '201-500 employees', 'source_company_website': 'http://www.merecindustries.com'}
+DEBUG: 2025-07-04 13:15:40,574 INFO: {'source_company_name': 'Merec Industries, SA', 'source_company_countries': '', 'source_company_phone': '+258 21750103Phone number is +258 21750103', 'source_company_sector_or_activity': 'Food and Beverage Manufacturing', 'source_company_business_description': 'Merec Industries, SA was founded in 1998, and is actually a national reference in Maize and wheat flours, pastas, biscuits and animal feeds. We have 4 manufacture units, 2 in Matola, 1 in Beira and other in Nacala. Our products have high quality and can be found in all Mozambican', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/company/merec-industries-sa/about/', 'source_company_specialties': 'Moagem, Soluções Agrárias, Rações, Farinhas, Massas, and Bolachas', 'source_founding_date': '1998', 'source_company_size': '201-500 employees', 'source_company_website': 'http://www.merecindustries.com'}
+DEBUG: 2025-07-04 13:15:40,574 INFO: {'source_company_name': 'Merec Industries, SA', 'source_company_countries': '', 'source_company_phone': '+258 21750103Phone number is +258 21750103', 'source_company_sector_or_activity': 'Food and Beverage Manufacturing', 'source_company_business_description': 'Merec Industries, SA was founded in 1998, and is actually a national reference in Maize and wheat flours, pastas, biscuits and animal feeds. We have 4 manufacture units, 2 in Matola, 1 in Beira and other in Nacala. Our products have high quality and can be found in all Mozambican', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/company/merec-industries-sa/about/', 'source_company_specialties': 'Moagem, Soluções Agrárias, Rações, Farinhas, Massas, and Bolachas', 'source_founding_date': '1998', 'source_company_size': '201-500 employees', 'source_company_website': 'http://www.merecindustries.com'}
+DEBUG: 2025-07-04 13:15:40,580 INFO: {'source_company_name': 'Merec Industries, SA', 'source_company_countries': 'MZ', 'source_company_phone': '+258 21750103Phone number is +258 21750103', 'source_company_sector_or_activity': 'Food and Beverage Manufacturing', 'source_company_business_description': 'Merec Industries, SA was founded in 1998, and is actually a national reference in Maize and wheat flours, pastas, biscuits and animal feeds. We have 4 manufacture units, 2 in Matola, 1 in Beira and other in Nacala. Our products have high quality and can be found in all Mozambican', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/company/merec-industries-sa/about/', 'source_company_specialties': 'Moagem, Soluções Agrárias, Rações, Farinhas, Massas, and Bolachas', 'source_founding_date': '1998', 'source_company_size': '201-500 employees', 'source_company_website': 'http://www.merecindustries.com'}
+DEBUG: 2025-07-04 13:15:40,580 INFO: {'source_company_name': 'Merec Industries, SA', 'source_company_countries': 'MZ', 'source_company_phone': '+258 21750103Phone number is +258 21750103', 'source_company_sector_or_activity': 'Food and Beverage Manufacturing', 'source_company_business_description': 'Merec Industries, SA was founded in 1998, and is actually a national reference in Maize and wheat flours, pastas, biscuits and animal feeds. We have 4 manufacture units, 2 in Matola, 1 in Beira and other in Nacala. Our products have high quality and can be found in all Mozambican', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/company/merec-industries-sa/about/', 'source_company_specialties': 'Moagem, Soluções Agrárias, Rações, Farinhas, Massas, and Bolachas', 'source_founding_date': '1998', 'source_company_size': '201-500 employees', 'source_company_website': 'http://www.merecindustries.com'}
+DEBUG: 2025-07-04 13:15:40,589 INFO: Company data saved to: /Users/user/Desktop/Projects/Crapers/Company-Query-Agent/scraper/results/Merec-Industries-SA_about.json
+DEBUG: 2025-07-04 13:15:40,589 INFO: Company data saved to: /Users/user/Desktop/Projects/Crapers/Company-Query-Agent/scraper/results/Merec-Industries-SA_about.json
+DEBUG: 2025-07-04 13:15:40,589 INFO: {'source_company_name': 'Merec Industries, SA', 'source_company_countries': 'MZ', 'source_company_phone': '+258 21750103Phone number is +258 21750103', 'source_company_sector_or_activity': 'Food and Beverage Manufacturing', 'source_company_business_description': 'Merec Industries, SA was founded in 1998, and is actually a national reference in Maize and wheat flours, pastas, biscuits and animal feeds. We have 4 manufacture units, 2 in Matola, 1 in Beira and other in Nacala. Our products have high quality and can be found in all Mozambican', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/company/merec-industries-sa/about/', 'source_company_specialties': 'Moagem, Soluções Agrárias, Rações, Farinhas, Massas, and Bolachas', 'source_founding_date': '1998', 'source_company_size': '201-500 employees', 'source_company_website': 'http://www.merecindustries.com'}
+DEBUG: 2025-07-04 13:15:40,589 INFO: {'source_company_name': 'Merec Industries, SA', 'source_company_countries': 'MZ', 'source_company_phone': '+258 21750103Phone number is +258 21750103', 'source_company_sector_or_activity': 'Food and Beverage Manufacturing', 'source_company_business_description': 'Merec Industries, SA was founded in 1998, and is actually a national reference in Maize and wheat flours, pastas, biscuits and animal feeds. We have 4 manufacture units, 2 in Matola, 1 in Beira and other in Nacala. Our products have high quality and can be found in all Mozambican', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/company/merec-industries-sa/about/', 'source_company_specialties': 'Moagem, Soluções Agrárias, Rações, Farinhas, Massas, and Bolachas', 'source_founding_date': '1998', 'source_company_size': '201-500 employees', 'source_company_website': 'http://www.merecindustries.com'}
+DEBUG: 2025-07-04 13:15:40,590 INFO: initialized successfully
+DEBUG: 2025-07-04 13:15:40,590 INFO: initialized successfully
+DEBUG: 2025-07-04 13:15:40,610 INFO: is_visible() confirmed visibility for: div#global-nav-search.global-nav__search
+DEBUG: 2025-07-04 13:15:40,610 INFO: is_visible() confirmed visibility for: div#global-nav-search.global-nav__search
+DEBUG: 2025-07-04 13:15:40,610 INFO: Search box visible
+DEBUG: 2025-07-04 13:15:40,610 INFO: Search box visible
+DEBUG: 2025-07-04 13:15:40,672 INFO: Basic hover succeeded
+DEBUG: 2025-07-04 13:15:40,672 INFO: Basic hover succeeded
+DEBUG: 2025-07-04 13:15:40,672 INFO: Hover Search box visible True
+DEBUG: 2025-07-04 13:15:40,672 INFO: Hover Search box visible True
+DEBUG: 2025-07-04 13:15:40,937 INFO: Method 1: Basic click succeeded
+DEBUG: 2025-07-04 13:15:40,937 INFO: Method 1: Basic click succeeded
+DEBUG: 2025-07-04 13:15:40,937 INFO: Click Search box True
+DEBUG: 2025-07-04 13:15:40,937 INFO: Click Search box True
+DEBUG: 2025-07-04 13:15:44,345 INFO: Search box filled with company name SanLei
+DEBUG: 2025-07-04 13:15:44,345 INFO: Search box filled with company name SanLei
+DEBUG: 2025-07-04 13:15:50,836 INFO: Search success for SanLei
+DEBUG: 2025-07-04 13:15:50,836 INFO: Search success for SanLei
+DEBUG: 2025-07-04 13:15:50,837 INFO: Search SanLei loading
+DEBUG: 2025-07-04 13:15:50,837 INFO: Search SanLei loading
+DEBUG: 2025-07-04 13:15:50,863 INFO: is_visible() confirmed visibility for: section.scaffold-layout-toolbar
+DEBUG: 2025-07-04 13:15:50,863 INFO: is_visible() confirmed visibility for: section.scaffold-layout-toolbar
+DEBUG: 2025-07-04 13:16:05,903 ERROR: CSS visibility check failed for ul[role='list'] li button:has-text('Companies'): Locator.evaluate: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("ul[role='list'] li button:has-text('Companies')")
+
+DEBUG: 2025-07-04 13:16:05,903 ERROR: CSS visibility check failed for ul[role='list'] li button:has-text('Companies'): Locator.evaluate: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("ul[role='list'] li button:has-text('Companies')")
+
+DEBUG: 2025-07-04 13:16:20,918 ERROR: Bounding box check failed for ul[role='list'] li button:has-text('Companies'): Locator.bounding_box: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("ul[role='list'] li button:has-text('Companies')")
+
+DEBUG: 2025-07-04 13:16:20,918 ERROR: Bounding box check failed for ul[role='list'] li button:has-text('Companies'): Locator.bounding_box: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("ul[role='list'] li button:has-text('Companies')")
+
+DEBUG: 2025-07-04 13:16:23,931 ERROR: Wait-based verification failed for ul[role='list'] li button:has-text('Companies'): Page.wait_for_selector: Timeout 3000ms exceeded.
+Call log:
+  - waiting for locator("ul[role='list'] li button:has-text('Companies')") to be visible
+
+DEBUG: 2025-07-04 13:16:23,931 ERROR: Wait-based verification failed for ul[role='list'] li button:has-text('Companies'): Page.wait_for_selector: Timeout 3000ms exceeded.
+Call log:
+  - waiting for locator("ul[role='list'] li button:has-text('Companies')") to be visible
+
+DEBUG: 2025-07-04 13:16:38,959 ERROR: Element handle check failed for ul[role='list'] li button:has-text('Companies'): Locator.element_handle: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("ul[role='list'] li button:has-text('Companies')")
+
+DEBUG: 2025-07-04 13:16:38,959 ERROR: Element handle check failed for ul[role='list'] li button:has-text('Companies'): Locator.element_handle: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("ul[role='list'] li button:has-text('Companies')")
+
+DEBUG: 2025-07-04 13:16:38,961 WARNING: All visibility checks failed for: ul[role='list'] li button:has-text('Companies')
+DEBUG: 2025-07-04 13:16:38,961 WARNING: All visibility checks failed for: ul[role='list'] li button:has-text('Companies')
+DEBUG: 2025-07-04 13:16:38,961 WARNING: Selector not visible: ul[role='list'] li button:has-text('Companies') False
+DEBUG: 2025-07-04 13:16:38,961 WARNING: Selector not visible: ul[role='list'] li button:has-text('Companies') False
+DEBUG: 2025-07-04 13:16:38,985 INFO: is_visible() confirmed visibility for: button.artdeco-pill:has-text('Companies')
+DEBUG: 2025-07-04 13:16:38,985 INFO: is_visible() confirmed visibility for: button.artdeco-pill:has-text('Companies')
+DEBUG: 2025-07-04 13:16:38,985 INFO: Attempting filter with selector: button.artdeco-pill:has-text('Companies')
+DEBUG: 2025-07-04 13:16:38,985 INFO: Attempting filter with selector: button.artdeco-pill:has-text('Companies')
+DEBUG: 2025-07-04 13:16:39,091 INFO: Basic hover succeeded
+DEBUG: 2025-07-04 13:16:39,091 INFO: Basic hover succeeded
+DEBUG: 2025-07-04 13:16:39,091 ERROR: Filter processing failed for button.artdeco-pill:has-text('Companies'): click_with_fallback() missing 1 required positional argument: 'logger'
+DEBUG: 2025-07-04 13:16:39,091 ERROR: Filter processing failed for button.artdeco-pill:has-text('Companies'): click_with_fallback() missing 1 required positional argument: 'logger'
+DEBUG: 2025-07-04 13:16:39,236 INFO: is_visible() confirmed visibility for: button.search-reusables__filter-pill-button:has-text('Companies')
+DEBUG: 2025-07-04 13:16:39,236 INFO: is_visible() confirmed visibility for: button.search-reusables__filter-pill-button:has-text('Companies')
+DEBUG: 2025-07-04 13:16:39,236 INFO: Attempting filter with selector: button.search-reusables__filter-pill-button:has-text('Companies')
+DEBUG: 2025-07-04 13:16:39,236 INFO: Attempting filter with selector: button.search-reusables__filter-pill-button:has-text('Companies')
+DEBUG: 2025-07-04 13:16:39,311 INFO: Basic hover succeeded
+DEBUG: 2025-07-04 13:16:39,311 INFO: Basic hover succeeded
+DEBUG: 2025-07-04 13:16:39,311 ERROR: Filter processing failed for button.search-reusables__filter-pill-button:has-text('Companies'): click_with_fallback() missing 1 required positional argument: 'logger'
+DEBUG: 2025-07-04 13:16:39,311 ERROR: Filter processing failed for button.search-reusables__filter-pill-button:has-text('Companies'): click_with_fallback() missing 1 required positional argument: 'logger'
+DEBUG: 2025-07-04 13:16:39,346 INFO: is_visible() confirmed visibility for: button:has-text('Companies')
+DEBUG: 2025-07-04 13:16:39,346 INFO: is_visible() confirmed visibility for: button:has-text('Companies')
+DEBUG: 2025-07-04 13:16:39,346 INFO: Attempting filter with selector: button:has-text('Companies')
+DEBUG: 2025-07-04 13:16:39,346 INFO: Attempting filter with selector: button:has-text('Companies')
+DEBUG: 2025-07-04 13:16:39,407 INFO: Basic hover succeeded
+DEBUG: 2025-07-04 13:16:39,407 INFO: Basic hover succeeded
+DEBUG: 2025-07-04 13:16:39,407 ERROR: Filter processing failed for button:has-text('Companies'): click_with_fallback() missing 1 required positional argument: 'logger'
+DEBUG: 2025-07-04 13:16:39,407 ERROR: Filter processing failed for button:has-text('Companies'): click_with_fallback() missing 1 required positional argument: 'logger'
+DEBUG: 2025-07-04 13:16:49,928 ERROR: Result click failed Timeout 10000ms exceeded.
+=========================== logs ===========================
+waiting for navigation to "https://www.linkedin.com/company/**" until 'domcontentloaded'
+============================================================
+DEBUG: 2025-07-04 13:16:49,928 ERROR: Result click failed Timeout 10000ms exceeded.
+=========================== logs ===========================
+waiting for navigation to "https://www.linkedin.com/company/**" until 'domcontentloaded'
+============================================================
+DEBUG: 2025-07-04 13:16:49,935 ERROR: All company filter methods failed
+DEBUG: 2025-07-04 13:16:49,935 ERROR: All company filter methods failed
+DEBUG: 2025-07-04 13:16:49,936 INFO: Apply filter False success
+DEBUG: 2025-07-04 13:16:49,936 INFO: Apply filter False success
+DEBUG: 2025-07-04 13:16:49,960 INFO: Search and filter success and about page
+DEBUG: 2025-07-04 13:16:49,960 INFO: Search and filter success and about page
+DEBUG: 2025-07-04 13:16:51,069 INFO: {'source_company_name': '', 'source_company_countries': '', 'source_company_phone': '', 'source_company_sector_or_activity': '', 'source_company_business_description': '', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/search/results/all/?keywords=SanLei&origin=GLOBAL_SEARCH_HEADER&sid=-09', 'source_company_specialties': '', 'source_founding_date': '', 'source_company_size': '', 'source_company_website': ''}
+DEBUG: 2025-07-04 13:16:51,069 INFO: {'source_company_name': '', 'source_company_countries': '', 'source_company_phone': '', 'source_company_sector_or_activity': '', 'source_company_business_description': '', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/search/results/all/?keywords=SanLei&origin=GLOBAL_SEARCH_HEADER&sid=-09', 'source_company_specialties': '', 'source_founding_date': '', 'source_company_size': '', 'source_company_website': ''}
+DEBUG: 2025-07-04 13:16:51,071 INFO: Company data saved to: /Users/user/Desktop/Projects/Crapers/Company-Query-Agent/scraper/results/_about.json
+DEBUG: 2025-07-04 13:16:51,071 INFO: Company data saved to: /Users/user/Desktop/Projects/Crapers/Company-Query-Agent/scraper/results/_about.json
+DEBUG: 2025-07-04 13:16:51,071 INFO: {'source_company_name': '', 'source_company_countries': '', 'source_company_phone': '', 'source_company_sector_or_activity': '', 'source_company_business_description': '', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/search/results/all/?keywords=SanLei&origin=GLOBAL_SEARCH_HEADER&sid=-09', 'source_company_specialties': '', 'source_founding_date': '', 'source_company_size': '', 'source_company_website': ''}
+DEBUG: 2025-07-04 13:16:51,071 INFO: {'source_company_name': '', 'source_company_countries': '', 'source_company_phone': '', 'source_company_sector_or_activity': '', 'source_company_business_description': '', 'source_company_transaction': 'No transactions found', 'Source_company_url': 'https://www.linkedin.com/search/results/all/?keywords=SanLei&origin=GLOBAL_SEARCH_HEADER&sid=-09', 'source_company_specialties': '', 'source_founding_date': '', 'source_company_size': '', 'source_company_website': ''}
+DEBUG: 2025-07-04 13:16:51,072 INFO: initialized successfully
+DEBUG: 2025-07-04 13:16:51,072 INFO: initialized successfully
+DEBUG: 2025-07-04 13:16:51,091 INFO: is_visible() confirmed visibility for: div#global-nav-search.global-nav__search
+DEBUG: 2025-07-04 13:16:51,091 INFO: is_visible() confirmed visibility for: div#global-nav-search.global-nav__search
+DEBUG: 2025-07-04 13:16:51,091 INFO: Search box visible
+DEBUG: 2025-07-04 13:16:51,091 INFO: Search box visible
+DEBUG: 2025-07-04 13:17:06,142 ERROR: Basic hover failed: Locator.hover: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("div#global-nav-search.global-nav__search")
+    - locator resolved to <div id="global-nav-search" class="global-nav__search↵            ">…</div>
+  - attempting hover action
+    2 × waiting for element to be visible and stable
+      - element is visible and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div id="ember1588" aria-hidden="false" data-test-modal-container="" class="artdeco-modal-overlay artdeco-modal-overlay--layer-default artdeco-modal-overlay--is-top-layer  ember-view">…</div> from <div id="artdeco-modal-outlet">…</div> subtree intercepts pointer events
+    - retrying hover action
+    - waiting 20ms
+    2 × waiting for element to be visible and stable
+      - element is visible and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div id="ember1588" aria-hidden="false" data-test-modal-container="" class="artdeco-modal-overlay artdeco-modal-overlay--layer-default artdeco-modal-overlay--is-top-layer  ember-view">…</div> from <div id="artdeco-modal-outlet">…</div> subtree intercepts pointer events
+    - retrying hover action
+      - waiting 100ms
+    5 × waiting for element to be visible and stable
+      - element is visible and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div id="ember1588" aria-hidden="false" data-test-modal-container="" class="artdeco-modal-overlay artdeco-modal-overlay--layer-default artdeco-modal-overlay--is-top-layer  ember-view">…</div> from <div id="artdeco-modal-outlet">…</div> subtree intercepts pointer events
+    - retrying hover action
+      - waiting 500ms
+
+DEBUG: 2025-07-04 13:17:06,142 ERROR: Basic hover failed: Locator.hover: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("div#global-nav-search.global-nav__search")
+    - locator resolved to <div id="global-nav-search" class="global-nav__search↵            ">…</div>
+  - attempting hover action
+    2 × waiting for element to be visible and stable
+      - element is visible and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div id="ember1588" aria-hidden="false" data-test-modal-container="" class="artdeco-modal-overlay artdeco-modal-overlay--layer-default artdeco-modal-overlay--is-top-layer  ember-view">…</div> from <div id="artdeco-modal-outlet">…</div> subtree intercepts pointer events
+    - retrying hover action
+    - waiting 20ms
+    2 × waiting for element to be visible and stable
+      - element is visible and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div id="ember1588" aria-hidden="false" data-test-modal-container="" class="artdeco-modal-overlay artdeco-modal-overlay--layer-default artdeco-modal-overlay--is-top-layer  ember-view">…</div> from <div id="artdeco-modal-outlet">…</div> subtree intercepts pointer events
+    - retrying hover action
+      - waiting 100ms
+    5 × waiting for element to be visible and stable
+      - element is visible and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div id="ember1588" aria-hidden="false" data-test-modal-container="" class="artdeco-modal-overlay artdeco-modal-overlay--layer-default artdeco-modal-overlay--is-top-layer  ember-view">…</div> from <div id="artdeco-modal-outlet">…</div> subtree intercepts pointer events
+    - retrying hover action
+      - waiting 500ms
+
+DEBUG: 2025-07-04 13:17:06,826 INFO: Precise mouse movement hover succeeded
+DEBUG: 2025-07-04 13:17:06,826 INFO: Precise mouse movement hover succeeded
+DEBUG: 2025-07-04 13:17:06,827 INFO: Hover Search box visible True
+DEBUG: 2025-07-04 13:17:06,827 INFO: Hover Search box visible True
+DEBUG: 2025-07-04 13:17:21,856 ERROR: Method 1: Basic click failed - Locator.click: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("div#global-nav-search.global-nav__search")
+    - locator resolved to <div id="global-nav-search" class="global-nav__search↵            ">…</div>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div id="ember1588" aria-hidden="false" data-test-modal-container="" class="artdeco-modal-overlay artdeco-modal-overlay--layer-default artdeco-modal-overlay--is-top-layer  ember-view">…</div> from <div id="artdeco-modal-outlet">…</div> subtree intercepts pointer events
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div id="ember1588" aria-hidden="false" data-test-modal-container="" class="artdeco-modal-overlay artdeco-modal-overlay--layer-default artdeco-modal-overlay--is-top-layer  ember-view">…</div> from <div id="artdeco-modal-outlet">…</div> subtree intercepts pointer events
+    - retrying click action
+      - waiting 100ms
+    13 × waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <div id="ember1588" aria-hidden="false" data-test-modal-container="" class="artdeco-modal-overlay artdeco-modal-overlay--layer-default artdeco-modal-overlay--is-top-layer  ember-view">…</div> from <div id="artdeco-modal-outlet">…</div> subtree intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+    - waiting for element to be visible, enabled and stable
+
+DEBUG: 2025-07-04 13:17:21,856 ERROR: Method 1: Basic click failed - Locator.click: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator("div#global-nav-search.global-nav__search")
+    - locator resolved to <div id="global-nav-search" class="global-nav__search↵            ">…</div>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div id="ember1588" aria-hidden="false" data-test-modal-container="" class="artdeco-modal-overlay artdeco-modal-overlay--layer-default artdeco-modal-overlay--is-top-layer  ember-view">…</div> from <div id="artdeco-modal-outlet">…</div> subtree intercepts pointer events
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div id="ember1588" aria-hidden="false" data-test-modal-container="" class="artdeco-modal-overlay artdeco-modal-overlay--layer-default artdeco-modal-overlay--is-top-layer  ember-view">…</div> from <div id="artdeco-modal-outlet">…</div> subtree intercepts pointer events
+    - retrying click action
+      - waiting 100ms
+    13 × waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <div id="ember1588" aria-hidden="false" data-test-modal-container="" class="artdeco-modal-overlay artdeco-modal-overlay--layer-default artdeco-modal-overlay--is-top-layer  ember-view">…</div> from <div id="artdeco-modal-outlet">…</div> subtree intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+    - waiting for element to be visible, enabled and stable
+
+DEBUG: 2025-07-04 13:17:23,045 INFO: Method 2: Force click succeeded
+DEBUG: 2025-07-04 13:17:23,045 INFO: Method 2: Force click succeeded
+DEBUG: 2025-07-04 13:17:23,045 INFO: Click Search box True
+DEBUG: 2025-07-04 13:17:23,045 INFO: Click Search box True
+DEBUG: 2025-07-04 13:17:27,438 INFO: Search box filled with company name Moni-Shop
+DEBUG: 2025-07-04 13:17:27,438 INFO: Search box filled with company name Moni-Shop

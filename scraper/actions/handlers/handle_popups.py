@@ -20,7 +20,7 @@ class UnexpectedPopupHandler:
         self.handlers = [
             self.page.on("dialog", self.handle_dialog),
             self.page.on("popup", self.handle_popup),
-            self.page.on("load", self.check_page_modals)
+            # self.page.on("load", self.check_page_modals)
         ]
 
         # Start periodic background checker

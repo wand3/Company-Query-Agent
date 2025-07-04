@@ -139,6 +139,7 @@ class CompanyAboutScraper(Base):
         self.extract_overview_section()
         self.extract_locations_section()
         # self.extract_transactions()
+        self.save_to_json()
 
         return self.data
 
@@ -147,7 +148,8 @@ class CompanyAboutScraper(Base):
         if not filename:
             # Generate filename from company name
             company_slug = re.sub(r'[^a-zA-Z0-9]+', '-', self.data["source_company_name"]).strip('-')
-            filename = f"{company_slug}_about.json"
+            # filename = f"{company_slug}_about.json"
+            filename = f"companies_about.json"
 
         base_folder = Path(__name__).resolve().parent
         results_dir = base_folder / "scraper" / "results"
@@ -165,8 +167,8 @@ class CompanyAboutScraper(Base):
         self.logger.info(f'{company_data}')
 
         # Save to JSON
-        json_path = self.save_to_json()
-        self.logger.info(f"Company data saved to: {json_path}")
+        # json_path = self.save_to_json()
+        # self.logger.info(f"Company data saved to: {json_path}")
         self.logger.info(f"{company_data}")
 
         return company_data
