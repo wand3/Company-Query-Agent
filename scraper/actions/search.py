@@ -112,7 +112,6 @@ class search(Base):
 
                             # check and handle alert for dialog on expanding network
 
-
                             try:
                                 check_alert = await self.handle_access_alert()
                                 if check_alert:

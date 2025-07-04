@@ -15,6 +15,22 @@ short_delay = random.uniform(2, 4)
 logger = setup_logger("linkedn", "INFO")
 
 
+# load cookies if it exists
+async def load_cookies(context, logger):
+    try:
+        base_folder = Path(__name__).resolve().parent
+        file_path = base_folder / 'scraper' / 'cookies.json'
+        # load cookies of the user from the file
+        with open(file_path, "r") as f:
+            cookies = json.load(f)
+            await context.add_cookies(cookies)
+            logger.info(f"Cookies loaded for successfully")
+        return True
+    except Exception as e:
+        logger.error(e)
+        return False
+
+
 async def navigate():
     async with async_playwright() as p:
         # browser configs
@@ -47,19 +63,23 @@ async def navigate():
                 });
             """
             )
-
-        # Load the CSV file into a DataFrame
-        # df = pd.read_csv('data.csv')
-
-        page = await context.new_page()
-        page.set_default_timeout(15000)
-
-        from scraper.actions.login import loginAcct
         controller = linkednController()
-        controller.add_command(loginAcct(page, context, "https://www.linkedin.com", logger=logger))
-        await controller.execute_commands()
-        controller.clear_commands()
-        logger.info("Auth complete")
+        # load cookies first else login if cookies doesn't exist
+        try:
+            load = await load_cookies(context, logger)
+            page = await context.new_page()
+            page.set_default_timeout(15000)
+            if load:
+                await page.goto('https://www.linkedin.com/feed')
+                return
+            else:
+                from scraper.actions.login import loginAcct
+                controller.add_command(loginAcct(page, context, "https://www.linkedin.com", logger=logger))
+                await controller.execute_commands()
+                controller.clear_commands()
+                logger.info("Auth complete")
+        except Exception as e:
+            logger.error(f'{e}')
 
         from scraper.actions.search import search
         # get and loop through company and country data

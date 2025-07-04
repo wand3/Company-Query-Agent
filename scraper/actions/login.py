@@ -49,20 +49,7 @@ class loginAcct(Base):
             self.logger.error(f"Failed to save login cookies: {e}")
             return False
 
-    # load cookies if it exists
-    async def load_cookies(self):
-        try:
-            base_folder = Path(__name__).resolve().parent
-            file_path = base_folder / 'scraper' / 'cookies.json'
-            # load cookies of the user from the file
-            with open(file_path, "w") as f:
-                cookies = json.load(f)
-                await self.context.add_cookies(cookies)
-                self.logger.info(f"Cookies loaded for successfully")
-            return True
-        except Exception as e:
-            self.logger.error(e)
-            return False
+
 
     # login if it auto logs out
     @staticmethod
@@ -173,13 +160,13 @@ class loginAcct(Base):
                 logger.info(f"Error checking card layout locator : {e}")
 
     async def execute(self):
-        load = await self.load_cookies()
-        if load:
-            self.logger.info(f"cookies loaded to session")
-            verify_cookies = check_if_click_successful(self.page, "div#global-nav-search.global-nav__search", "https://www.linkedin.com/feed/", self.logger)
-            if verify_cookies:
-                await asyncio.sleep(random.randint(2, 5))
-                return
+        # load = await self.load_cookies()
+        # if load:
+        #     self.logger.info(f"cookies loaded to session")
+        #     verify_cookies = check_if_click_successful(self.page, "div#global-nav-search.global-nav__search", "https://www.linkedin.com/feed/", self.logger)
+        #     if verify_cookies:
+        #         await asyncio.sleep(random.randint(2, 5))
+        #         return
         await asyncio.sleep(random.randint(2, 5))
         await self.page.goto(self.url)
         await self.page.wait_for_load_state()
