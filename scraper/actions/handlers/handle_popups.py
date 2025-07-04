@@ -50,6 +50,81 @@ class UnexpectedPopupHandler:
         logger.warning(f"Closing unexpected popup: {popup.url}")
         await popup.close()
 
+    async def handle_dismissible_alert(self):
+        """
+        Detects and dismisses access restriction alerts with drop shadow.
+        Looks for an alert containing the message:
+        "You don't have access to this profile"
+        and attempts to click "Got it" or "X" to dismiss it.
+        """
+        if not self.enabled:
+            return
+
+        dismiss_selectors = [
+            # LinkedIn dismiss and got it buttons
+            "button:has-text('Got it')",
+            "button[aria-label='Dismiss']",
+        ]
+
+        text_contents = [
+         "You don't have access to this profile"
+        ]
+
+        try:
+            for selector in dismiss_selectors:
+                try:
+                    elements = await self.page.query_selector_all(selector)
+                    for element in elements:
+                        for text in text_contents:
+                            if text in element.inner_text:
+                                try:
+                                    # self.logger.info(f"Restriction popup not visible {e}")
+                                    # Try clicking the "Got it" button if visible
+                                    got_it_button = self.page.locator("button:has-text('Got it')")
+                                    if await got_it_button.is_visible():
+                                        await got_it_button.click()
+                                        logger.info("Dismissed alert with 'Got it' button")
+                                        return True
+
+                                    # Fallback: Try closing with 'X' button
+                                    close_button = self.page.locator("button[aria-label='Dismiss']")  # Adjust if needed
+                                    if await close_button.is_visible():
+                                        await close_button.click()
+                                        logger.info("Dismissed alert with 'X' button")
+                                        return True
+                                except Exception as e:
+                                    logger.warning(f"Alert was visible but no dismiss button was found {e}")
+                except Exception as e:
+                    logger.info(f'Alert not Dismissed {e}')
+            #
+            # # Wait for the alert to appear within 3 seconds
+            # try:
+            #     from ..utilities import hover_if_text
+            #     seen = await hover_if_text(self, "You don't have access to this profile")
+            #     if seen:
+            #         try:
+            #             # self.logger.info(f"Restriction popup not visible {e}")
+            #             # Try clicking the "Got it" button if visible
+            #             got_it_button = self.page.locator("button:has-text('Got it')")
+            #             if await got_it_button.is_visible():
+            #                 await got_it_button.click()
+            #                 logger.info("Dismissed alert with 'Got it' button")
+            #                 return True
+            #
+            #             # Fallback: Try closing with 'X' button
+            #             close_button = self.page.locator("button[aria-label='Dismiss']")  # Adjust if needed
+            #             if await close_button.is_visible():
+            #                 await close_button.click()
+            #                 logger.info("Dismissed alert with 'X' button")
+            #                 return True
+            #         except Exception as e:
+            #             logger.warning(f"Alert was visible but no dismiss button was found {e}")
+            # except Exception as e:
+            #     logger.error(f"Failed to handle access alert: {str(e)}")
+        except Exception as e:
+            logger.debug(f"No relevant alert detected or different alert shown {e}")
+        return False
+
     async def check_page_modals(self):
         """Check for in-page modals"""
         if not self.enabled:
@@ -64,7 +139,8 @@ class UnexpectedPopupHandler:
             ".overlay",
 
             # Platform-specific (LinkedIn, Salesforce, etc.)
-            # ".auth-wall",  # LinkedIn login wall
+
+
             ".cookie-banner",  # GDPR cookie banners
             "[data-test-id='auth-wall']",
             "#tcp-modal",  # Common marketing modals
@@ -120,7 +196,8 @@ class UnexpectedPopupHandler:
         """Background task to periodically check for popups"""
         while self.enabled:
             try:
-                await self.check_page_modals()
+                # await self.check_page_modals()
+                await self.handle_dismissible_alert()
                 await asyncio.sleep(3)  # Check every 3 seconds
             except asyncio.CancelledError:
                 return

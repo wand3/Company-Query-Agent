@@ -16,10 +16,7 @@ username = os.getenv("USERNAME")
 password = os.getenv("PASSWORD")
 
 
-# Configure logging to display messages to the terminal
-# logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s', handlers=[logging.StreamHandler()])
-
-logger = setup_logger("linkedn", "INFO")
+# logger = setup_logger("linkedn", "INFO")
 
 
 parent_dir = Path(__name__).resolve().parent  # Get the parent directory of the current directory
@@ -32,11 +29,25 @@ class loginAcct(Base):
         login an account with required inputs from pages
     """
 
-    def __init__(self, page, context, url: str):
+    def __init__(self, page, context, url: str, logger):
         self.page = page
         self.url = url
         self.context = context
+        self.logger = logger
         logger.info("initialized successfully")
+
+    # save login cookies
+    async def save_cookies(self, file_path=cookies_filepath):
+        self.logger.info(f"Attempting to save cookies to: {cookies_filepath}")
+        try:
+            cookies = await self.context.cookies()
+            with open(file_path, 'w') as f:
+                json.dump(cookies, f, indent=4)  # Added indent for readability in JSON file
+            self.logger.info(f"Login cookies successfully saved to {cookies_filepath}")
+            return True
+        except Exception as e:
+            self.logger.error(f"Failed to save login cookies: {e}")
+            return False
 
     # load cookies if it exists
     async def load_cookies(self):
@@ -47,15 +58,15 @@ class loginAcct(Base):
             with open(file_path, "w") as f:
                 cookies = json.load(f)
                 await self.context.add_cookies(cookies)
-                logger.info(f"Cookies loaded for successfully")
+                self.logger.info(f"Cookies loaded for successfully")
             return True
         except Exception as e:
-            logger.error(e)
+            self.logger.error(e)
             return False
 
     # login if it auto logs out
     @staticmethod
-    async def sign_in(page, context):
+    async def sign_in(page, context, logger):
 
         """
 
@@ -64,6 +75,7 @@ class loginAcct(Base):
             We sent a notification to your signed in devices. Open your LinkedIn app and tap Yes to confirm your sign-in attempt.
 
             Login the site
+        :param logger:
         :param page:
         :param context:
         :return:
@@ -157,35 +169,14 @@ class loginAcct(Base):
                     if feed_navigate:
                         logger.info("Authentication complete now proceed to search")
 
-                        # # Save the login cookies
-                        # from .scrape import CompanyAboutScraper
-                        # # async def save_cookies(file_path=cookies_filepath):
-                        # cookies = await context.cookies()
-                        # with open(cookies_filepath, 'w') as f:
-                        #     json.dump(cookies, f)
-                        #     await page.save_cookies(cookies)
-                        # base_folder = Path(__name__).resolve().parent
-                        # file_path = f'{base_folder}/scraper/cookies.json'
-                        # save cookies of the user from the file
-
-                        # Save the login cookies
-                        async def save_cookies(file_path=str(cookies_filepath)):
-                            cookies = await context.cookies()
-                            with open(file_path, 'w') as f:
-                                json.dump(cookies, f)
-
-                        await save_cookies(context)
-                        logger.info(f"Cookies saved for successfully")
-                        return True
-
             except Exception as e:
                 logger.info(f"Error checking card layout locator : {e}")
 
     async def execute(self):
         load = await self.load_cookies()
         if load:
-            logger.info(f"cookies loaded to session")
-            verify_cookies = check_if_click_successful(self.page, "div#global-nav-search.global-nav__search", "https://www.linkedin.com/feed/", logger)
+            self.logger.info(f"cookies loaded to session")
+            verify_cookies = check_if_click_successful(self.page, "div#global-nav-search.global-nav__search", "https://www.linkedin.com/feed/", self.logger)
             if verify_cookies:
                 await asyncio.sleep(random.randint(2, 5))
                 return
@@ -193,9 +184,14 @@ class loginAcct(Base):
         await self.page.goto(self.url)
         await self.page.wait_for_load_state()
         login_button = await self.page.get_by_text("Sign in with email").is_visible()
-        # if login_button:
-        #     logger.error("Session continued failed for user")
-        #     # await login()
-        await self.sign_in(self.page, self.context)
-        logger.info(f"Session continued successful for")
-        await self.page.wait_for_load_state()
+        if login_button:
+            #     logger.error("Session continued failed for user")
+            #     # await login()
+            await self.sign_in(self.page, self.context, self.logger)
+            self.logger.info(f"Session continued successful for")
+            await self.page.wait_for_load_state()
+
+            # Save the login cookies
+            await self.save_cookies()
+            self.logger.info(f"Cookies saved for successfully")
+

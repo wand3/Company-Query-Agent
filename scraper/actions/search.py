@@ -25,9 +25,10 @@ class search(Base):
         login an account with required inputs from pages
     """
 
-    logger = setup_logger("linkedn", "INFO")
+    # logger = setup_logger("linkedn", "INFO")
 
     def __init__(self, page, context, name: str, logger):
+        super().__init__(page=page)  # <--- ADD THIS LINE! Pass the 'page' argument up to Base.__init__
         self.page = page
         self.name = name
         self.context = context
@@ -60,43 +61,6 @@ class search(Base):
             self.logger.info(f"Search success for {self.name}")
             return True
 
-    async def handle_access_alert(self):
-        """
-        Detects and dismisses access restriction alerts with drop shadow.
-
-        Looks for an alert containing the message:
-        "You don't have access to this profile"
-        and attempts to click "Got it" or "X" to dismiss it.
-        """
-        try:
-            # Wait for the alert to appear within 3 seconds
-            try:
-                from utilities import hover_if_text
-                seen = await hover_if_text(self, "You don't have access to this profile")
-                if seen:
-                    try:
-                        # self.logger.info(f"Restriction popup not visible {e}")
-                        # Try clicking the "Got it" button if visible
-                        got_it_button = self.page.locator("button:has-text('Got it')")
-                        if await got_it_button.is_visible():
-                            await got_it_button.click()
-                            self.logger.info("Dismissed alert with 'Got it' button")
-                            return True
-
-                        # Fallback: Try closing with 'X' button
-                        close_button = self.page.locator("button[aria-label='Dismiss']")  # Adjust if needed
-                        if await close_button.is_visible():
-                            await close_button.click()
-                            self.logger.info("Dismissed alert with 'X' button")
-                            return True
-                    except Exception as e:
-                        self.logger.warning(f"Alert was visible but no dismiss button was found {e}")
-            except Exception as e:
-                self.logger.error(f"Failed to handle access alert: {str(e)}")
-        except Exception as e:
-            self.logger.debug(f"No relevant alert detected or different alert shown {e}")
-        return False
-
     # selects company filter
     async def company_filter(self, selector):
         """
@@ -106,127 +70,100 @@ class search(Base):
         3. Clicks with prioritized fallbacks
         4. Verifies success through URL pattern and element state
         """
-        # check if filters section is loaded
-        filters_bar = await check_if_its_visible(self.page, selector, self.logger)
-        try:
+        async with self.disable_popups():
+            # check if filters section is loaded
+            filters_bar = await check_if_its_visible(self.page, selector, self.logger)
+            try:
 
-            if filters_bar:
-                # Define URL pattern for verification
-                url_pattern = "https://www.linkedin.com/search/results/companies/**"
+                if filters_bar:
+                    # Define URL pattern for verification
+                    url_pattern = "https://www.linkedin.com/search/results/companies/**"
 
-                # Candidate selectors in priority order
-                candidate_selectors = [
-                    "ul[role='list'] li button:has-text('Companies')",  # First locator in list
-                    "button.artdeco-pill:has-text('Companies')",  # Direct button selector
-                    "button.search-reusables__filter-pill-button:has-text('Companies')",
-                    "button:has-text('Companies')"
-                ]
+                    # Candidate selectors in priority order
+                    candidate_selectors = [
+                        "ul[role='list'] li button:has-text('Companies')",  # First locator in list
+                        "button.artdeco-pill:has-text('Companies')",  # Direct button selector
+                        "button.search-reusables__filter-pill-button:has-text('Companies')",
+                        "button:has-text('Companies')"
+                    ]
 
-                success = False
+                    success = False
 
-                for candidate in candidate_selectors:
-                    try:
-                        # 1. Visibility check
-                        is_visible = await check_if_its_visible(self.page, candidate, self.logger)
-                        if not is_visible:
-                            self.logger.warning(f"Selector not visible: {candidate} {is_visible}")
-                            continue
-
-                        self.logger.info(f"Attempting filter with selector: {candidate}")
-
-                        # 2. Hover interaction
-                        hover_success = await hover_with_fallback(self.page, candidate, self.logger)
-                        if not hover_success:
-                            self.logger.warning(f"Hover failed for selector: {candidate} {hover_success}")
-
-                        # 3. Click interaction
-                        click_success = await click_with_fallback(self.page, candidate)
-                        if not click_success:
-                            self.logger.error(f"Click failed for selector: {candidate} {click_success}")
-                            continue
-
-                        # check and handle alert for dialog on expanding network
+                    for candidate in candidate_selectors:
                         try:
-                            check_alert = await self.handle_access_alert()
-                            if check_alert:
-                                pass
-                        except Exception as e:
-                            self.logger.debug(f"No relevant alert detected or different alert shown {e}")
+                            # 1. Visibility check
+                            is_visible = await check_if_its_visible(self.page, candidate, self.logger)
+                            if not is_visible:
+                                self.logger.warning(f"Selector not visible: {candidate} {is_visible}")
+                                continue
 
-                        # 4. Success verification
-                        verified = await check_if_click_successful(
-                            self.page,
-                            selector=candidate,
-                            url_pattern=url_pattern,
-                            logger=self.logger
-                        )
-                        self.logger.info(f"Company filter click successfully: {candidate} {verified}")
-                        if verified:
-                            self.logger.info(f"Company filter activated successfully with: {candidate}")
-                            success = True
-                            break
-                        else:
-                            # Fallback: Check if button state changed
-                            pressed_state = await self.page.evaluate(f"""selector => {{
-                                        const btn = document.querySelector(selector);
-                                        return btn ? btn.getAttribute('aria-pressed') : null;
-                                    }}""", candidate)
+                            self.logger.info(f"Attempting filter with selector: {candidate}")
 
-                            if pressed_state == 'true':
-                                self.logger.info(f"Filter state changed to active: {candidate}")
+                            # 2. Hover interaction
+                            hover_success = await hover_with_fallback(self.page, candidate, self.logger)
+                            if not hover_success:
+                                self.logger.warning(f"Hover failed for selector: {candidate} {hover_success}")
+
+                            # 3. Click interaction
+                            click_success = await click_with_fallback(self.page, candidate)
+                            if not click_success:
+                                self.logger.error(f"Click failed for selector: {candidate} {click_success}")
+                                continue
+
+                            # check and handle alert for dialog on expanding network
+
+
+                            try:
+                                check_alert = await self.handle_access_alert()
+                                if check_alert:
+                                    pass
+                            except Exception as e:
+                                self.logger.debug(f"No relevant alert detected or different alert shown {e}")
+
+                            # 4. Success verification
+                            verified = await check_if_click_successful(
+                                self.page,
+                                selector=candidate,
+                                url_pattern=url_pattern,
+                                logger=self.logger
+                            )
+                            self.logger.info(f"Company filter click successfully: {candidate} {verified}")
+                            if verified:
+                                self.logger.info(f"Company filter activated successfully with: {candidate}")
                                 success = True
                                 break
+                            else:
+                                # Fallback: Check if button state changed
+                                pressed_state = await self.page.evaluate(f"""selector => {{
+                                            const btn = document.querySelector(selector);
+                                            return btn ? btn.getAttribute('aria-pressed') : null;
+                                        }}""", candidate)
+
+                                if pressed_state == 'true':
+                                    self.logger.info(f"Filter state changed to active: {candidate}")
+                                    success = True
+                                    break
+                        except Exception as e:
+                            self.logger.error(f"Filter processing failed for {candidate}: {str(e)}")
+
+                    try:
+                        # CLick about first result to visit company
+                        result_click = await select_first_company_result(self.page, "div[data-chameleon-result-urn]", self.logger)
+                        # result_click = self.page.locator(
+                        #     'ul[role="list"] li >> a[data-test-app-aware-link]').first()
+                        # await result_click.click(force=True)
+                        self.logger.debug(f"First result click status {result_click}")
+                        success = True
                     except Exception as e:
-                        self.logger.error(f"Filter processing failed for {candidate}: {str(e)}")
+                        self.logger.error(f"Result click failed {e}")
 
-                try:
-                    # CLick about first result to visit company
-                    result_click = await select_first_company_result(self.page, "div[data-chameleon-result-urn]", self.logger)
-                    # result_click = self.page.locator(
-                    #     'ul[role="list"] li >> a[data-test-app-aware-link]').first()
-                    # await result_click.click(force=True)
-                    self.logger.debug(f"First result click status {result_click}")
-                    success = True
-                except Exception as e:
-                    self.logger.error(f"Result click failed {e}")
+                    if not success:
+                        self.logger.error("All company filter methods failed")
 
-                if not success:
-                    self.logger.error("All company filter methods failed")
+                    return success
 
-                return success
-
-        except Exception as e:
-            self.logger.error(f"Search filters not loaded {e}")
-
-    # async def navigate_to_verified_link(page):
-    #     """
-    #     Locates and clicks the verified badge link to navigate to the about page
-    #     """
-    #     # Define selectors in priority order
-    #     selectors = [
-    #         "a[href*='/about/'][aria-label='Verified']",  # Most specific
-    #         "a.ember-view.active[href*='/about/']",  # Class-based
-    #         "a[href*='/about/'] svg[data-test-icon='verified-medium']",  # Child element
-    #         "a[href*='/about/']"  # Generic fallback
-    #     ]
-    #
-    #     for selector in selectors:
-    #         try:
-    #             # Check visibility
-    #             if await page.locator(selector).is_visible():
-    #                 self.logger.info(f"Verified link found with selector: {selector}")
-    #
-    #                 # Click using our robust click method
-    #                 if await click_with_fallback(page, selector):
-    #                     # Verify navigation success
-    #                     await page.wait_for_url("**/about/", timeout=10000)
-    #                     self.logger.info("Successfully navigated to About page via verified badge")
-    #                     return True
-    #         except Exception as e:
-    #             self.logger.warning(f"Attempt failed with {selector}: {str(e)}")
-    #
-    #     self.logger.error("All attempts to locate verified badge failed")
-    #     return False
+            except Exception as e:
+                self.logger.error(f"Search filters not loaded {e}")
 
     # scrape company about page
     async def company_about(self):

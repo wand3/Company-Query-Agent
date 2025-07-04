@@ -56,7 +56,7 @@ async def navigate():
 
         from scraper.actions.login import loginAcct
         controller = linkednController()
-        controller.add_command(loginAcct(page, context, "https://www.linkedin.com"))
+        controller.add_command(loginAcct(page, context, "https://www.linkedin.com", logger=logger))
         await controller.execute_commands()
         controller.clear_commands()
         logger.info("Auth complete")
