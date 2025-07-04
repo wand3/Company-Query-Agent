@@ -1,6 +1,7 @@
 scraper/actions/__py*/
 scraper/__py*/
 scraper/cookies.json
+scraper/actions/handlers/__py*/
 #scraper/actions/login.py
 .env
 # does not ignore the README.md file
